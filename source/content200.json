@@ -5085,63 +5085,16 @@
      "html": "대표 자동화 2 | 수업 영상"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "[너꽃] 대성고1 반톡"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "학생 + 매니저"
-        }
-       ],
-       "box": true,
-       "kakaobar": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "icon",
-           "name": "Play",
-           "tone": "light"
-          }
-         ],
-         "box": true,
-         "dark": true
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": false,
-         "html": "YBM 공통영어2 3과 수업 영상 A<br>28:00"
-        }
-       ],
-       "box": true,
-       "kakao": true,
-       "right": true
-      }
-     ],
-     "box": true,
-     "kakaobar": true
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": false,
+     "html": "수업 영상을 공유와 보강 차원에서 <b>「반 단톡방에 링크 공유해!」</b>라고 시키면, 클코가 카톡에서 해당 반을 검색해서 링크를 자동으로 올립니다."
+    },
+    {
+     "t": "img",
+     "src": "/_blob/4a7a8fcf71a1c78c4455ca9f0c802dd4",
+     "alt": "[너꽃] 다정고1 단톡방에 올라간 수업 영상 링크"
     }
    ],
    "members": [
@@ -5184,30 +5137,17 @@
     {
      "t": "group",
      "dir": "col",
+     "build": "fade 2",
+     "step": true,
      "kids": [
       {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "accent",
-         "bold": true,
-         "html": "37"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "카드 전체"
-        }
-       ]
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "영상 2개 안에 강사가 설명한 문제로 출제할 수 있는 <em>시험 포인트 37개</em> 확인!"
       }
-     ],
-     "build": "fade 2",
-     "step": true
+     ]
     }
    ],
    "members": [
@@ -5552,86 +5492,17 @@
     {
      "t": "group",
      "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "icon",
-         "name": "Book",
-         "tone": "accent"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "light",
-         "bold": false,
-         "html": "<b>밤의 교재 작업</b> | 확정된 범위만큼 빅북 문항을 미리 채워 둡니다"
-        }
-       ],
-       "box": true,
-       "dark": true
-      }
-     ],
      "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
+     "step": true,
      "kids": [
       {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "icon",
-         "name": "Search",
-         "tone": "accent"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "light",
-         "bold": false,
-         "html": "<b>마케팅 공부</b> | 학원 마케팅에 쓸 AI 활용법을 찾아, 승인 없이 되는 것만 적용합니다"
-        }
-       ],
-       "box": true,
-       "dark": true
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "밤새도록 교재 만드는, <em>잠들지 않는 클코 직원!</em>"
       }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "icon",
-         "name": "PaperPlane",
-         "tone": "accent"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "light",
-         "bold": false,
-         "html": "<b>블로그 거리 모으기</b> | 오늘 하루 중 학부모님께 알릴 만한 일을 추립니다"
-        }
-       ],
-       "box": true,
-       "dark": true
-      }
-     ],
-     "build": "fade 3",
-     "step": true
+     ]
     }
    ],
    "members": [
@@ -5662,6 +5533,8 @@
     {
      "t": "group",
      "dir": "col",
+     "build": "fade 1",
+     "step": true,
      "kids": [
       {
        "t": "group",
@@ -5669,329 +5542,62 @@
        "kids": [
         {
          "t": "text",
-         "step": "l",
-         "tone": "ink",
+         "step": "m",
+         "tone": "accent",
          "bold": true,
-         "html": "23:00 시작"
-        },
-        {
-         "t": "rule"
+         "html": "23:00 시작 전"
         },
         {
          "t": "text",
          "step": "m",
          "tone": "ink",
          "bold": true,
-         "html": "05:00 새 학교는 여기까지만 시작"
+         "html": "오늘 업데이트된 학교의 시험범위를 카톡으로 확인"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "ex. 새롬고1 김00 : 「선생님 이번에 10월 모의고사 전체 들어간대요.」"
         }
        ]
       }
-     ],
-     "build": "fade 1",
-     "step": true
+     ]
     },
     {
      "t": "group",
      "dir": "col",
+     "build": "fade 2",
+     "step": true,
      "kids": [
       {
        "t": "group",
        "dir": "col",
        "kids": [
         {
-         "t": "rule",
-         "short": true
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "23:00 ~ 05:00"
         },
         {
          "t": "text",
          "step": "m",
-         "tone": "light",
+         "tone": "ink",
          "bold": true,
-         "html": "05:50 진행 중도 끊음",
-         "chip": "accent"
-        },
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "accent",
-           "bold": true,
-           "html": "1",
-           "w": 44.0
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": true,
-           "html": "확정된 범위의 원문을 노션에서 찾습니다"
-          }
-         ]
+         "html": "매일 카톡으로 오는 시험범위를 정리하고 있다가, 해당 시험범위를 해당 학교의 시험 패턴에 맞춰 <em>변형문항 풀가동 생산!</em>"
         }
        ]
       }
-     ],
-     "build": "fade 2",
-     "step": true
+     ]
     }
    ],
    "members": [
     "c1",
     "c1-2",
     "c1-3"
-   ]
-  },
-  {
-   "id": "c1-4",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 3 | 나의 새벽"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "2",
-         "w": 44.0
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "원문을 잠가 바뀌지 않게 고정합니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "3",
-         "w": 44.0
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "학교 지침서대로 지문마다 5문항을 미리 만듭니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "4",
-         "w": 44.0
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "두 모델이 따로 블라인드로 풀고, 엇갈리면 따로 심사합니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "5",
-         "w": 44.0
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "순서 · 삽입 · 어법은 전수 문항으로 만듭니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "6",
-         "w": 44.0
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "범위가 다 닫힌 학교는 그 밤에 15회 조립, PDF, 납품까지"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "대성고1 낮 시험, 실제 결과"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "c1-4",
-    "c1-5"
-   ]
-  },
-  {
-   "id": "c1-6",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 3 | 나의 새벽"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "대성고1 낮 시험, 실제 결과"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "accent",
-         "bold": true,
-         "html": "38분"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "지문 14개를 넣었습니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "accent",
-         "bold": true,
-         "html": "70/70"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "문항 70개 모두 블라인드 검수 통과 (실제 결함 1건, 고친 뒤 재통과)"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "accent",
-         "bold": true,
-         "html": "122"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "순서 · 삽입 · 어법 전수 문항"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "accent",
-         "bold": true,
-         "html": "9"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "답이 둘 나올 수 있어 뺀 문항"
-        }
-       ]
-      }
-     ]
-    }
-   ],
-   "members": [
-    "c1-6"
    ]
   },
   {
@@ -6088,306 +5694,6 @@
     "c2",
     "c2-2",
     "c2-3"
-   ]
-  },
-  {
-   "id": "c2-4",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 3 | 나의 새벽"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "accent",
-     "bold": true,
-     "html": "지침서에 1:1 상담이 들어간 학교"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "다정고1",
-           "chip": "fill"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "다정고2",
-           "chip": "fill"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "대성고1",
-           "chip": "fill"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "대성고2",
-           "chip": "fill"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "새롬고2",
-           "chip": "fill"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "양지고1",
-           "chip": "fill"
-          }
-         ],
-         "wrap": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "어휘 정답은 5개교 모두 원문 낱말의 반대말이었습니다"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "기존 규칙(반의어 정답 금지)을 실물에 맞춰 바꿨습니다"
-          }
-         ]
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "「시험 선지가 빅북보다 어려웠다」"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "상담에서 나온 말로, 〔상〕 난이도를 6회로 늘렸습니다"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "c2-4",
-    "c2-5"
-   ]
-  },
-  {
-   "id": "c3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 3 | 나의 새벽"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "첫 시험에서 일어난 일, 그리고 고친 것",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "발견"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "혼자 도는 세션이 맡긴 에이전트를 기다리지 않고 먼저 끝났습니다"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "결과"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "10분 뒤, 일하던 에이전트가 끊겼습니다"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    }
-   ],
-   "members": [
-    "c3",
-    "c3-2",
-    "c3-3"
-   ]
-  },
-  {
-   "id": "c3-4",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 3 | 나의 새벽"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "고침"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "맡긴 에이전트를 끝까지 기다리게 고쳤습니다"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "재시험"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "끝까지 돌았습니다"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "기록은 로그 한 파일에 남아 있습니다"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "실패한 기록이 남아 있어서, 다음 학교부터는 같은 일이 생기지 않습니다."
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    }
-   ],
-   "members": [
-    "c3-4",
-    "c3-5",
-    "c3-6"
    ]
   },
   {
@@ -6615,81 +5921,56 @@
     },
     {
      "t": "group",
-     "dir": "col",
+     "dir": "grid",
+     "cols": 5,
+     "cards": true,
      "kids": [
       {
        "t": "group",
        "dir": "col",
+       "box": true,
        "kids": [
         {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "01"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "내신 개강"
-          }
-         ]
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "01"
         },
         {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "02"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "매주 케어지"
-          }
-         ]
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "내신 개강"
         }
        ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "season",
-    "season-2"
-   ]
-  },
-  {
-   "id": "season-3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "한 시즌을 AI로"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
+      },
       {
        "t": "group",
        "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "02"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "매주 케어지"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
        "kids": [
         {
          "t": "text",
@@ -6710,6 +5991,7 @@
       {
        "t": "group",
        "dir": "col",
+       "box": true,
        "kids": [
         {
          "t": "text",
@@ -6726,86 +6008,53 @@
          "html": "빅북 배정표"
         }
        ]
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
+      },
       {
        "t": "group",
        "dir": "col",
+       "box": true,
        "kids": [
         {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "05"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "빅북 하루 완성"
-          }
-         ]
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "05"
         },
         {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "06"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "FINAL 직보 동형"
-          }
-         ]
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "빅북 하루 완성"
         }
        ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "season-3",
-    "season-4"
-   ]
-  },
-  {
-   "id": "season-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "한 시즌을 AI로"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
+      },
       {
        "t": "group",
        "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "06"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "FINAL 직보 동형"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
        "kids": [
         {
          "t": "text",
@@ -6826,6 +6075,7 @@
       {
        "t": "group",
        "dir": "col",
+       "box": true,
        "kids": [
         {
          "t": "text",
@@ -6842,65 +6092,57 @@
          "html": "시험 뒤 이의제기"
         }
        ]
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
+      },
       {
        "t": "group",
        "dir": "col",
+       "box": true,
        "kids": [
         {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "09"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "시험지 분석 리포트"
-          }
-         ]
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "09"
         },
         {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "10"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "기말 개강"
-          }
-         ]
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "시험지 분석 리포트"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "10"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "기말 개강"
         }
        ]
       }
-     ],
-     "build": "fade 1",
-     "step": true
+     ]
     }
    ],
    "members": [
+    "season",
+    "season-2",
+    "season-3",
+    "season-4",
     "season-5",
     "season-6"
    ]
@@ -7211,64 +6453,6 @@
    ]
   },
   {
-   "id": "weekly",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "한 시즌을 AI로"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "매주 돌아가는 것",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "icon",
-         "name": "Book",
-         "tone": "accent"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "케어지",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "주간내신<br>주간 모의고사<br>외부지문 프린트"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "weekly",
-    "weekly-2"
-   ]
-  },
-  {
    "id": "weekly-3",
    "body": [
     {
@@ -7356,10 +6540,10 @@
     },
     {
      "t": "text",
-     "step": "l",
+     "step": "xl",
      "tone": "ink",
      "bold": true,
-     "html": "시험이 끝난 날, 서술형 이의제기",
+     "html": "시험이 끝난 날, 바로 할 수 있는 것은?",
      "head": true
     },
     {

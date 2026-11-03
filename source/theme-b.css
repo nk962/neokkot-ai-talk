@@ -282,3 +282,13 @@ hr.rule { display: none; }
 .g-row.mimgs { height: calc(var(--k) * 600px); }
 .g-row.msplit.mwide { grid-template-columns: minmax(0, 55%) minmax(0, 1fr); }
 .msplit.mwide .g-row.mimgs { height: calc(var(--k) * 560px); }
+
+/* 11-03 수정 */
+#meetings-3b .mcol .g-row.box { flex-direction: row; align-items: center; gap: calc(var(--k) * 28px); width: 100%; padding: calc(var(--k) * 28px) calc(var(--k) * 36px); }
+#meetings-3b .mcol .g-row.box > .tag { align-self: center; margin: 0; }
+#meetings-3b .mcol .g-row.box > .g-col { gap: calc(var(--k) * 6px); }
+#meetings-3b .mcol > .g-row > .g-col { width: 100%; gap: calc(var(--k) * 16px); }
+#meetings-3b .mcol .r-caption { margin-top: calc(var(--k) * 12px); }
+#meetings-3b .g-row.mimgs > .im, #b2-7 .g-row.mimgs > .im { background: none; box-shadow: none; }
+#meetings-3b .g-row.mimgs > .im img, #b2-7 .g-row.mimgs > .im img { border-radius: 16px; box-shadow: 0 2px 24px rgba(31, 27, 24, .08); width: auto; max-width: 100%; }
+#objection .r-title { font-size: calc(var(--k) * 84px); }
