@@ -9,6 +9,7 @@ python3 render.py <content.json> <그림 폴더> <출력 폴더> <a|b>
 """
 import html, json, re, shutil, sys
 from pathlib import Path
+from PIL import Image
 
 content, asset_dir, out, theme = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3]), sys.argv[4]
 here = Path(__file__).parent
@@ -117,9 +118,12 @@ def render(n, in_box=False):
         return '<span class="bar%s"></span>' % (' on' if n['on'] else '')
     if t == 'img':
         fit = ' contain' if n.get('fit') == 'contain' else ''
-        return f'<figure{attrs(n, "im" + fit)}><img src="{asset(n["src"])}" alt="{html.escape(n["alt"])}"></figure>'
+        src = asset(n['src'])
+        w, h = Image.open(assets[Path(src).stem]).size
+        return f'<figure{attrs(n, "im" + fit)}><img src="{src}" width="{w}" height="{h}" alt="{html.escape(n["alt"])}"></figure>'
     if t == 'video':  # 누르면 재생. 장 넘김 클릭과 겹치지 않게 template 이 영상 클릭은 넘기지 않는다
-        return (f'<figure{attrs(n, "vid")}><video controls playsinline preload="auto" poster="{asset(n["poster"])}" '
+        pw, ph = Image.open(assets[Path(asset(n['poster'])).stem]).size
+        return (f'<figure{attrs(n, "vid")}><video controls playsinline preload="auto" width="{pw}" height="{ph}" poster="{asset(n["poster"])}" '
                 f'aria-label="{html.escape(n["alt"])}"><source src="{asset(n["src"])}" type="video/mp4"></video></figure>')
     if t == 'icon':
         return svg(ICONS[n['name']], 'ic ' + n.get('tone', 'accent'))
