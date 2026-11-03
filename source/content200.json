@@ -214,14 +214,14 @@
        "step": "xs",
        "tone": "accent",
        "bold": true,
-       "html": "2025년 AI Conference"
+       "html": "AI 세미나를 접하기 시작하며"
       },
       {
        "t": "text",
        "step": "m",
        "tone": "ink",
        "bold": true,
-       "html": "그날 무대에 선 세 분",
+       "html": "2025년 AI Conference",
        "head": true
       }
      ]
@@ -3121,47 +3121,12 @@
          "step": "m",
          "tone": "accent",
          "bold": true,
-         "html": "신규생"
+         "html": "신규생 온/오프 보딩 처리"
         }
        ]
       }
      ],
      "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "01"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "카톡 읽기"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "신규 · 퇴원 · 휴원"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
      "step": true
     }
    ],
@@ -3179,7 +3144,7 @@
      "step": "xs",
      "tone": "accent",
      "bold": true,
-     "html": "대표 자동화 1 | 카톡"
+     "html": "대표 자동화 1 | 신규생 온보딩"
     },
     {
      "t": "text",
@@ -3366,14 +3331,7 @@
      "step": "xs",
      "tone": "accent",
      "bold": true,
-     "html": "대표 자동화 1 | 카톡"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "accent",
-     "bold": true,
-     "html": "퇴원생"
+     "html": "대표 자동화 1 | 퇴원생 오프보딩"
     },
     {
      "t": "group",
