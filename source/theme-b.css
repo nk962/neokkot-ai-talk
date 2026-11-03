@@ -183,3 +183,24 @@ hr.rule { display: none; }
 .chip-outline { border: 0; background: #ffffff; color: var(--ink); }
 .chip { font-size: calc(var(--k) * 36px); padding: .35em .85em; }
 .bd { justify-content: center; }
+
+/* 나란한 항목 카드: 같은 무게라 첫 칸도 흰 카드. 카드 안 첫 굵은 줄이 카드 제목 */
+.g-grid.cards { gap: calc(var(--k) * 20px); align-items: stretch; }
+.g-grid.cards > .box, .g-grid.cards > .box:first-child { background: var(--card); --fg: var(--ink); --sub: var(--gray); color: var(--ink); }
+.dark .g-grid.cards > .box, .dark .g-grid.cards > .box:first-child { background: transparent; --fg: var(--soft); --sub: var(--mute); color: var(--soft); }
+.g-grid.cards > .box { padding: calc(var(--k) * 36px) calc(var(--k) * 36px); justify-content: flex-start; }
+.g-grid.cards .r-cbody.accent, .g-grid.cards .t.accent:not(.r-ctitle) { font-family: 'Paperlogy'; font-weight: 500; }
+.g-grid.cards > .box .tag, .g-grid.cards > .box:first-child .tag { background: rgba(255, 106, 0, .14); color: var(--orange); }
+.r-cbody b { font-family: 'Paperlogy'; font-weight: 500; }
+
+/* 검수에서 고른 배치 */
+.stmt .r-title { font-size: calc(var(--k) * 80px); line-height: 1.2; }
+.stmt .r-body, .stmt .r-strong { font-size: calc(var(--k) * 44px); }
+.g-grid.compare > .box:last-child { background: var(--ink); --fg: var(--soft); --sub: var(--mute); color: var(--soft); }
+.g-grid.compare > .box:last-child .tag { background: rgba(255, 106, 0, .24); color: #ffb27a; }
+.g-grid.stats > .box > .t:first-child { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 72px); line-height: 1.1; color: var(--orange); }
+.g-row.flowcards { align-items: stretch; gap: calc(var(--k) * 12px); }
+.g-row.flowcards > .box { flex: 1 1 0; background: var(--card); --fg: var(--ink); --sub: var(--gray); color: var(--ink); }
+.g-row.flowcards > .ar { flex: none; }
+/* 항목 옆에 붙지 않고 혼자 남은 막대는 숨긴다(쪽을 모으며 떨어진 것) */
+.bd > .bar, .step > .bar { display: none; }

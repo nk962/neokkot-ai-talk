@@ -957,146 +957,139 @@
        "box": true
       }
      ]
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xs",
+       "tone": "accent",
+       "bold": true,
+       "html": "쓰는 도구 | 세 AI의 특징"
+      },
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "ink",
+       "bold": true,
+       "html": "각 AI, 이런 일에 씁니다",
+       "head": true
+      },
+      {
+       "t": "group",
+       "dir": "grid",
+       "cols": 3,
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "GPT"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "만능 대화 상대"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "dim",
+           "bold": false,
+           "html": "아이디어 · 해석"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "dim",
+           "bold": false,
+           "html": "그림 · 사진 생성"
+          }
+         ],
+         "box": true
+        },
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "클로드"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "내 폴더에서 일하는 직원"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "dim",
+           "bold": false,
+           "html": "클로드 코드 기준"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "dim",
+           "bold": false,
+           "html": "교재 · 시험지 제작과 검수"
+          }
+         ],
+         "box": true
+        },
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "구글 자료를 다루는 조수"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "dim",
+           "bold": false,
+           "html": "구글 문서 · 드라이브"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "dim",
+           "bold": false,
+           "html": "긴 PDF · 영상 정리"
+          }
+         ],
+         "box": true
+        }
+       ]
+      }
+     ],
+     "build": "fade 1",
+     "step": true
     }
    ],
    "rev": "바꿈",
    "members": [
-    "compare"
-   ]
-  },
-  {
-   "id": "rev-compare-uses",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "쓰는 도구 | 세 AI의 특징"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "ink",
-     "bold": true,
-     "html": "각 AI, 이런 일에 씁니다",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "grid",
-     "cols": 3,
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "GPT"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "만능 대화 상대"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "아이디어 · 해석"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "그림 · 사진 생성"
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "클로드"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "내 폴더에서 일하는 직원"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "클로드 코드 기준"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "교재 · 시험지 제작과 검수"
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "제미나이"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "구글 자료를 다루는 조수"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "구글 문서 · 드라이브"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "긴 PDF · 영상 정리"
-        }
-       ],
-       "box": true
-      }
-     ]
-    }
-   ],
-   "rev": "끼움",
-   "members": [
+    "compare",
     "rev-compare-uses"
    ]
   },
@@ -1461,154 +1454,139 @@
        "chip": "accent"
       }
      ]
-    }
-   ],
-   "members": [
-    "compare-6"
-   ]
-  },
-  {
-   "id": "compare-7",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "쓰는 도구 | 세 AI 비교"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "ink",
-     "bold": true,
-     "html": "클로드 코드",
-     "head": true
     },
     {
      "t": "group",
-     "dir": "row",
+     "dir": "col",
      "kids": [
       {
        "t": "group",
-       "dir": "col",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "accent",
+           "bold": true,
+           "html": "좋은 점"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "파일로 끝난다"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "원문이 안 바뀐다"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "AI끼리 검수"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "규칙이 쌓인다"
+          }
+         ],
+         "box": true
+        },
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "accent",
+           "bold": true,
+           "html": "알아둘 점"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "세팅이 고비"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "쓸수록 비용"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "그림 생성은 없음"
+          },
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "ink",
+           "bold": true,
+           "html": "배우는 시간"
+          }
+         ],
+         "box": true
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "row",
        "kids": [
         {
          "t": "text",
          "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "좋은 점"
-        },
-        {
-         "t": "text",
-         "step": "s",
          "tone": "ink",
          "bold": true,
-         "html": "파일로 끝난다"
+         "html": "시험지·교재 한 권",
+         "chip": "outline"
         },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "원문이 안 바뀐다"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "AI끼리 검수"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "규칙이 쌓인다"
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
         {
          "t": "text",
          "step": "xs",
-         "tone": "accent",
+         "tone": "ink",
          "bold": true,
-         "html": "알아둘 점"
+         "html": "매주 같은 틀 반복",
+         "chip": "outline"
         },
         {
          "t": "text",
-         "step": "s",
+         "step": "xs",
          "tone": "ink",
          "bold": true,
-         "html": "세팅이 고비"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "쓸수록 비용"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "그림 생성은 없음"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "배우는 시간"
+         "html": "검수까지",
+         "chip": "outline"
         }
        ],
-       "box": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "row",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "시험지·교재 한 권",
-       "chip": "outline"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "매주 같은 틀 반복",
-       "chip": "outline"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "검수까지",
-       "chip": "outline"
+       "wrap": true
       }
      ],
-     "wrap": true
+     "build": "fade 1",
+     "step": true
     }
    ],
-   "rev": "바꿈",
    "members": [
+    "compare-6",
     "compare-7"
    ]
   },
@@ -1848,6 +1826,70 @@
      ],
      "build": "fade 2",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "dim",
+         "bold": false,
+         "html": "ChatGPT Work와 Google Antigravity도 <br>이제 내 폴더에서 일합니다. <br>브랜드보다 쓰는 방식을 보고 선택합니다."
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "accent",
+         "bold": true,
+         "html": "세 번째"
+        },
+        {
+         "t": "text",
+         "step": "xl",
+         "tone": "ink",
+         "bold": true,
+         "html": "무료로 판단하지 마세요"
+        }
+       ],
+       "build": "fade 1",
+       "step": true
+      }
+     ],
+     "build": "fade 3",
+     "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "dim",
+         "bold": false,
+         "html": "무료 요금제는 유료와 모델이 다를 때가 많습니다. <br>제대로 비교하려면 같은 급끼리 써 봐야 합니다."
+        }
+       ]
+      }
+     ],
+     "build": "fade 4",
+     "step": true
     }
    ],
    "members": [
@@ -1855,100 +1897,10 @@
     "compare2-2",
     "compare2-3",
     "compare2-4",
-    "compare2-5"
-   ]
-  },
-  {
-   "id": "compare2-6",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "쓰는 도구 | 세 AI 비교에서 남기는 말"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "방식은 닮아 가는 중"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "ChatGPT Work와 Google Antigravity도 <br>이제 내 폴더에서 일합니다. <br>브랜드보다 쓰는 방식을 보고 선택합니다."
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "세 번째"
-      },
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "무료로 판단하지 마세요"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
+    "compare2-5",
     "compare2-6",
     "compare2-7",
-    "compare2-8"
-   ]
-  },
-  {
-   "id": "compare2-9",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "쓰는 도구 | 세 AI 비교에서 남기는 말"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "무료로 판단하지 마세요"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "무료 요금제는 유료와 모델이 다를 때가 많습니다. <br>제대로 비교하려면 같은 급끼리 써 봐야 합니다."
-      }
-     ]
-    }
-   ],
-   "members": [
+    "compare2-8",
     "compare2-9"
    ]
   },
@@ -2032,26 +1984,27 @@
      ],
      "build": "fade 1",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "ink",
+       "bold": true,
+       "html": "그래서 질문은<br>AI보다 먼저, <em>나에게</em>",
+       "head": true
+      }
+     ],
+     "build": "fade 2",
+     "step": true
     }
    ],
    "members": [
     "e820ce89",
-    "ask-self"
-   ]
-  },
-  {
-   "id": "ask-self-2",
-   "body": [
-    {
-     "t": "text",
-     "step": "xl",
-     "tone": "ink",
-     "bold": true,
-     "html": "그래서 질문은<br>AI보다 먼저, <em>나에게</em>",
-     "head": true
-    }
-   ],
-   "members": [
+    "ask-self",
     "ask-self-2"
    ]
   },
@@ -2353,62 +2306,56 @@
      ],
      "build": "fade 3",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": true,
+         "html": "실장님"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": false,
+         "html": "원장님 다정고2 신규생입니다. 학생 번호는 000, 학부모님 번호 000이고 첫 수업 11월 1일입니다"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "연락 = 오늘 나의 할 일"
+        }
+       ],
+       "build": "fade 1",
+       "step": true
+      }
+     ],
+     "build": "fade 4",
+     "step": true
     }
    ],
    "members": [
     "inbox-ex",
     "inbox-ex-2",
     "inbox-ex-3",
-    "inbox-ex-4"
-   ]
-  },
-  {
-   "id": "inbox-ex-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "내 일을 해체하기"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "실장님"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "원장님 다정고2 신규생입니다. 학생 번호는 000, 학부모님 번호 000이고 첫 수업 11월 1일입니다"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "accent",
-       "bold": true,
-       "html": "연락 = 오늘 나의 할 일"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
+    "inbox-ex-4",
     "inbox-ex-5",
     "inbox-ex-6"
    ]
@@ -3986,38 +3933,6 @@
      ],
      "build": "fade 1",
      "step": true
-    }
-   ],
-   "members": [
-    "a3",
-    "a3-2"
-   ]
-  },
-  {
-   "id": "a3-3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 1 | 카톡"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "ink",
-       "bold": false,
-       "html": "안녕하세요, 어머님! 😊<br>○○의 퇴원 소식 전해 들었습니다. 아쉬운 결정이지만, 앞으로 ○○가 더 크게 성장해 나갈 모습을 진심으로 기대하고 응원하겠습니다.<br><br>○○야, 그동안 정말 수고 많았어! 공부하다가 막히는 부분이나 도움이 필요한 일이 생기면 언제든 편하게 연락 줘 ㅎㅎ<br><br>그동안 ○○를 믿고 맡겨 주셔서 진심으로 감사했습니다. 🙏"
-      }
-     ],
-     "box": true,
-     "kakao": true,
-     "right": true
     },
     {
      "t": "group",
@@ -4025,30 +3940,56 @@
      "kids": [
       {
        "t": "group",
-       "dir": "row",
+       "dir": "col",
        "kids": [
         {
          "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "송별 글"
-        },
-        {
-         "t": "text",
-         "step": "l",
+         "step": "s",
          "tone": "ink",
          "bold": false,
-         "html": "학생과 학부모님께 먼저 마음을 전합니다"
+         "html": "안녕하세요, 어머님! 😊<br>○○의 퇴원 소식 전해 들었습니다. 아쉬운 결정이지만, 앞으로 ○○가 더 크게 성장해 나갈 모습을 진심으로 기대하고 응원하겠습니다.<br><br>○○야, 그동안 정말 수고 많았어! 공부하다가 막히는 부분이나 도움이 필요한 일이 생기면 언제든 편하게 연락 줘 ㅎㅎ<br><br>그동안 ○○를 믿고 맡겨 주셔서 진심으로 감사했습니다. 🙏"
         }
-       ]
+       ],
+       "box": true,
+       "kakao": true,
+       "right": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "accent",
+           "bold": true,
+           "html": "송별 글"
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": false,
+           "html": "학생과 학부모님께 먼저 마음을 전합니다"
+          }
+         ]
+        }
+       ],
+       "build": "fade 1",
+       "step": true
       }
      ],
-     "build": "fade 1",
+     "build": "fade 2",
      "step": true
     }
    ],
    "members": [
+    "a3",
+    "a3-2",
     "a3-3",
     "a3-4"
    ]
@@ -4169,98 +4110,85 @@
      ],
      "build": "fade 1",
      "step": true
-    }
-   ],
-   "members": [
-    "a4",
-    "a4-2"
-   ]
-  },
-  {
-   "id": "a4-3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 1 | 카톡"
     },
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "제가 한 말"
-      },
-      {
        "t": "group",
        "dir": "col",
        "kids": [
         {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "「신규생 관리톡 만드는 거, 자동으로 해 줘」"
-        }
-       ],
-       "box": true,
-       "kakao": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "「신규생 관리톡 만드는 거, 자동으로 해 줘」"
+          }
+         ],
+         "box": true,
+         "kakao": true
+        },
         {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "「팀톡이라고 하면 팀채팅이야」"
-        }
-       ],
-       "box": true,
-       "kakao": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "「팀톡이라고 하면 팀채팅이야」"
+          }
+         ],
+         "box": true,
+         "kakao": true
+        },
         {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "「만들 때마다 창이 떠서 일을 못 해. 1시간에 한 번 몰아서 물어봐」"
-        }
-       ],
-       "box": true,
-       "kakao": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "「만들 때마다 창이 떠서 일을 못 해. 1시간에 한 번 몰아서 물어봐」"
+          }
+         ],
+         "box": true,
+         "kakao": true
+        },
         {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "「○○이 팀톡 파해 줘」"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "「○○이 팀톡 파해 줘」"
+          }
+         ],
+         "box": true,
+         "kakao": true
         }
-       ],
-       "box": true,
-       "kakao": true
+       ]
       }
-     ]
+     ],
+     "build": "fade 2",
+     "step": true
     }
    ],
    "members": [
+    "a4",
+    "a4-2",
     "a4-3"
    ]
   },
@@ -4461,49 +4389,6 @@
      ],
      "build": "fade 1",
      "step": true
-    }
-   ],
-   "members": [
-    "b1",
-    "b1-2"
-   ]
-  },
-  {
-   "id": "b1-3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 2 | 수업 영상"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "02"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "맥으로 자동 이동"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "촬영이 끝나는 대로"
-      }
-     ]
     },
     {
      "t": "group",
@@ -4518,114 +4403,55 @@
          "step": "m",
          "tone": "accent",
          "bold": true,
-         "html": "03"
+         "html": "02"
         },
         {
          "t": "text",
          "step": "l",
          "tone": "ink",
          "bold": true,
-         "html": "마이박스에 업로드"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "b1-3",
-    "b1-4"
-   ]
-  },
-  {
-   "id": "b1-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 2 | 수업 영상"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "04"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "학교별 반톡에 올립니다"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "학부모 없이 학생과 매니저만"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "05"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "영상을 보고 정리"
+         "html": "맥으로 자동 이동"
         },
         {
          "t": "text",
          "step": "m",
          "tone": "dim",
          "bold": false,
-         "html": "내가 중요하다고 한 것, 출제 포인트"
+         "html": "촬영이 끝나는 대로"
         }
        ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "03"
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "마이박스에 업로드"
+          }
+         ]
+        }
+       ],
+       "build": "fade 1",
+       "step": true
       }
      ],
-     "build": "fade 1",
+     "build": "fade 2",
      "step": true
-    }
-   ],
-   "members": [
-    "b1-5",
-    "b1-6"
-   ]
-  },
-  {
-   "id": "b1-7",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 2 | 수업 영상"
     },
     {
      "t": "group",
@@ -4637,17 +4463,24 @@
        "kids": [
         {
          "t": "text",
-         "step": "l",
-         "tone": "ink",
+         "step": "m",
+         "tone": "accent",
          "bold": true,
-         "html": "빅북에 반영"
+         "html": "04"
         },
         {
          "t": "text",
          "step": "l",
          "tone": "ink",
          "bold": true,
-         "html": "강의 리뷰 테스트 제작"
+         "html": "학교별 반톡에 올립니다"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "dim",
+         "bold": false,
+         "html": "학부모 없이 학생과 매니저만"
         }
        ]
       },
@@ -4656,25 +4489,102 @@
        "dir": "col",
        "kids": [
         {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "06"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "05"
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "영상을 보고 정리"
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "dim",
+           "bold": false,
+           "html": "내가 중요하다고 한 것, 출제 포인트"
+          }
+         ]
+        }
+       ],
+       "build": "fade 1",
+       "step": true
+      }
+     ],
+     "build": "fade 3",
+     "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "빅북에 반영"
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "강의 리뷰 테스트 제작"
+          }
+         ]
         },
         {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "학생 명단에 맞춰 인쇄"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "06"
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "학생 명단에 맞춰 인쇄"
+          }
+         ]
         }
        ]
       }
-     ]
+     ],
+     "build": "fade 4",
+     "step": true
     }
    ],
    "members": [
+    "b1",
+    "b1-2",
+    "b1-3",
+    "b1-4",
+    "b1-5",
+    "b1-6",
     "b1-7"
    ]
   },
@@ -4833,80 +4743,74 @@
        ]
       }
      ]
-    }
-   ],
-   "members": [
-    "rv-1"
-   ]
-  },
-  {
-   "id": "rv-2",
-   "body": [
+    },
     {
      "t": "group",
-     "dir": "row",
+     "dir": "col",
      "kids": [
       {
        "t": "group",
-       "dir": "col",
+       "dir": "row",
        "kids": [
         {
-         "t": "text",
-         "step": "xs",
-         "tone": "light",
-         "bold": true,
-         "html": "정답판 | 근거 포함",
-         "chip": "accent"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "light",
+           "bold": true,
+           "html": "정답판 | 근거 포함",
+           "chip": "accent"
+          },
+          {
+           "t": "img",
+           "src": "/_blob/261da248f09218bc939a70bdbefa4d34",
+           "alt": "",
+           "fit": "contain"
+          }
+         ]
         },
         {
-         "t": "img",
-         "src": "/_blob/261da248f09218bc939a70bdbefa4d34",
-         "alt": "",
-         "fit": "contain"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "수업 영상 → 리뷰 테스트"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "정답 선택지에 회색 표시가 들어갑니다",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "문항마다 「정답 + 근거」 상자가 바로 아래 붙습니다",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "채점하는 사람이 해설을 찾아볼 일이 없습니다",
-         "chip": "fill"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": false,
+           "html": "정답 선택지에 회색 표시가 들어갑니다",
+           "chip": "fill"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": false,
+           "html": "문항마다 「정답 + 근거」 상자가 바로 아래 붙습니다",
+           "chip": "fill"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": false,
+           "html": "채점하는 사람이 해설을 찾아볼 일이 없습니다",
+           "chip": "fill"
+          }
+         ]
         }
        ]
       }
-     ]
+     ],
+     "build": "fade 1",
+     "step": true
     }
    ],
    "members": [
+    "rv-1",
     "rv-2"
    ]
   },
@@ -5025,43 +4929,6 @@
      ],
      "build": "fade 2",
      "step": true
-    }
-   ],
-   "members": [
-    "b2",
-    "b2-2",
-    "b2-3"
-   ]
-  },
-  {
-   "id": "b2-4",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 2 | 수업 영상"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "클로드 코드에 전달한 명령"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "<b><em>3</em></b> 영상에서 내가 중요하다고 한 것을 정리해 빅북에 반영하고, 강의 리뷰 테스트를 만들어"
-      }
-     ]
     },
     {
      "t": "group",
@@ -5076,37 +4943,61 @@
          "step": "l",
          "tone": "ink",
          "bold": false,
-         "html": "<b><em>4</em></b> 리뷰 테스트는 제작되는 대로 학생 명단에 맞춰 인쇄해"
+         "html": "<b><em>3</em></b> 영상에서 내가 중요하다고 한 것을 정리해 빅북에 반영하고, 강의 리뷰 테스트를 만들어"
         }
        ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
+      },
       {
        "t": "group",
        "dir": "col",
        "kids": [
         {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "「누군가 인쇄기 앞에 가서 인쇄물만 가져올 수 있게, 그 전의 모든 작업을 자동화해 줘.」"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": false,
+           "html": "<b><em>4</em></b> 리뷰 테스트는 제작되는 대로 학생 명단에 맞춰 인쇄해"
+          }
+         ]
         }
-       ]
+       ],
+       "build": "fade 1",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "dim",
+           "bold": false,
+           "html": "「누군가 인쇄기 앞에 가서 인쇄물만 가져올 수 있게, 그 전의 모든 작업을 자동화해 줘.」"
+          }
+         ]
+        }
+       ],
+       "build": "fade 2",
+       "step": true
       }
      ],
-     "build": "fade 2",
+     "build": "fade 3",
      "step": true
     }
    ],
    "members": [
+    "b2",
+    "b2-2",
+    "b2-3",
     "b2-4",
     "b2-5",
     "b2-6"
@@ -5274,72 +5165,6 @@
      ],
      "build": "fade 3",
      "step": true
-    }
-   ],
-   "members": [
-    "b3",
-    "b3-2",
-    "b3-3",
-    "b3-4"
-   ]
-  },
-  {
-   "id": "b3-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 2 | 수업 영상"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "accent",
-       "bold": true,
-       "html": "10"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "되는 단어 · 안 되는 단어"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "accent",
-         "bold": true,
-         "html": "13"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "어법"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
     },
     {
      "t": "group",
@@ -5361,16 +5186,76 @@
          "step": "m",
          "tone": "dim",
          "bold": false,
-         "html": "지칭 · 의미 · 내용 일치"
+         "html": "되는 단어 · 안 되는 단어"
         }
        ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xl",
+           "tone": "accent",
+           "bold": true,
+           "html": "13"
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "dim",
+           "bold": false,
+           "html": "어법"
+          }
+         ]
+        }
+       ],
+       "build": "fade 1",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xl",
+           "tone": "accent",
+           "bold": true,
+           "html": "10"
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "dim",
+           "bold": false,
+           "html": "지칭 · 의미 · 내용 일치"
+          }
+         ]
+        }
+       ],
+       "build": "fade 2",
+       "step": true
       }
      ],
-     "build": "fade 2",
+     "build": "fade 4",
      "step": true
     }
    ],
    "members": [
+    "b3",
+    "b3-2",
+    "b3-3",
+    "b3-4",
     "b3-5",
     "b3-6",
     "b3-7"
@@ -5461,33 +5346,27 @@
      ],
      "build": "fade 2",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "dim",
+       "bold": false,
+       "html": "상태: 초안. 받아쓰기 오인식을 원문과 대조한 뒤, 승인한 카드만 출제에 넣습니다."
+      }
+     ],
+     "build": "fade 3",
+     "step": true
     }
    ],
    "members": [
     "b3-8",
     "b3-9",
-    "b3-10"
-   ]
-  },
-  {
-   "id": "b3-11",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 2 | 수업 영상"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "dim",
-     "bold": false,
-     "html": "상태: 초안. 받아쓰기 오인식을 원문과 대조한 뒤, 승인한 카드만 출제에 넣습니다."
-    }
-   ],
-   "members": [
+    "b3-10",
     "b3-11"
    ]
   },
@@ -6064,95 +5943,82 @@
      ],
      "build": "fade 1",
      "step": true
-    }
-   ],
-   "members": [
-    "c2",
-    "c2-2"
-   ]
-  },
-  {
-   "id": "c2-3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 3 | 나의 새벽"
     },
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "9개교 지침서에 들어 있는 것"
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": true,
+         "html": "중간고사 실물 시험지를 쪽마다 읽은 정리"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": true,
+         "html": "번호별 유형과 배점, 발문 원문"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": true,
+         "html": "선지 언어와 길이, 오답을 만든 방식"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": true,
+         "html": "지문을 고쳐 쓴 방식"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": true,
+         "html": "1:1 상담에서 들은 이야기(학생 이름 없이)"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": true,
+         "html": "학교 기준을 바꾸고 싶으면, 지침서만 고치면 됩니다"
+        }
+       ]
       },
       {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "중간고사 실물 시험지를 쪽마다 읽은 정리"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "번호별 유형과 배점, 발문 원문"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "선지 언어와 길이, 오답을 만든 방식"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "지문을 고쳐 쓴 방식"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "1:1 상담에서 들은 이야기(학생 이름 없이)"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "학교 기준을 바꾸고 싶으면, 지침서만 고치면 됩니다"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "지침서에 1:1 상담이 들어간 학교"
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "지침서에 1:1 상담이 들어간 학교"
+        }
+       ],
+       "build": "fade 1",
+       "step": true
       }
      ],
-     "build": "fade 1",
+     "build": "fade 2",
      "step": true
     }
    ],
    "members": [
+    "c2",
+    "c2-2",
     "c2-3",
     "c2-4"
    ]
@@ -6557,69 +6423,70 @@
      ],
      "build": "fade 2",
      "step": true
-    }
-   ],
-   "members": [
-    "wake",
-    "wake-2",
-    "wake-3"
-   ]
-  },
-  {
-   "id": "wake-4",
-   "body": [
+    },
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
        "t": "group",
-       "dir": "row",
+       "dir": "col",
        "kids": [
         {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "월, 수, 금",
-         "w": 400.0
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "월, 수, 금",
+           "w": 400.0
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": false,
+           "html": "작업 현황을 경영 단톡에 공유"
+          }
+         ],
+         "line": true
         },
         {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": false,
-         "html": "작업 현황을 경영 단톡에 공유"
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "매달",
+           "w": 400.0
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": false,
+           "html": "학교 학사일정 업데이트"
+          }
+         ],
+         "line": true
         }
-       ],
-       "line": true
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "매달",
-         "w": 400.0
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": false,
-         "html": "학교 학사일정 업데이트"
-        }
-       ],
-       "line": true
+       ]
       }
-     ]
+     ],
+     "build": "fade 3",
+     "step": true
     }
    ],
    "members": [
+    "wake",
+    "wake-2",
+    "wake-3",
     "wake-4"
    ]
   },
@@ -7346,52 +7213,46 @@
      ],
      "build": "fade 2",
      "step": true
-    }
-   ],
-   "members": [
-    "weekly",
-    "weekly-2",
-    "weekly-3"
-   ]
-  },
-  {
-   "id": "weekly-4",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "한 시즌을 AI로"
     },
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
-       "t": "icon",
-       "name": "Users",
-       "tone": "accent"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "늘 켜 두는 것",
-       "head": true
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "신규생 관리 단톡 개설<br>퇴원생 정리<br>시험범위 감시"
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "icon",
+         "name": "Users",
+         "tone": "accent"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "늘 켜 두는 것",
+         "head": true
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "dim",
+         "bold": false,
+         "html": "신규생 관리 단톡 개설<br>퇴원생 정리<br>시험범위 감시"
+        }
+       ]
       }
-     ]
+     ],
+     "build": "fade 3",
+     "step": true
     }
    ],
    "members": [
+    "weekly",
+    "weekly-2",
+    "weekly-3",
     "weekly-4"
    ]
   },
@@ -7550,22 +7411,6 @@
      ],
      "build": "fade 1",
      "step": true
-    }
-   ],
-   "members": [
-    "consult",
-    "consult-2"
-   ]
-  },
-  {
-   "id": "consult-3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "한 시즌 | 상담 피드백"
     },
     {
      "t": "group",
@@ -7576,18 +7421,51 @@
        "dir": "col",
        "kids": [
         {
-         "t": "text",
-         "step": "s",
-         "tone": "accent",
-         "bold": true,
-         "html": "그날 밤"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "accent",
+           "bold": true,
+           "html": "그날 밤"
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": true,
+           "html": "상담 메모를 학생별로 정리"
+          }
+         ]
+        },
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "accent",
+           "bold": true,
+           "html": "관리톡"
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": true,
+           "html": "학부모님께 피드백 글"
+          }
+         ]
         },
         {
          "t": "text",
          "step": "m",
          "tone": "ink",
          "bold": true,
-         "html": "상담 메모를 학생별로 정리"
+         "html": "서비스의 평판은 여기서 쌓이기 시작합니다"
         }
        ]
       },
@@ -7596,55 +7474,32 @@
        "dir": "col",
        "kids": [
         {
-         "t": "text",
-         "step": "s",
-         "tone": "accent",
-         "bold": true,
-         "html": "관리톡"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "학부모님께 피드백 글"
-        }
-       ]
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "서비스의 평판은 여기서 쌓이기 시작합니다"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "[너꽃] 다정고1 ○○○ 관리톡"
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": true,
+           "html": "[너꽃] 다정고1 ○○○ 관리톡"
+          }
+         ],
+         "box": true,
+         "kakaobar": true
         }
        ],
-       "box": true,
-       "kakaobar": true
+       "build": "fade 1",
+       "step": true
       }
      ],
-     "build": "fade 1",
+     "build": "fade 2",
      "step": true
     }
    ],
    "members": [
+    "consult",
+    "consult-2",
     "consult-3",
     "consult-4"
    ]
@@ -7893,63 +7748,6 @@
      ],
      "build": "fade 1",
      "step": true
-    }
-   ],
-   "members": [
-    "adm-intro",
-    "adm-intro-2",
-    "adm-intro-3"
-   ]
-  },
-  {
-   "id": "adm-intro-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "행정실은 어떻게 하나"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "두 번째"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "icon",
-       "name": "Wallet",
-       "tone": "accent"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "2"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "수강료와 교재비",
-       "head": true
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "다과목 시수를 확인하고 안내 문자까지 한 번에"
-      }
-     ]
     },
     {
      "t": "group",
@@ -7960,7 +7758,7 @@
        "step": "s",
        "tone": "accent",
        "bold": true,
-       "html": "세 번째"
+       "html": "두 번째"
       },
       {
        "t": "group",
@@ -7968,7 +7766,7 @@
        "kids": [
         {
          "t": "icon",
-         "name": "ListChecks",
+         "name": "Wallet",
          "tone": "accent"
         },
         {
@@ -7976,14 +7774,14 @@
          "step": "m",
          "tone": "accent",
          "bold": true,
-         "html": "3"
+         "html": "2"
         },
         {
          "t": "text",
          "step": "l",
          "tone": "ink",
          "bold": true,
-         "html": "다과목 학생 취합",
+         "html": "수강료와 교재비",
          "head": true
         },
         {
@@ -7991,16 +7789,67 @@
          "step": "l",
          "tone": "dim",
          "bold": false,
-         "html": "혜택 대상 학생이 빠지지 않았는지 한 번에 확인"
+         "html": "다과목 시수를 확인하고 안내 문자까지 한 번에"
         }
        ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "accent",
+         "bold": true,
+         "html": "세 번째"
+        },
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "icon",
+           "name": "ListChecks",
+           "tone": "accent"
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "3"
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "다과목 학생 취합",
+           "head": true
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "dim",
+           "bold": false,
+           "html": "혜택 대상 학생이 빠지지 않았는지 한 번에 확인"
+          }
+         ]
+        }
+       ],
+       "build": "fade 1",
+       "step": true
       }
      ],
-     "build": "fade 1",
+     "build": "fade 2",
      "step": true
     }
    ],
    "members": [
+    "adm-intro",
+    "adm-intro-2",
+    "adm-intro-3",
     "adm-intro-4",
     "adm-intro-5",
     "adm-intro-6",
@@ -8118,51 +7967,6 @@
      ],
      "build": "fade 2",
      "step": true
-    }
-   ],
-   "members": [
-    "adm-onboard",
-    "adm-onboard-2",
-    "adm-onboard-3"
-   ]
-  },
-  {
-   "id": "adm-onboard-4",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "행정실은 어떻게 하나 1"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "3 어사이드"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "통통통에 등록",
-       "head": true
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "통통통은 웹 브라우저라서 어사이드가 대신 입력합니다"
-      }
-     ]
     },
     {
      "t": "group",
@@ -8177,14 +7981,14 @@
          "step": "m",
          "tone": "accent",
          "bold": true,
-         "html": "4 담당 강사"
+         "html": "3 어사이드"
         },
         {
          "t": "text",
          "step": "l",
          "tone": "ink",
          "bold": true,
-         "html": "카톡으로 연결",
+         "html": "통통통에 등록",
          "head": true
         },
         {
@@ -8192,31 +7996,70 @@
          "step": "m",
          "tone": "dim",
          "bold": false,
-         "html": "학생을 담당 강사에게 전달하고 카톡으로 소통을 시작합니다"
+         "html": "통통통은 웹 브라우저라서 어사이드가 대신 입력합니다"
         }
        ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
+      },
       {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "등록해 놓고, 전달하고, 연결하는 데까지 이어집니다"
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "4 담당 강사"
+          },
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "카톡으로 연결",
+           "head": true
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "dim",
+           "bold": false,
+           "html": "학생을 담당 강사에게 전달하고 카톡으로 소통을 시작합니다"
+          }
+         ]
+        }
+       ],
+       "build": "fade 1",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "등록해 놓고, 전달하고, 연결하는 데까지 이어집니다"
+        }
+       ],
+       "build": "fade 2",
+       "step": true
       }
      ],
-     "build": "fade 2",
+     "build": "fade 3",
      "step": true
     }
    ],
    "members": [
+    "adm-onboard",
+    "adm-onboard-2",
+    "adm-onboard-3",
     "adm-onboard-4",
     "adm-onboard-5",
     "adm-onboard-6"
@@ -8879,6 +8722,83 @@
      ],
      "build": "fade 3",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "bar",
+           "on": true
+          }
+         ]
+        }
+       ],
+       "build": "fade 1",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "bar",
+           "on": false
+          }
+         ]
+        }
+       ],
+       "build": "fade 2",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "bar",
+           "on": false
+          }
+         ]
+        }
+       ],
+       "build": "fade 3",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "dim",
+         "bold": false,
+         "html": "카톡 속 내 말을 읽혀서, 받는 사람마다 다른 말투를 등록합니다"
+        }
+       ],
+       "build": "fade 4",
+       "step": true
+      }
+     ],
+     "build": "fade 4",
+     "step": true
     }
    ],
    "members": [
@@ -8888,113 +8808,7 @@
     "nm-intro-4",
     "nm-intro-5",
     "nm-intro-6",
-    "nm-intro-7"
-   ],
-   "dark": true
-  },
-  {
-   "id": "nm-1",
-   "body": [
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "light",
-     "bold": true,
-     "html": "나만의 AI 만드는 방법",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "bar",
-         "on": true
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "light",
-         "bold": true,
-         "html": "1) 내 말투를 등록한다면?"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "bar",
-         "on": false
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "dim",
-         "bold": true,
-         "html": "2) 디자인 레퍼런스를 준다면?"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "bar",
-         "on": false
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "dim",
-         "bold": true,
-         "html": "3) 내 취향을 계속 전달한다면?"
-        }
-       ]
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "카톡 속 내 말을 읽혀서, 받는 사람마다 다른 말투를 등록합니다"
-      }
-     ],
-     "build": "fade 4",
-     "step": true
-    }
-   ],
-   "members": [
+    "nm-intro-7",
     "nm-1",
     "nm-1-2",
     "nm-1-3",
@@ -9148,119 +8962,113 @@
        "html": "다섯 칸으로 나눈 말투 스킬 한 개. 카톡을 보내기 직전에 자동으로 불러옵니다."
       }
      ]
-    }
-   ],
-   "members": [
-    "tone-ask-6"
-   ]
-  },
-  {
-   "id": "tone",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "나다운 AI"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "말투는 받는 사람마다 다섯 칸입니다",
-     "head": true
     },
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "말투는 받는 사람마다 다섯 칸입니다",
+       "head": true
+      },
+      {
        "t": "group",
        "dir": "col",
        "kids": [
         {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "강사님께",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "「다빈 선생님~」으로 부르고 고마움을 용건보다 앞에 둡니다. 요청은 「~해 주시면 좋을 것 같습니다 :)」"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "강사님께",
+           "head": true
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "dim",
+           "bold": false,
+           "html": "「다빈 선생님~」으로 부르고 고마움을 용건보다 앞에 둡니다. 요청은 「~해 주시면 좋을 것 같습니다 :)」"
+          }
+         ]
         }
-       ]
+       ],
+       "build": "fade 1",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "파트너 원장님께",
+           "head": true
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "dim",
+           "bold": false,
+           "html": "「원장님! 안녕하세요 :))」로 열고 의견은 「어떠세요?」로 묻습니다. 피드백 자리를 열어 둡니다."
+          }
+         ]
+        }
+       ],
+       "build": "fade 2",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "직원에게",
+           "head": true
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "dim",
+           "bold": false,
+           "html": "이름에 님을 붙이고 짧고 분명하게 씁니다. 존대를 올리지 않고 「확인 부탁드립니다」는 붙이지 않습니다."
+          }
+         ]
+        }
+       ],
+       "build": "fade 3",
+       "step": true
       }
      ],
      "build": "fade 1",
      "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "파트너 원장님께",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "「원장님! 안녕하세요 :))」로 열고 의견은 「어떠세요?」로 묻습니다. 피드백 자리를 열어 둡니다."
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "직원에게",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "이름에 님을 붙이고 짧고 분명하게 씁니다. 존대를 올리지 않고 「확인 부탁드립니다」는 붙이지 않습니다."
-        }
-       ]
-      }
-     ],
-     "build": "fade 3",
-     "step": true
     }
    ],
    "members": [
+    "tone-ask-6",
     "tone",
     "tone-2",
     "tone-3",
@@ -9611,6 +9419,21 @@
      ],
      "build": "fade 4",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "dim",
+       "bold": false,
+       "html": "이 규칙은 말투 스킬과 카톡 발송 절차에 함께 적어 둡니다. 다음 카톡부터는 말하지 않아도 지킵니다."
+      }
+     ],
+     "build": "fade 5",
+     "step": true
     }
    ],
    "members": [
@@ -9618,28 +9441,7 @@
     "tone-rule-2",
     "tone-rule-3",
     "tone-rule-4",
-    "tone-rule-5"
-   ]
-  },
-  {
-   "id": "tone-rule-6",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "나다운 AI"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "dim",
-     "bold": false,
-     "html": "이 규칙은 말투 스킬과 카톡 발송 절차에 함께 적어 둡니다. 다음 카톡부터는 말하지 않아도 지킵니다."
-    }
-   ],
-   "members": [
+    "tone-rule-5",
     "tone-rule-6"
    ]
   },
@@ -9726,6 +9528,28 @@
      ],
      "build": "fade 3",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "accent",
+       "bold": true,
+       "html": "네 번째"
+      },
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "ink",
+       "bold": true,
+       "html": "「발표 자료는 <em>문어체</em>로 써 줘」"
+      }
+     ],
+     "build": "fade 4",
+     "step": true
     }
    ],
    "members": [
@@ -9735,35 +9559,7 @@
     "phrases-4",
     "phrases-5",
     "phrases-6",
-    "phrases-7"
-   ]
-  },
-  {
-   "id": "phrases-9",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "나다운 AI"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "네 번째"
-    },
-    {
-     "t": "text",
-     "step": "xl",
-     "tone": "ink",
-     "bold": true,
-     "html": "「발표 자료는 <em>문어체</em>로 써 줘」"
-    }
-   ],
-   "members": [
+    "phrases-7",
     "phrases-8",
     "phrases-9"
    ]
@@ -9814,34 +9610,27 @@
      "bold": true,
      "html": "누가 검수를 잘할까?",
      "head": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "「출판사」는 어떻게 할까?",
+       "head": true
+      }
+     ],
+     "build": "fade 1",
+     "step": true
     }
    ],
    "rev": "바꿈",
    "members": [
-    "pub-q"
-   ]
-  },
-  {
-   "id": "rev-pub-publisher",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "「출판사」는 어떻게 할까?",
-     "head": true
-    }
-   ],
-   "rev": "끼움",
-   "members": [
+    "pub-q",
     "rev-pub-publisher"
    ]
   },
@@ -10254,41 +10043,35 @@
      ],
      "build": "fade 1",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "accent",
+       "bold": true,
+       "html": "두 번째"
+      },
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "ink",
+       "bold": true,
+       "html": "AI가 고친 것을 그대로 반영하지 않는다. 제안으로 받고, 사람이 승인한다",
+       "chip": "fill"
+      }
+     ],
+     "build": "fade 2",
+     "step": true
     }
    ],
    "members": [
     "pub-stack-11",
     "pub-stack-12",
-    "pub-stack-13"
-   ]
-  },
-  {
-   "id": "pub-stack-15",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "두 번째"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "ink",
-     "bold": true,
-     "html": "AI가 고친 것을 그대로 반영하지 않는다. 제안으로 받고, 사람이 승인한다",
-     "chip": "fill"
-    }
-   ],
-   "members": [
+    "pub-stack-13",
     "pub-stack-14",
     "pub-stack-15"
    ]
@@ -10632,6 +10415,41 @@
      ],
      "build": "fade 3",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "accent",
+       "bold": true,
+       "html": "네 번째"
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "4"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "셀 수 있는 것은 AI 대신 코드가 셉니다"
+        }
+       ]
+      }
+     ],
+     "build": "fade 4",
+     "step": true
     }
    ],
    "members": [
@@ -10641,48 +10459,7 @@
     "blind-4",
     "blind-5",
     "blind-6",
-    "blind-7"
-   ]
-  },
-  {
-   "id": "blind-9",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "네 번째"
-    },
-    {
-     "t": "group",
-     "dir": "row",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "accent",
-       "bold": true,
-       "html": "4"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "셀 수 있는 것은 AI 대신 코드가 셉니다"
-      }
-     ]
-    }
-   ],
-   "members": [
+    "blind-7",
     "blind-8",
     "blind-9"
    ]
@@ -10993,67 +10770,68 @@
      ],
      "build": "fade 1",
      "step": true
-    }
-   ],
-   "members": [
-    "layers",
-    "layers-2"
-   ]
-  },
-  {
-   "id": "layers-3",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": false,
-       "html": "이의 심사"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": false,
-       "html": "교차 검수"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": false,
-       "html": "납품 PDF 되읽기"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": false,
-       "html": "출고 판정"
-      }
-     ]
     },
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": false,
-       "html": "결함 승격"
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "이의 심사"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "교차 검수"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "납품 PDF 되읽기"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "출고 판정"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "결함 승격"
+        }
+       ],
+       "build": "fade 1",
+       "step": true
       }
      ],
-     "build": "fade 1",
+     "build": "fade 2",
      "step": true
     }
    ],
    "members": [
+    "layers",
+    "layers-2",
     "layers-3",
     "layers-4"
    ]
@@ -13329,157 +13107,152 @@
      ],
      "build": "fade 2",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": true,
+         "html": "외부지문 (프린트, 부교재)"
+        },
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "l",
+           "tone": "ink",
+           "bold": true,
+           "html": "케어"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "dim",
+           "bold": true,
+           "html": "FINAL 직보"
+          },
+          {
+           "t": "group",
+           "dir": "col",
+           "kids": [
+            {
+             "t": "text",
+             "step": "l",
+             "tone": "ink",
+             "bold": true,
+             "html": "동형 모의고사"
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "build": "fade 1",
+       "step": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "dim",
+           "bold": true,
+           "html": "취약유형 개인 교재"
+          },
+          {
+           "t": "group",
+           "dir": "col",
+           "kids": [
+            {
+             "t": "text",
+             "step": "l",
+             "tone": "ink",
+             "bold": true,
+             "html": "커스텀"
+            }
+           ]
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "사교육이 가는 방향"
+          }
+         ]
+        }
+       ],
+       "build": "fade 2",
+       "step": true
+      }
+     ],
+     "build": "fade 3",
+     "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xl",
+         "tone": "ink",
+         "bold": true,
+         "html": "커스텀"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "dim",
+         "bold": false,
+         "html": "교재 라인도 학생마다 맞는 자료를 골라 주는 쪽으로 정리했습니다."
+        }
+       ]
+      }
+     ],
+     "build": "fade 4",
+     "step": true
     }
    ],
    "members": [
     "lines",
     "lines-2",
-    "lines-3"
-   ]
-  },
-  {
-   "id": "lines-4",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "외부지문 (프린트, 부교재)"
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": true,
-         "html": "학생에게 주는 것"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "케어"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "FINAL 직보"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "동형 모의고사"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "취약유형 개인 교재"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "커스텀"
-          }
-         ]
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "사교육이 가는 방향"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    }
-   ],
-   "members": [
+    "lines-3",
     "lines-4",
     "lines-5",
-    "lines-6"
-   ]
-  },
-  {
-   "id": "lines-7",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "커스텀"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "교재 라인도 학생마다 맞는 자료를 골라 주는 쪽으로 정리했습니다."
-      }
-     ]
-    }
-   ],
-   "members": [
+    "lines-6",
     "lines-7"
    ]
   },
@@ -14273,27 +14046,28 @@
      ],
      "build": "fade 3",
      "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": false,
+       "html": "여기서 근거는, <b>“나는 무엇을 노력했는가”</b>입니다."
+      }
+     ],
+     "build": "fade 4",
+     "step": true
     }
    ],
    "members": [
     "possib",
     "possib-2",
     "possib-3",
-    "possib-4"
-   ]
-  },
-  {
-   "id": "possib-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": false,
-     "html": "여기서 근거는, <b>“나는 무엇을 노력했는가”</b>입니다."
-    }
-   ],
-   "members": [
+    "possib-4",
     "possib-5"
    ]
   },

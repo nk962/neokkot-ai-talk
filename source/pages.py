@@ -191,5 +191,42 @@ for grp in pages:
     outs.append({'id': first['id'], 'body': body, 'note': '\n\n'.join(s.get('note', '') for s in grp if s.get('note')),
                  'members': members, **({'dark': True} if first.get('dark') else {})})
 
+# 4. 검수에서 고른 병합(layout.txt: MERGE_PREV · MERGE_NEXT). 얇은 쪽을 이어지는 이웃 쪽에 붙인다
+lay = {}
+lf = Path(__file__).parent / 'layout.txt'
+if lf.exists():
+    for ln in lf.read_text().splitlines():
+        if ln.strip() and not ln.startswith('#'):
+            k_, _, v_ = ln.partition('|')
+            lay[k_.strip()] = v_.strip().split()[0]
+
+
+def as_step(page, n):
+    return {'t': 'group', 'dir': 'col', 'kids': page['body'], 'build': f'fade {n}', 'step': True}
+
+
+def nsteps(page):
+    return sum(1 for n in page['body'] if n.get('build'))
+
+
+changed = True
+while changed:
+    changed = False
+    for i, pg in enumerate(outs):
+        how = lay.get(pg['id'])
+        if how == 'MERGE_PREV' and i > 0 and not pg.get('keep') and not outs[i - 1].get('keep'):
+            prev = outs[i - 1]
+            seen = set(texts(prev['body']))
+            pg2 = dict(pg, body=drop_text(pg['body'], seen))
+            outs[i - 1] = dict(prev, body=prev['body'] + [as_step(pg2, nsteps(prev) + 1)], members=prev['members'] + pg['members'])
+            del outs[i]; lay.pop(pg['id']); changed = True; break
+        if how == 'MERGE_NEXT' and i + 1 < len(outs) and not pg.get('keep') and not outs[i + 1].get('keep'):
+            nxt = outs[i + 1]
+            seen = set(texts(pg['body']))
+            nxt2 = dict(nxt, body=drop_text(nxt['body'], seen))
+            outs[i] = dict(pg, body=pg['body'] + [as_step(nxt2, nsteps(pg) + 1)], members=pg['members'] + nxt['members'])
+            lay[pg['id']] = lay.pop(nxt['id'], '') if lay.get(nxt['id']) not in ('MERGE_PREV', 'MERGE_NEXT') else ''
+            del outs[i + 1]; changed = True; break
+
 out.write_text(json.dumps(dict(deck, slides=outs), ensure_ascii=False, indent=1))
 print(f'{len(deck["slides"])}장 → {len(outs)}쪽 (상한 {CAP}px) → {out}')

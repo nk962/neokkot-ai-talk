@@ -83,6 +83,8 @@ def role(n, in_box):
     """원본 크기 단계 대신 역할로 크기를 정한다. 크기는 theme 의 r-* 다섯 단계 + 카드 두 단계"""
     big, bold, short = n['step'] in ('m', 'l', 'xl'), n.get('bold') or n.get('head'), len(plain(n['html'])) <= 30
     if in_box:
+        if n.get('crole'):
+            return n['crole']
         return 'r-ctitle' if (bold or big) else 'r-cbody'
     if n['tone'] == 'accent' and short and n['step'] in ('xs', 's') or n.get('sub'):
         return 'r-label'
@@ -148,7 +150,7 @@ def render(n, in_box=False):
     if t == 'group':
         cls = ['g', 'g-' + n['dir']]
         box = n.get('box')
-        for k in ('box', 'dark', 'accent', 'rule', 'wrap', 'line', 'step', 'kakao', 'kakaobar', 'right'):
+        for k in ('box', 'dark', 'accent', 'rule', 'wrap', 'line', 'step', 'kakao', 'kakaobar', 'right', 'cards', 'compare', 'stats', 'flowcards'):
             if n.get(k):
                 cls.append(k)
         if n['dir'] == 'row' and any(k['t'] == 'img' for k in n['kids']):
@@ -158,7 +160,17 @@ def render(n, in_box=False):
         if n['dir'] == 'row' and any(k['t'] == 'embed' for k in n['kids']):
             cls.append('withphone')
         style = f' style="--cols:{n["cols"]}"' if n['dir'] == 'grid' else ''
-        inner = ''.join(render(k, in_box or box) for k in n['kids'])
+        kids = n['kids']
+        if box:  # 카드 안: 첫 굵은 줄만 카드 제목, 나머지 글은 설명
+            seen_t, kids = False, []
+            for k in n['kids']:
+                if k['t'] == 'text' and not is_tag(k) and not k.get('chip'):
+                    if not seen_t and (k.get('bold') or k.get('head') or k['step'] in ('m', 'l', 'xl')):
+                        k, seen_t = dict(k, crole='r-ctitle'), True
+                    elif seen_t:
+                        k = dict(k, crole='r-cbody')
+                kids.append(k)
+        inner = ''.join(render(k, in_box or box) for k in kids)
         return f'<div{attrs(n, " ".join(cls))}{style}>{inner}</div>'
     sys.exit(f'모르는 요소: {t}')
 
@@ -233,6 +245,153 @@ def scatter_html(k):
     return '<div class="scatter">' + ''.join(out) + '</div>'
 
 
+def _item(n):
+    """나란히 놓을 항목인가: 글만 2~5줄, 굵은 소제목이 하나 이상, 그림 없음, 너무 길지 않음"""
+    if n['t'] != 'group' or n['dir'] != 'col' or n.get('box') or n.get('kakao') or n.get('kakaobar'):
+        return None
+    kids = n['kids']
+    if len(kids) == 1 and kids[0]['t'] == 'group':
+        inner = _item(kids[0])
+        return dict(inner, build=n.get('build') or inner.get('build')) if inner else None
+    if not 2 <= len(kids) <= 5 or not all(k['t'] == 'text' and not k.get('chip') for k in kids):
+        return None
+    if not any(k.get('bold') or k.get('head') for k in kids):
+        return None
+    if sum(len(plain(k['html'])) for k in kids) > 150:
+        return None
+    return dict(n, kids=kids)
+
+
+def cardify(body):
+    """같은 짜임의 항목(굵은 소제목 + 설명)이 2개 넘게 이어지면 카드로 나란히. 클릭 차례는 그대로"""
+    out, run = [], []
+
+    def flush():
+        if len(run) >= 2:
+            cols = len(run) if len(run) <= 4 else (3 if len(run) <= 6 else 4)
+            out.append({'t': 'group', 'dir': 'grid', 'cols': cols, 'cards': True,
+                        'kids': [dict(r, box=True) for r in run]})
+        else:
+            out.extend(run_src)
+    run_src = []
+    for n in body:
+        it = _item(n)
+        if it:
+            run.append(it)
+            run_src.append(n)
+            continue
+        flush()
+        run, run_src = [], []
+        out.append(n)
+    flush()
+    return out
+
+
+# 쪽마다 내용에 맞는 배치(layout.txt: '쪽 id | 배치'). 검수에서 고른 배치를 반영한다
+LAYOUT = {}
+_lf = here / 'layout.txt'
+if _lf.exists():
+    for _ln in _lf.read_text().splitlines():
+        if _ln.strip() and not _ln.startswith('#'):
+            _k, _, _v = _ln.partition('|')
+            LAYOUT[_k.strip()] = _v.strip().split()[0]
+
+
+def _flat(nodes):
+    """묶음(차례로 나타나는 단계 포함)을 풀어 글 · 그림을 한 줄로. 단계의 클릭 차례는 첫 요소에 남긴다"""
+    for n in nodes:
+        if n['t'] == 'group' and n['dir'] == 'col' and not n.get('box') and not n.get('kakao') and not n.get('kakaobar'):
+            kids = list(_flat(n['kids']))
+            if kids and n.get('build'):
+                kids[0] = dict(kids[0], build=n['build'])
+            yield from kids
+        else:
+            yield n
+
+
+def _heading(x):
+    return x['t'] == 'text' and (x.get('head') or x.get('bold') or (x['tone'] == 'accent' and len(plain(x['html'])) <= 12))
+
+
+def relayout(body, how):
+    """CARDS · FLOW · COMPARE · STATS: 머리(머리말 + 첫 제목) 뒤의 내용을 소제목 단위 항목으로 나눠 카드로"""
+    flat = list(_flat(body))
+    head, i = [], 0
+    while i < len(flat) and flat[i]['t'] == 'text' and flat[i].get('sub'):
+        head.append(flat[i]); i += 1
+    heads_after = sum(1 for x in flat[i + 1:] if _heading(x))
+    if i < len(flat) and flat[i]['t'] == 'text' and (flat[i].get('head') or flat[i].get('bold')) and heads_after >= 2:
+        head.append(flat[i]); i += 1
+    def label_like(k):  # 항목 앞에 붙는 작은 그림 · 이름(첫 번째) · 번호는 그 항목의 머리
+        return k['t'] in ('icon', 'shape') or (_heading(k) and k['tone'] == 'accent')
+    items, cur = [], None
+    for x in flat[i:]:
+        starts = (_heading(x) or x['t'] == 'icon') and (cur is None or any(not label_like(k) for k in cur))
+        if cur is None or starts:
+            cur = [x]; items.append(cur)
+        else:
+            cur.append(x)
+    if len(items) < 2:
+        return body
+    cards = []
+    for it in items:
+        b = next((k.get('build') for k in it if k.get('build')), None)
+        it = [dict(k, build=None) if k.get('build') else k for k in it]
+        card = {'t': 'group', 'dir': 'col', 'box': True, 'kids': it}
+        if b:
+            card['build'] = b
+        cards.append(card)
+    if how == 'FLOW' and len(cards) > 6:
+        how = 'CARDS'  # 단계가 6개를 넘으면 한 줄에 안 들어가 번호 카드 바둑판으로
+    if how == 'FLOW':
+        kids = []
+        for j, c in enumerate(cards):
+            if j:
+                kids.append({'t': 'shape', 'kind': 'arrow-right', 'kids': [], 'tone': 'accent', **({'build': c['build']} if c.get('build') else {})})
+            kids.append(c)
+        grp = {'t': 'group', 'dir': 'row', 'kids': kids, 'flowcards': True}
+    else:
+        n = len(cards)
+        cols = 2 if how == 'COMPARE' else (n if n <= 4 else (3 if n <= 6 else 4))
+        grp = {'t': 'group', 'dir': 'grid', 'cols': cols, 'cards': True, 'kids': cards,
+               **({'compare': True} if how == 'COMPARE' else {}), **({'stats': True} if how == 'STATS' else {})}
+    return head + [grp]
+
+
+def dedupe_tokens(body):
+    """검수에서 반복으로 고른 쪽만: 낱말이 모두 앞 글에 이미 나온 줄은 뺀다. 뺀 줄은 DEDUPED 에 적어 README 에 남긴다"""
+    seen, out = set(), []
+    def walk(nodes):
+        res = []
+        for n in nodes:
+            if n['t'] == 'text':
+                toks = set(re.findall(r'[\w가-힣]+', plain(n['html']).lower()))
+                if toks and toks <= seen:
+                    DEDUPED.append(plain(n['html']))
+                    continue
+                seen.update(toks)
+            if n.get('kids'):
+                n = dict(n, kids=walk(n['kids']))
+            res.append(n)
+        return res
+    return walk(body)
+
+
+DEDUPED = []
+
+
+def chip_rows(body):
+    """알약만 세로로 쌓인 묶음은 가로로 펼친다(36 core: ① 카톡 ② 노션)"""
+    out = []
+    for n in body:
+        if n['t'] == 'group' and n['dir'] == 'col' and n['kids'] and all(k['t'] == 'text' and (k.get('chip') or plain(k['html']) == '|') for k in n['kids']):
+            n = dict(n, dir='row', wrap=True)
+        elif n.get('kids'):
+            n = dict(n, kids=chip_rows(n['kids']))
+        out.append(n)
+    return out
+
+
 def kicker_of(body):
     """맨 앞 작은 오렌지 글은 머리말. 제목 묶음 안에 있으면 꺼낸다"""
     first = body[0] if body else None
@@ -274,6 +433,13 @@ slides = deck['slides']
 last_kicker = None
 for i, s in enumerate(slides, 1):
     kicker, body = kicker_of(s['body'])
+    how = LAYOUT.get(s['id'])
+    if how == 'DEDUPE':
+        body = dedupe_tokens(body)
+    if not s.get('keep'):
+        if how in ('CARDS', 'FLOW', 'COMPARE', 'STATS'):
+            body = relayout(body, how)
+        body = chip_rows(cardify(body))
     if s.get('keeps'):  # 겹친 장의 알약: 처음 나오는 머리말
         kicker = next((kicker_of(b)[0] for b in s['keep_body'] if kicker_of(b)[0]), None)
     kind, num = ('keep', None) if (s.get('keep') or s.get('keeps')) else kind_of(body)
@@ -297,7 +463,9 @@ for i, s in enumerate(slides, 1):
     if kind == 'compose' and not any(n['t'] in ('img', 'embed', 'shape', 'icon') or n.get('box') or n.get('chip') for n in flat(body)):
         cls.append('textonly')  # 카드 · 그림 없이 글로만 짠 목록은 글을 한 단계 키운다
     if solo:
-        cls.append('solo')  # 주황 낱말 하나로 말을 여는 장(왜 쓰는가 · 가설 · CLOSING)
+        cls.append('solo')
+    if how == 'STATEMENT':
+        cls.append('stmt')  # 핵심 한 문장 쪽: 문장을 크게  # 주황 낱말 하나로 말을 여는 장(왜 쓰는가 · 가설 · CLOSING)
     if kind == 'statement' and 'dim' in tones and tones & {'ink', 'accent'}:
         cls.append('two')
     if s['id'].startswith('cover') or s['id'] == 'welcome':
@@ -363,3 +531,5 @@ page = (tpl.replace('{{TITLE}}', '원장과 강사를 위한 AI 강연 | 너희�
            .replace('{{SLIDES}}', '\n'.join(sections)))
 (out / 'index.html').write_text(page)
 print(f'{theme}: {len(sections)}장, 그림 {len(used)}개 → {out}')
+if DEDUPED:
+    print('반복이라 뺀 줄:', ' / '.join(DEDUPED))
