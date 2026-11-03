@@ -52,7 +52,8 @@ body { -webkit-font-smoothing: antialiased; touch-action: pan-y; }
 .em { border: 0; display: block; transform-origin: 0 0; }
 .ar, .circ { display: inline-flex; align-items: center; justify-content: center; flex: none; }
 .ar svg, .circ svg, .ic { display: block; }
-[data-build-in] { transition: opacity .25s ease; }
+[data-build-in] { transition: opacity .24s ease-out, transform .24s ease-out; }
+[data-build-in].pending { transform: translateY(8px); }
 .no-anim [data-build-in] { transition: none !important; }
 [data-build-in].pending { opacity: 0; }
 #bar { position: fixed; left: 0; right: 0; bottom: 0; height: 3px; background: rgba(255,255,255,.08); }
@@ -66,7 +67,7 @@ body.show-ui #ui { opacity: .9; }
   html, body { overflow: visible; height: auto; background: #fff; }
   #stage { position: static; transform: none !important; }
   #stage > section { position: relative; width: 1920px; height: 1080px; opacity: 1; visibility: visible; break-after: page; }
-  [data-build-in].pending { opacity: 1; }
+  [data-build-in].pending { opacity: 1; transform: none; }
   #bar, #ui { display: none; }
   @page { size: 1920px 1080px; margin: 0; }
 }
@@ -124,11 +125,8 @@ body.show-ui #ui { opacity: .9; }
   }
   function fitAll() { slides.forEach(shrink); }
 
-  function builds(s) {
-    return Array.prototype.slice.call(s.querySelectorAll('[data-build-in]')).sort(function (a, b) {
-      return (parseInt(a.getAttribute('data-build-in').split(' ')[1], 10) || 0) -
-             (parseInt(b.getAttribute('data-build-in').split(' ')[1], 10) || 0);
-    });
+  function builds(s) {  // 나타나는 차례는 화면 순서(위 → 아래, 왼쪽 → 오른쪽)
+    return Array.prototype.slice.call(s.querySelectorAll('[data-build-in]'));
   }
   function fit() {
     var k = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
@@ -181,8 +179,15 @@ body.show-ui #ui { opacity: .9; }
     else if (k === 'End') show(n - 1, true);
     else if (k === 'f' || k === 'F') full();
   });
+  // 영상: 재생 버튼이나 영상을 누르면 재생 · 멈춤(쪽은 넘기지 않음)
+  Array.prototype.forEach.call(document.querySelectorAll('.vid'), function (f) {
+    var v = f.querySelector('video'), b = f.querySelector('.play');
+    function sync() { f.classList.toggle('playing', !v.paused); }
+    v.addEventListener('play', sync); v.addEventListener('pause', sync); v.addEventListener('ended', sync);
+    b.addEventListener('click', function (e) { e.stopPropagation(); v.play(); });
+  });
   document.addEventListener('click', function (e) {
-    if (e.target.closest('#ui') || e.target.closest('video')) return;  // 영상은 눌러서 재생
+    if (e.target.closest('#ui') || e.target.closest('.vid')) return;  // 영상은 눌러서 재생
     next();  // 화면 클릭은 언제나 다음으로. 뒤로는 ← 키 · ◀ 버튼
   });
   var tx = null, ty = null;

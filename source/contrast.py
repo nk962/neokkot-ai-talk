@@ -27,7 +27,7 @@ JS = r"""
       if (!p.innerText.trim()) return;
       const a = lum(rgb(getComputedStyle(p).color)), b = lum(bgOf(p));
       const cr = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
-      if (cr < 3) out.push([i + 1, s.id, cr.toFixed(2), p.innerText.trim().slice(0, 30)]);
+      if (cr < 4.5) out.push([i + 1, s.id, cr.toFixed(2), p.innerText.trim().slice(0, 30)]);
     });
   });
   return out;
@@ -43,4 +43,4 @@ with sync_playwright() as p:
     b.close()
 for r in rows:
     print(*r)
-print(f'대비 3 아래: {len(rows)}곳')
+print(f"대비 4.5 아래: {len(rows)}곳")

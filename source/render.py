@@ -130,7 +130,8 @@ def render(n, in_box=False):
     if t == 'video':  # 누르면 재생. 장 넘김 클릭과 겹치지 않게 template 이 영상 클릭은 넘기지 않는다
         pw, ph = Image.open(assets[Path(asset(n['poster'])).stem]).size
         return (f'<figure{attrs(n, "vid")}><video controls playsinline preload="auto" width="{pw}" height="{ph}" poster="{asset(n["poster"])}" '
-                f'aria-label="{html.escape(n["alt"])}"><source src="{asset(n["src"])}" type="video/mp4"></video></figure>')
+                f'aria-label="{html.escape(n["alt"])}"><source src="{asset(n["src"])}" type="video/mp4"></video>'
+                f'<button class="play" aria-label="영상 재생">{svg("<path d=\"M8 5v14l11-7z\" fill=\"currentColor\"/>", "")}</button></figure>')
     if t == 'icon':
         return svg(ICONS[n['name']], 'ic ' + n.get('tone', 'accent'))
     if t == 'list':
@@ -159,6 +160,15 @@ def render(n, in_box=False):
             cls.append('flow')  # 화살표로 잇는 흐름: 칸마다 둥근 카드
         if n['dir'] == 'row' and any(k['t'] == 'embed' for k in n['kids']):
             cls.append('withphone')
+        if n.get('cards') or n.get('flowcards') or 'flow' in cls:  # 카드 · 단계는 클릭할 때마다 한 장씩
+            ks, seq = [], 0
+            for j, k in enumerate(n['kids']):
+                if j and not k.get('build') and not n.get('build'):
+                    if k['t'] != 'shape':
+                        seq += 1
+                    k = dict(k, build=f'fade {seq}')
+                ks.append(k)
+            n = dict(n, kids=ks)
         style = f' style="--cols:{n["cols"]}"' if n['dir'] == 'grid' else ''
         kids = n['kids']
         if box:  # 카드 안: 첫 굵은 줄만 카드 제목, 나머지 글은 설명
@@ -320,8 +330,12 @@ def relayout(body, how):
     while i < len(flat) and flat[i]['t'] == 'text' and flat[i].get('sub'):
         head.append(flat[i]); i += 1
     heads_after = sum(1 for x in flat[i + 1:] if _heading(x))
-    if i < len(flat) and flat[i]['t'] == 'text' and (flat[i].get('head') or flat[i].get('bold')) and heads_after >= 2:
+    if i < len(flat) and flat[i]['t'] == 'text' and (flat[i].get('head') or flat[i].get('bold')) and heads_after >= 1:
         head.append(flat[i]); i += 1
+    chips = [x for x in flat[i:] if x['t'] == 'text' and x.get('chip')]  # 시작 시각 · Daily 같은 알약은 제목 아래로
+    flat = flat[:i] + [x for x in flat[i:] if not (x['t'] == 'text' and x.get('chip'))]
+    if chips:
+        head.append({'t': 'group', 'dir': 'row', 'wrap': True, 'kids': chips})
     def label_like(k):  # 항목 앞에 붙는 작은 그림 · 이름(첫 번째) · 번호는 그 항목의 머리
         return k['t'] in ('icon', 'shape') or (_heading(k) and k['tone'] == 'accent')
     items, cur = [], None
@@ -331,7 +345,18 @@ def relayout(body, how):
             cur = [x]; items.append(cur)
         else:
             cur.append(x)
-    if len(items) < 2:
+    num = re.compile(r'^\s*(\d{1,2}|STEP\s*\d+)\s*$')
+    def numbered(it):
+        return any(k['t'] == 'text' and num.match(plain(k['html'])) for k in it[:2])
+    if sum(numbered(it) for it in items) >= 2:  # 번호 카드가 있는 흐름에서 번호 없는 항목은 앞 카드에 붙인다
+        merged = []
+        for it in items:
+            if merged and not numbered(it):
+                merged[-1] = merged[-1] + it
+            else:
+                merged.append(it)
+        items = merged
+    if not items:
         return body
     cards = []
     for it in items:

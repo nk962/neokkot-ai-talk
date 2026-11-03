@@ -2,11 +2,9 @@
 lines | CARDS | 교재 라인별 학생에게 주는 것
 lines-4 | MERGE_PREV | 앞 쪽 교재 라인 카드의 나머지 항목
 lines-7 | MERGE_PREV | 커스텀 한 줄, 앞 항목에 이어짐
-custom | STATS | 150명 · 150권
 possib-5 | MERGE_PREV | 한 줄짜리, 앞 쪽 가능주의에 이어짐
 hypo | STATEMENT | AI를 잘 쓰면 시간을 되찾을 수 있다가 핵심
 close | DEDUPE | 서명 줄이 꼬리 줄과 같음
-why | COMPARE | 원장 · 강사의 이유와 직원의 이유
 ans-split | COMPARE | 만드는 일과 책임지는 일
 prog-flow | FLOW | STEP 1~6 순서
 origin | COMPARE | 2019·2020 교재 강의와 2026 외부 강의
@@ -33,7 +31,6 @@ rv-1 | COMPARE | 학생용 실제 출력본과 정답판
 rv-2 | MERGE_PREV | 정답판
 b1-8 | STATEMENT | 사람은 인쇄기 앞에서 가져오기만
 b2-4 | MERGE_PREV | 명령 3 · 4번
-b3 | STATS | 37 · 4 · 10 · 13 · 10
 b3-5 | MERGE_PREV | 10 · 13 · 10
 b3-11 | MERGE_PREV | 상태: 초안 한 줄
 dawn | CARDS | 밤의 교재 작업 · 마케팅 공부 · 블로그 거리 모으기
@@ -49,7 +46,6 @@ season-6 | FLOW | 09~10 시즌 순서
 weekly | CARDS | 케어지 · 수업 당일 카톡
 weekly-4 | MERGE_PREV | 늘 켜 두는 것
 objection | FLOW | 시험 직후 → 질문이 오면 → 결과
-consult | MERGE_NEXT | 1:1 상담 첫 단계
 consult-3 | FLOW | 상담 → 메모 정리 → 학부모 피드백
 aside | COMPARE | 클로드 코드와 어사이드
 adm-intro | CARDS | 행정실 세 가지 일
@@ -58,7 +54,6 @@ adm-onboard | FLOW | 1 사람 → 2 클로드 코드 → 3 어사이드 → 4 �
 adm-onboard-4 | MERGE_PREV | 3, 4단계와 맺음
 adm-fee | COMPARE | 사람이 하는 일과 AI가 하는 일
 adm-why | CARDS | 많다 · 반복된다 · 실수는 없다
-nm-intro | MERGE_NEXT | 질문 셋, 다음 쪽에 그대로 다시 나옴
 tone-ask-6 | MERGE_NEXT | 결과 한 줄
 tone-rule-6 | MERGE_PREV | 결론 한 줄
 phrases-9 | MERGE_PREV | 넷째 마디
