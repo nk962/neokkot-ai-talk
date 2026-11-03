@@ -1,0 +1,152 @@
+/* 2안: 강연 장표 색은 그대로, 글꼴은 너희가 꽃이다 학원 사이트(youareflower.com)와 같게,
+   생김새는 핀 장표(pin.it/4aUyGnLHl) 요소로: 알약 이름표 · 동그라미 화살표 · 장 나누기 큰 번호 ·
+   둥근 카드(첫 칸은 어둡게) · 뒷부분을 흐리게 쓰는 두 색 문장. 짧은 장은 왼쪽 아래에 앉힌다 */
+@font-face { font-family: 'Paperlogy'; font-weight: 400; font-display: block; src: url('fonts/Paperlogy-4Regular.woff2') format('woff2'); }
+@font-face { font-family: 'Paperlogy'; font-weight: 500; font-display: block; src: url('fonts/Paperlogy-5Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Paperlogy'; font-weight: 700; font-display: block; src: url('fonts/Paperlogy-7Bold.woff2') format('woff2'); }
+@font-face { font-family: 'KoPub Dotum'; font-weight: 300; font-display: block; src: url('fonts/KoPubWorldDotum-Light.woff2') format('woff2'); }
+#stage > section {
+  --m: 120px; --hd-top: 50px; --ft-bottom: 46px; --band-top: 170px; --band-bottom: 150px;
+  --orange: #ff6a00; --ink: #1f1b18; --gray: #6b6560; --soft: #f6f4f1; --line: #e4e0db; --pale: #9c958e;
+  --fg: var(--ink); --sub: var(--gray); --fade: var(--pale); --rim: var(--ink);
+  background: var(--soft); color: var(--fg);
+  font-family: 'KoPub Dotum', sans-serif; font-weight: 300; letter-spacing: -0.02em;
+}
+#stage > section.dark {
+  --fg: var(--soft); --sub: #c9c3bc; --fade: var(--gray); --rim: var(--soft);
+  background: var(--ink);
+}
+
+/* 머리 줄: 동그라미 화살표 + 알약 이름표(이 장의 머리말) · 오른쪽 끝 작은 강연 이름 */
+.hd { gap: 14px; }
+.circ { width: 56px; height: 56px; border: 1.5px solid var(--rim); border-radius: 50%; color: var(--rim); }
+.circ svg { width: 24px; height: 24px; stroke-width: 1.75; }
+.pill { font-family: 'Paperlogy'; font-weight: 500; font-size: 22px; line-height: 1; color: var(--rim);
+        border: 1.5px solid var(--rim); border-radius: 999px; padding: 15px 26px 14px; white-space: nowrap; }
+.pill em { color: var(--orange); }
+.hd .meta { margin-left: auto; font-size: 18px; color: var(--sub); max-width: 760px; text-align: right;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hd .meta em, .ft em { color: var(--orange); }
+.ft { font-size: 19px; color: var(--sub); gap: 18px; }
+.ft .pg { margin-left: auto; font-family: 'Paperlogy'; font-weight: 500; font-size: 20px; color: var(--fg); font-variant-numeric: tabular-nums; }
+.ft .circ svg { transform: rotate(-90deg); }
+.k { display: none; }
+
+.bd { gap: calc(var(--k) * 28px); }
+.s-statement .bd, .s-divider .bd, .s-part .bd { justify-content: flex-end; }
+
+.t { line-height: 1.5; color: var(--fg); }
+.t.b, .t.h { font-family: 'Paperlogy'; font-weight: 700; line-height: 1.22; }
+.t.xs.b, .t.s.b { font-weight: 500; line-height: 1.4; }
+.t.xs { font-size: calc(var(--k) * 28px); }
+.t.s { font-size: calc(var(--k) * 40px); }
+.t.m { font-size: calc(var(--k) * 58px); line-height: 1.35; }
+.t.l { font-size: calc(var(--k) * 96px); line-height: 1.2; }
+.t.xl { font-size: calc(var(--k) * 140px); line-height: 1.12; }
+.t.m.b, .t.m.h { line-height: 1.25; }
+.t.c { text-align: center; }
+.t.accent { color: var(--orange); }
+/* 회색 글은 진한 회색. 진한 글과 함께 놓인 두 색 문장에서만 한 단계 흐리게 */
+.t.dim { color: var(--sub); }
+.s-statement.two .t.dim { color: var(--fade); }
+.t.light { color: var(--fg); }
+.bd em { color: var(--orange); }
+.bd i { color: var(--fade); }
+.bd mark { background: rgba(255, 106, 0, .16); color: inherit; padding: 0 .12em; border-radius: .2em; }
+
+/* 부 나눔(7장): 어두운 바탕, 오른쪽 위 큰 번호, 왼쪽 아래 큰 글 */
+.num { font-family: 'Paperlogy'; font-weight: 400; line-height: .9; letter-spacing: -0.04em; }
+.s-part .num { position: absolute; right: 0; top: calc(var(--k) * -30px); font-size: 360px; color: var(--line); }
+.s-part .bd { justify-content: flex-end; }
+.s-part .t:not(.b):not(.h) { font-size: calc(var(--k) * 48px); }
+/* 소항목(첫 번째 · 두 번째): 밝은 바탕, 주황 큰 번호 아래 낱말 */
+.s-divider .num { font-size: calc(var(--k) * 300px); color: var(--orange); }
+.s-divider .t { font-size: calc(var(--k) * 96px); color: var(--fg); }
+
+/* 둥근 카드. 가로 줄 · 칸 묶음에서 첫 카드는 어둡게(핀의 검은 칸) */
+.g-col { gap: calc(var(--k) * 12px); }
+.g-row { gap: calc(var(--k) * 20px); }
+.g-grid { gap: calc(var(--k) * 20px); }
+.bd > .g-col { gap: calc(var(--k) * 16px); }
+.box { background: #ffffff; border-radius: 32px; padding: calc(var(--k) * 38px) calc(var(--k) * 44px); gap: calc(var(--k) * 14px); }
+.dark .box { background: transparent; border: 1.5px solid var(--gray); }
+.g-row.box { align-items: center; }
+.box.dark, .g-row > .box:first-child:not(.accent), .g-grid > .box:first-child:not(.accent) {
+  background: var(--ink); --fg: var(--soft); --sub: #c9c3bc; --fade: #9c958e; color: var(--soft);
+}
+.dark .box.dark, .dark .g-row > .box:first-child:not(.accent), .dark .g-grid > .box:first-child:not(.accent) { background: var(--soft); --fg: var(--ink); --sub: var(--gray); --fade: var(--pale); color: var(--ink); }
+.box.accent { background: var(--orange); --fg: #ffffff; --fade: var(--soft); color: #ffffff; }
+.box.accent em { color: var(--ink); }
+.box.rule { background: #ffffff; }
+.box .t.m { font-size: calc(var(--k) * 46px); }
+.box .t.l, .box .t.xl { font-size: calc(var(--k) * 64px); }
+/* 알약 이름표: 상자 안 짧은 오렌지 글(1 · 02 · STEP 1) */
+.tag { align-self: flex-start; font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 24px); line-height: 1;
+       color: var(--orange); border: 1.5px solid var(--orange); border-radius: 999px; padding: .5em 1em .45em; white-space: nowrap; }
+.g-row > .tag { align-self: center; }
+
+.im { border-radius: 28px; background: #ffffff; }
+.im img { max-height: calc(var(--ki, 1) * 600px); }
+.bd > .im { align-self: flex-start; max-width: 100%; }
+.bd > .im img { width: auto; max-width: 100%; }
+/* 흐름 화살표는 동그라미 안에 */
+.ar { width: calc(var(--k) * 76px); height: calc(var(--k) * 76px); border: 1.5px solid var(--fg); border-radius: 50%; color: var(--fg); align-self: center; }
+.ar svg { width: 46%; height: 46%; stroke-width: 1.75; }
+.ic { width: calc(var(--k) * 76px); height: calc(var(--k) * 76px); padding: calc(var(--k) * 18px); border-radius: 50%;
+      background: var(--soft); color: var(--orange); stroke-width: 1.75; flex: none; }
+.dark .ic, .box.dark .ic { background: transparent; border: 1.5px solid var(--gray); }
+.ls { font-size: calc(var(--k) * 40px); line-height: 1.6; padding-left: 1.2em; }
+.ls li::marker { color: var(--orange); }
+
+/* 짧은 장(글만 있는 장)은 글을 한 단계 키워 두 색 큰 문장으로 */
+.s-statement .t.xs { font-size: calc(var(--k) * 44px); }
+.s-statement .t.s { font-size: calc(var(--k) * 60px); line-height: 1.38; }
+.s-statement .t.xs.b, .s-statement .t.s.b { font-weight: 700; line-height: 1.25; }
+.chip { border-radius: 999px; padding: .32em .9em .3em; line-height: 1.25; font-family: 'Paperlogy'; font-weight: 500; }
+.chip-accent { background: var(--orange); color: #ffffff; }
+.chip-fill { background: #ffffff; }
+.chip-outline { border: 1.5px solid var(--fg); }
+.rule { border-top: 1.5px solid var(--line); }
+.dark .rule { border-top-color: var(--gray); }
+.rule.short { width: 120px; border-top-width: 6px; border-radius: 3px; }
+.bar { width: 14px; min-height: calc(var(--k) * 64px); background: var(--line); border-radius: 7px; }
+.bar.on { background: var(--orange); }
+
+/* 원래 배치를 살린 장: 좌표는 원본, 글꼴만 2안으로(굵은 글 Paperlogy Bold · 나머지 KoPub 돋움 Light) */
+.keep { position: absolute; inset: 0; width: 1920px; height: 1080px; color: var(--fg); }
+.keep, .keep * { font-family: 'KoPub Dotum', sans-serif; letter-spacing: -0.02em !important; }
+.keep h1, .keep h2, .keep h3, .keep [style*="font-weight:6"], .keep [style*="font-weight:7"], .keep [style*="font-weight:8"],
+.keep [style*="font-weight:9"], .keep [style*="font-weight: 7"], .keep [style*="font-weight: 8"], .keep b, .keep strong,
+.keep text[font-weight] { font-family: 'Paperlogy', sans-serif; font-weight: 700; }
+.keep p, .keep h1, .keep h2, .keep h3 { margin: 0; }
+.keep img { display: block; }
+.keep .kic { display: block; }
+
+/* 73 dump: 원본에서 이름표가 제목을 덮었다. 이름표는 흩어진 자리 그대로, 제목만 아래로 */
+#dump .keep { justify-content: flex-end; padding-bottom: 170px; }
+#dump .keep [style*="left:110px"] { left: 128px !important; }
+#a2-4 .keep { padding-top: 160px !important; }
+
+/* 검수 뒤 고침(11-03) */
+.t:not(.b):not(.h) b { font-family: 'Paperlogy'; font-weight: 700; }
+.bd .ink { color: var(--fg); }
+.sp { margin-top: calc(var(--k) * 28px); }
+.t.l.long { font-size: calc(var(--k) * 76px); }
+.t.xl.long { font-size: calc(var(--k) * 104px); }
+.g-col.line > .g-row, .g-row.line { border-top: 1.5px solid var(--line); padding-top: calc(var(--k) * 22px); padding-bottom: calc(var(--k) * 6px); align-items: baseline; gap: calc(var(--k) * 32px); }
+.dark .g-row.line { border-top-color: var(--gray); }
+/* 구역을 여는 장: 검은 바탕에 큰 주황 글 */
+.s-opener .bd { justify-content: flex-end; }
+.s-opener .t { font-size: calc(var(--k) * 150px); }
+/* 그림은 자르지 않고 전체를 보인다. 카드에 그림 하나면 가운데로 */
+.im img { object-fit: contain; }
+.box:has(> .im) { justify-content: center; }
+.box > .im { align-self: center; background: transparent; }
+/* 원래 배치를 살린 장: 머리말은 알약에만 */
+.keep p[style*="letter-spacing:2px"] { display: none; }
+#possib-3 .keep [style*="border-radius"], #possib-4 .keep [style*="border-radius"], #tone-rule-5 .keep [style*="border"] { padding: 32px 40px !important; }
+#possib-4 .keep [style*="#1f1b18"] p { color: var(--line) !important; }
+.s-statement.solo .t { font-size: calc(var(--k) * 140px); line-height: 1.1; }
+.s-compose.textonly .t.xs { font-size: calc(var(--k) * 40px); }
+.s-compose.textonly .t.s { font-size: calc(var(--k) * 52px); }
+.s-part .t.m, .s-part .t.l, .s-part .t.xl { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 112px); line-height: 1.15; }
