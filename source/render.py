@@ -102,13 +102,20 @@ def text(n, in_box=False):
         long = ' chip-long' if len(plain(n['html'])) > 14 else ''
         return f'<p{attrs(n, "t chip chip-" + n["chip"] + long + " " + n["tone"])}>{n["html"]}</p>'
     r = role(n, in_box)
+    if n.get('caption') and not in_box:
+        r = 'r-caption'
     tone = 'ink' if r == 'r-title' and n['tone'] == 'accent' else n['tone']  # 제목은 검정으로 통일
     cls = ['t', r, tone]
+    p_ = plain(n['html'])
+    if not in_box and r in ('r-body', 'r-strong', 'r-title') and p_[:1] in '「“"' and len(p_) >= 15:
+        cls.append('quote')  # 실제로 한 말 · 건넨 명령은 큰 인용(레퍼런스: quote 쪽)
     if n.get('bold'):
         cls.append('b')
     if n.get('head'):
         cls.append('h')
     style = f' style="--w:{int(n["w"])}px"' if n.get('w') else ''
+    if r == 'r-title':
+        style += ' role="heading" aria-level="2"'  # 화면 읽기 프로그램이 제목으로 읽게
     if style:
         cls.append('fw')
     return f'<p{attrs(n, " ".join(cls))}{style}>{n["html"]}</p>'
@@ -126,7 +133,7 @@ def render(n, in_box=False):
         fit = ' contain' if n.get('fit') == 'contain' else ''
         src = asset(n['src'])
         w, h = Image.open(assets[Path(src).stem]).size
-        return f'<figure{attrs(n, "im" + fit)}><img src="{src}" width="{w}" height="{h}" alt="{html.escape(n["alt"])}"></figure>'
+        return f'<figure{attrs(n, "im" + fit)}><img src="{src}" width="{w}" height="{h}" loading="lazy" decoding="async" alt="{html.escape(n["alt"])}"></figure>'
     if t == 'video':  # 누르면 재생. 장 넘김 클릭과 겹치지 않게 template 이 영상 클릭은 넘기지 않는다
         pw, ph = Image.open(assets[Path(asset(n['poster'])).stem]).size
         return (f'<figure{attrs(n, "vid")}><video controls playsinline preload="auto" width="{pw}" height="{ph}" poster="{asset(n["poster"])}" '
@@ -138,7 +145,8 @@ def render(n, in_box=False):
         tag = 'ol' if n['ordered'] else 'ul'
         return f'<{tag}{attrs(n, "ls")}>' + ''.join(f'<li>{i}</li>' for i in n['items']) + f'</{tag}>'
     if t == 'embed':
-        doc = '<!doctype html><meta charset="utf-8"><style>*{letter-spacing:-0.02em}</style>' + n['html']
+        doc = ('<!doctype html><meta charset="utf-8"><style>*{letter-spacing:-0.02em}'
+               '@media (prefers-reduced-motion: reduce){*{animation:none!important;opacity:1!important}}</style>' + n['html'])
         w, h = int(n.get('w') or 760), int(n.get('h') or 700)
         return (f'<iframe{attrs(n, "em")} style="width:{w}px;height:{h}px" srcdoc="{html.escape(doc, quote=True)}" '
                 f'sandbox="" scrolling="no"></iframe>')
@@ -151,7 +159,7 @@ def render(n, in_box=False):
     if t == 'group':
         cls = ['g', 'g-' + n['dir']]
         box = n.get('box')
-        for k in ('box', 'dark', 'accent', 'rule', 'wrap', 'line', 'step', 'kakao', 'kakaobar', 'right', 'cards', 'compare', 'stats', 'flowcards'):
+        for k in ('box', 'dark', 'accent', 'rule', 'wrap', 'line', 'step', 'kakao', 'kakaobar', 'right', 'cards', 'compare', 'stats', 'flowcards', 'msplit', 'mcol', 'mimgs', 'mwide'):
             if n.get(k):
                 cls.append(k)
         if n['dir'] == 'row' and any(k['t'] == 'img' for k in n['kids']):
@@ -227,7 +235,8 @@ def keep_html(k, extra='', pill=None):
 
     def embed(m):
         st = (re.search(r'style="([^"]*)"', m.group(1)) or [None, ''])[1]
-        doc = '<!doctype html><meta charset="utf-8"><style>*{letter-spacing:-0.02em}</style>' + m.group(2)
+        doc = ('<!doctype html><meta charset="utf-8"><style>*{letter-spacing:-0.02em}'
+               '@media (prefers-reduced-motion: reduce){*{animation:none!important;opacity:1!important}}</style>' + m.group(2))
         return f'<iframe class="em" style="{st}" srcdoc="{html.escape(doc, quote=True)}" sandbox="" scrolling="no"></iframe>'
     h = re.sub(r'<x-embed([^>]*)>(.*?)</x-embed>', embed, h, flags=re.S)
     if re.search(r'<x-|/_blob/', h):
@@ -405,6 +414,64 @@ def dedupe_tokens(body):
 DEDUPED = []
 
 
+def media_split(body):
+    """그림 쪽: 글은 왼쪽 열, 그림은 오른쪽에 화면 높이를 다 쓰게. 그림은 글 다음에 나타난다"""
+    imgs = []
+    def strip(nodes):
+        out = []
+        for n in nodes:
+            if n['t'] == 'img':
+                imgs.append(dict(n, build=None)); continue
+            if n.get('kids'):
+                k = strip(n['kids'])
+                if not k:
+                    continue
+                n = dict(n, kids=k)
+            out.append(n)
+        return out
+    texts = strip(body)
+    if not imgs:
+        return body
+    left = {'t': 'group', 'dir': 'col', 'kids': texts, 'mcol': True}
+    right = {'t': 'group', 'dir': 'row', 'kids': imgs, 'mimgs': True, 'build': 'fade'}
+    def length(ns):
+        return sum(len(plain(n['html'])) if n['t'] == 'text' else length(n.get('kids', [])) for n in ns)
+    wide = length(texts) > 220  # 글이 긴 쪽은 글 · 그림 반반
+    return [{'t': 'group', 'dir': 'row', 'kids': [left, right], 'msplit': True, **({'mwide': True} if wide else {})}]
+
+
+def mark_captions(nodes):
+    """카드 · 그림 · 줄 묶음 바로 뒤의 회색 덧붙임 줄은 작은 글(세 연사의 공통 키워드는…)"""
+    out, prev = [], None
+    for n in nodes:
+        if (n['t'] == 'text' and n['tone'] == 'dim' and not n.get('bold') and prev is not None
+                and (prev['t'] in ('img', 'video') or (prev['t'] == 'group' and (prev.get('box') or prev['dir'] in ('row', 'grid'))))):
+            n = dict(n, caption=True)
+        if n.get('kids') and n['t'] == 'group':
+            n = dict(n, kids=mark_captions(n['kids']))
+        out.append(n); prev = n
+    return out
+
+
+def sequence(body):
+    """차례대로: 머리(머리말 · 첫 제목)는 바로 보이고, 그다음 덩어리는 클릭마다 하나씩. 단계 안도 같은 규칙"""
+    out, seen_title = [], False
+    for n in body:
+        is_head = n['t'] == 'text' and (n.get('sub') or (not seen_title and (n.get('head') or (n.get('bold') and n['step'] in ('m', 'l', 'xl')))))
+        if is_head:
+            seen_title = seen_title or not n.get('sub')
+            out.append(n); continue
+        if not out:
+            out.append(n); continue
+        if n.get('step') and n['t'] == 'group' and n['kids']:
+            ks = n['kids']
+            n = dict(n, kids=[ks[0]] + [dict(k, build=k.get('build') or 'fade') if k['t'] != 'shape' else k for k in ks[1:]])
+        elif not n.get('build') and not n.get('caption'):
+            n = dict(n, build='fade')
+        out.append(n)
+    return out
+
+
 def chip_rows(body):
     """알약만 세로로 쌓인 묶음은 가로로 펼친다(36 core: ① 카톡 ② 노션)"""
     out = []
@@ -451,6 +518,7 @@ def foot_of(i):
 
 
 ARROW_CIRCLE = '<span class="circ">' + svg(f'<path d="{ARROW["corner"]}"/>', '') + '</span>'
+PART_RE = re.compile(r'p\d+|44c5cdaa')
 # 강연 7부를 여는 장(원본 장 이름 p1~p6 · 44c5cdaa). 덱 순서대로 01~07
 PART_IDS = [s['id'] for s in deck['slides'] if re.fullmatch(r'p\d+|44c5cdaa', s['id'])]
 sections = []
@@ -464,7 +532,12 @@ for i, s in enumerate(slides, 1):
     if not s.get('keep'):
         if how in ('CARDS', 'FLOW', 'COMPARE', 'STATS'):
             body = relayout(body, how)
+        if how == 'MEDIA':
+            body = media_split(body)
         body = chip_rows(cardify(body))
+        body = mark_captions(body)
+        if not PART_RE.fullmatch(s['id']) and s['id'] not in ('cover', 'cover-2', 'cover-3'):
+            body = sequence(body)
     if s.get('keeps'):  # 겹친 장의 알약: 처음 나오는 머리말
         kicker = next((kicker_of(b)[0] for b in s['keep_body'] if kicker_of(b)[0]), None)
     kind, num = ('keep', None) if (s.get('keep') or s.get('keeps')) else kind_of(body)

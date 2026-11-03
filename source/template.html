@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#1f1b18">
+<link rel="preload" as="font" type="font/woff2" href="fonts/Paperlogy-7Bold.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/KoPubWorldDotum-Light.woff2" crossorigin>
 <title>{{TITLE}}</title>
 <style>
 /* 틀: 1920x1080 한 장을 창에 맞춰 키우고 줄인다. 생김새는 아래 테마가 정한다 */
@@ -16,7 +19,8 @@ body { -webkit-font-smoothing: antialiased; touch-action: pan-y; }
   opacity: 0; visibility: hidden;
   word-break: keep-all; overflow-wrap: break-word;
 }
-#stage > section.on { opacity: 1; visibility: visible; animation: enter .22s ease-out; }
+#stage > section.on { opacity: 1; visibility: visible; z-index: 2; animation: enter .26s cubic-bezier(0.23, 1, 0.32, 1); }
+#stage > section.leaving { opacity: 1; visibility: visible; z-index: 1; }
 @keyframes enter { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { #stage > section.on { animation: none; } [data-build-in] { transition: none; } }
 /* 글꼴 · 그림이 다 들어오고 크기를 맞춘 뒤에 보인다(처음 화면이 움찔하지 않게) */
@@ -52,7 +56,7 @@ body { -webkit-font-smoothing: antialiased; touch-action: pan-y; }
 .em { border: 0; display: block; transform-origin: 0 0; }
 .ar, .circ { display: inline-flex; align-items: center; justify-content: center; flex: none; }
 .ar svg, .circ svg, .ic { display: block; }
-[data-build-in] { transition: opacity .24s ease-out, transform .24s ease-out; }
+[data-build-in] { transition: opacity .24s cubic-bezier(0.23, 1, 0.32, 1), transform .24s cubic-bezier(0.23, 1, 0.32, 1); }
 [data-build-in].pending { transform: translateY(8px); }
 .no-anim [data-build-in] { transition: none !important; }
 [data-build-in].pending { opacity: 0; }
@@ -63,6 +67,9 @@ body { -webkit-font-smoothing: antialiased; touch-action: pan-y; }
 body.show-ui #ui { opacity: .9; }
 #ui button, #ui span { all: unset; cursor: pointer; padding: 8px 10px; border-radius: 6px; background: rgba(0,0,0,.55); }
 #ui span { cursor: default; min-width: 64px; text-align: center; }
+#ui button:hover { background: rgba(0,0,0,.85); }
+#ui button:focus-visible, .vid .play:focus-visible { outline: 3px solid #ff6a00; outline-offset: 3px; }
+body:has(:focus-visible) #ui { opacity: .9; }
 @media print {
   html, body { overflow: visible; height: auto; background: #fff; }
   #stage { position: static; transform: none !important; }
@@ -83,7 +90,7 @@ body.show-ui #ui { opacity: .9; }
 <div id="bar"><i></i></div>
 <div id="ui">
   <button id="prev" aria-label="이전 장">◀</button>
-  <span id="count">1 / 1</span>
+  <span id="count" aria-live="polite">1 / 1</span>
   <button id="next" aria-label="다음 장">▶</button>
   <button id="full" aria-label="전체 화면">전체 화면</button>
 </div>
@@ -132,9 +139,18 @@ body.show-ui #ui { opacity: .9; }
     var k = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
     stage.style.transform = 'scale(' + k + ') translate(-50%, -50%)';
   }
+  var leaveT;
   function show(i, atEnd) {
     i = Math.max(0, Math.min(n - 1, i));
     Array.prototype.forEach.call(slides[cur].querySelectorAll('video'), function (v) { v.pause(); });
+    // 앞 장은 새 장 아래에 0.26초 남겨 두어 뒤 배경이 비치지 않게(깜빡임 없이 겹쳐 바뀜)
+    slides.forEach(function (x) { x.classList.remove('leaving'); });
+    if (i !== cur) {
+      var old = slides[cur];
+      old.classList.add('leaving');
+      clearTimeout(leaveT);
+      leaveT = setTimeout(function () { old.classList.remove('leaving'); }, 280);
+    }
     slides[cur].classList.remove('on');
     cur = i;
     var s = slides[cur], b = builds(s);

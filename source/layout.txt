@@ -27,7 +27,6 @@ b1 | FLOW | 수업 영상 01~07 단계
 b1-3 | MERGE_PREV | 02 · 03
 b1-5 | MERGE_PREV | 04 · 05
 b1-7 | MERGE_PREV | 빅북 반영 · 06 인쇄
-rv-1 | COMPARE | 학생용 실제 출력본과 정답판
 rv-2 | MERGE_PREV | 정답판
 b1-8 | STATEMENT | 사람은 인쇄기 앞에서 가져오기만
 b2-4 | MERGE_PREV | 명령 3 · 4번
@@ -68,3 +67,16 @@ n85 | STATS | 85건
 ledger | FLOW | 찾는다 → 적는다 → 승격 → 사람 눈까지 오지 못함
 layers | FLOW | 9겹 검수
 layers-3 | MERGE_PREV | 9겹 나머지
+meetings-3b | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+rv-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+b3-card | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+design-5 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+vr-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+vr-2 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+vr-3 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+vr-4 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+vr-6 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+vr-7 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+web-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+program | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
+prog-test | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)

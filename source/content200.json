@@ -3203,237 +3203,51 @@
      ],
      "build": "fade 1",
      "step": true
-    }
-   ],
-   "members": [
-    "a1",
-    "a1-2"
-   ]
-  },
-  {
-   "id": "a1-3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 1 | 카톡"
     },
     {
      "t": "group",
      "dir": "col",
      "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "01"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "카톡 읽기"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "신규 · 퇴원 · 휴원"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "등록 이후, 이 순서로 자동화합니다",
-       "head": true
-      },
       {
        "t": "group",
-       "dir": "row",
+       "dir": "col",
        "kids": [
         {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "02"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "번호 저장"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "내 연락처에 저장"
-          }
-         ],
-         "box": true
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "01"
         },
         {
-         "t": "shape",
-         "kind": "arrow-right",
-         "kids": [],
-         "tone": "accent"
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "카톡 읽기"
         },
         {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "03"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "팀톡 생성"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "반톡 초대 + 개별 팀톡"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "shape",
-         "kind": "arrow-right",
-         "kids": [],
-         "tone": "accent"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "04"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "환영 인사"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "학부모 · 신규생"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "shape",
-         "kind": "arrow-right",
-         "kids": [],
-         "tone": "accent"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "05"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "케어 일정 조율"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "shape",
-         "kind": "arrow-right",
-         "kids": [],
-         "tone": "accent"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "06"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "노션 업로드"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "올린 내용은 카톡으로 전송"
-          }
-         ],
-         "box": true
+         "t": "text",
+         "step": "m",
+         "tone": "dim",
+         "bold": false,
+         "html": "신규 · 퇴원 · 휴원"
         }
        ]
       }
      ],
-     "build": "fade 1",
+     "build": "fade 2",
      "step": true
     }
    ],
    "members": [
-    "a1-3",
-    "a1-4"
+    "a1",
+    "a1-2",
+    "a1-3"
    ]
   },
   {
-   "id": "a1-5",
+   "id": "a1-4",
    "body": [
     {
      "t": "text",
@@ -3445,91 +3259,184 @@
     {
      "t": "text",
      "step": "m",
-     "tone": "accent",
+     "tone": "ink",
      "bold": true,
-     "html": "퇴원생"
+     "html": "등록 이후, 이 순서로 자동화합니다",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "row",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "02"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "번호 저장"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "내 연락처에 저장"
+        }
+       ],
+       "box": true
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "03"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "팀톡 생성"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "반톡 초대 + 개별 팀톡"
+        }
+       ],
+       "box": true
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "04"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "환영 인사"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "학부모 · 신규생"
+        }
+       ],
+       "box": true
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "05"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "케어 일정 조율"
+        }
+       ],
+       "box": true
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "06"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "노션 업로드"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "올린 내용은 카톡으로 전송"
+        }
+       ],
+       "box": true
+      }
+     ]
     },
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "퇴원"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "카톡에서 퇴원 글을 읽으면"
-          }
-         ]
-        },
-        {
-         "t": "shape",
-         "kind": "arrow-right",
-         "kids": [],
-         "tone": "accent"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "팀톡 지우기"
-        },
-        {
-         "t": "shape",
-         "kind": "arrow-right",
-         "kids": [],
-         "tone": "accent"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "반톡에서 내보내기"
-        },
-        {
-         "t": "shape",
-         "kind": "arrow-right",
-         "kids": [],
-         "tone": "accent"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": true,
-           "html": "문자 + 3시간 뒤"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "관리톡 정리"
-          }
-         ]
-        }
-       ]
+       "t": "text",
+       "step": "m",
+       "tone": "accent",
+       "bold": true,
+       "html": "퇴원생"
       }
      ],
      "build": "fade 1",
@@ -3537,7 +3444,100 @@
     }
    ],
    "members": [
-    "a1-5",
+    "a1-4",
+    "a1-5"
+   ]
+  },
+  {
+   "id": "a1-6",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "대표 자동화 1 | 카톡"
+    },
+    {
+     "t": "group",
+     "dir": "row",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "퇴원"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": true,
+         "html": "카톡에서 퇴원 글을 읽으면"
+        }
+       ]
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "text",
+       "step": "xs",
+       "tone": "ink",
+       "bold": true,
+       "html": "팀톡 지우기"
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "text",
+       "step": "xs",
+       "tone": "ink",
+       "bold": true,
+       "html": "반톡에서 내보내기"
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": true,
+         "html": "문자 + 3시간 뒤"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "관리톡 정리"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "members": [
     "a1-6"
    ]
   },
@@ -6078,21 +6078,6 @@
          "html": "학교 기준을 바꾸고 싶으면, 지침서만 고치면 됩니다"
         }
        ]
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "지침서에 1:1 상담이 들어간 학교"
-        }
-       ],
-       "build": "fade 1",
-       "step": true
       }
      ],
      "build": "fade 2",
@@ -6102,12 +6087,11 @@
    "members": [
     "c2",
     "c2-2",
-    "c2-3",
-    "c2-4"
+    "c2-3"
    ]
   },
   {
-   "id": "c2-5",
+   "id": "c2-4",
    "body": [
     {
      "t": "text",
@@ -6117,115 +6101,124 @@
      "html": "대표 자동화 3 | 나의 새벽"
     },
     {
+     "t": "text",
+     "step": "m",
+     "tone": "accent",
+     "bold": true,
+     "html": "지침서에 1:1 상담이 들어간 학교"
+    },
+    {
      "t": "group",
      "dir": "col",
      "kids": [
       {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "지침서에 1:1 상담이 들어간 학교"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "다정고1",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "다정고2",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "대성고1",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "대성고2",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "새롬고2",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "양지고1",
-         "chip": "fill"
-        }
-       ],
-       "wrap": true
-      },
-      {
        "t": "group",
        "dir": "col",
        "kids": [
         {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "어휘 정답은 5개교 모두 원문 낱말의 반대말이었습니다"
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": true,
+           "html": "다정고1",
+           "chip": "fill"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": true,
+           "html": "다정고2",
+           "chip": "fill"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": true,
+           "html": "대성고1",
+           "chip": "fill"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": true,
+           "html": "대성고2",
+           "chip": "fill"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": true,
+           "html": "새롬고2",
+           "chip": "fill"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": true,
+           "html": "양지고1",
+           "chip": "fill"
+          }
+         ],
+         "wrap": true
         },
         {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "기존 규칙(반의어 정답 금지)을 실물에 맞춰 바꿨습니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "「시험 선지가 빅북보다 어려웠다」"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": true,
+           "html": "어휘 정답은 5개교 모두 원문 낱말의 반대말이었습니다"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "dim",
+           "bold": false,
+           "html": "기존 규칙(반의어 정답 금지)을 실물에 맞춰 바꿨습니다"
+          }
+         ]
         },
         {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "상담에서 나온 말로, 〔상〕 난이도를 6회로 늘렸습니다"
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "ink",
+           "bold": true,
+           "html": "「시험 선지가 빅북보다 어려웠다」"
+          },
+          {
+           "t": "text",
+           "step": "xs",
+           "tone": "dim",
+           "bold": false,
+           "html": "상담에서 나온 말로, 〔상〕 난이도를 6회로 늘렸습니다"
+          }
+         ]
         }
        ]
       }
-     ]
+     ],
+     "build": "fade 1",
+     "step": true
     }
    ],
    "members": [
+    "c2-4",
     "c2-5"
    ]
   },
@@ -14177,43 +14170,45 @@
      ],
      "build": "fade 2",
      "step": true
-    },
+    }
+   ],
+   "members": [
+    "possib",
+    "possib-2",
+    "possib-3"
+   ]
+  },
+  {
+   "id": "possib-4",
+   "body": [
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "가능주의 Possibilism"
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "light",
-         "bold": true,
-         "html": "“잘되게 만들 수 있어”"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "내가 오늘 할 수 있는 것을 해 봅니다"
-        }
-       ],
-       "box": true,
-       "dark": true
+       "t": "text",
+       "step": "m",
+       "tone": "accent",
+       "bold": true,
+       "html": "가능주의 Possibilism"
+      },
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "light",
+       "bold": true,
+       "html": "“잘되게 만들 수 있어”"
+      },
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "dim",
+       "bold": false,
+       "html": "내가 오늘 할 수 있는 것을 해 봅니다"
       }
      ],
-     "build": "fade 3",
-     "step": true
+     "box": true,
+     "dark": true
     },
     {
      "t": "group",
@@ -14227,14 +14222,11 @@
        "html": "여기서 근거는, <b>“나는 무엇을 노력했는가”</b>입니다."
       }
      ],
-     "build": "fade 4",
+     "build": "fade 1",
      "step": true
     }
    ],
    "members": [
-    "possib",
-    "possib-2",
-    "possib-3",
     "possib-4",
     "possib-5"
    ]

@@ -228,3 +228,57 @@ hr.rule { display: none; }
              box-shadow: 0 8px 24px rgba(31, 27, 24, .25); transition: opacity .2s ease-out; }
 .vid .play svg { width: 52px; height: 52px; margin-left: 6px; }
 .vid.playing .play { opacity: 0; pointer-events: none; }
+
+/* 레퍼런스 반영(11-03 밤) */
+/* 덧붙임 줄은 작게 */
+.r-caption { font-size: calc(var(--k) * 28px); line-height: 1.5; color: var(--sub); }
+/* 실제로 한 말 · 건넨 명령: 큰 인용, 앞에 주황 따옴표 */
+.t.quote { font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 44px); line-height: 1.45; color: var(--fg);
+           position: relative; padding-left: calc(var(--k) * 72px); max-width: 1500px; }
+.t.quote::before { content: '“'; position: absolute; left: 0; top: calc(var(--k) * -18px); font-family: 'Paperlogy'; font-weight: 700;
+                   font-size: calc(var(--k) * 120px); line-height: 1; color: var(--orange); }
+/* 제목 속 강조 낱말은 형광펜 띠 */
+.r-title em { color: var(--fg); background: linear-gradient(transparent 58%, rgba(255, 106, 0, .32) 58%); padding: 0 .06em; }
+.dark .r-title em { background: linear-gradient(transparent 58%, rgba(255, 106, 0, .55) 58%); }
+/* 글 왼쪽 · 그림 오른쪽 크게 */
+.g-row.msplit { display: grid; grid-template-columns: minmax(0, 38%) minmax(0, 1fr); gap: calc(var(--k) * 56px); align-items: center; }
+.g-row.msplit > .mcol { gap: calc(var(--k) * 20px); }
+.g-row.mimgs { gap: calc(var(--k) * 20px); align-items: stretch; height: calc(var(--k) * 700px); }
+.g-row.mimgs > .im { flex: 1 1 0; min-width: 0; height: 100%; display: flex; align-items: center; justify-content: center;
+                     background: #ffffff; border-radius: 24px; padding: calc(var(--k) * 16px); }
+.g-row.mimgs > .im img { width: 100%; height: 100%; max-height: none; object-fit: contain; }
+
+/* 한글 조판 규칙(슬기님 11-03)
+   - 낱말 중간에서 줄을 바꾸지 않는다(keep-all)
+   - 제목은 줄 길이를 고르게(balance), 본문은 마지막 줄에 한 글자만 남지 않게(pretty)
+   - 행간: 본문 1.6~1.75, 큰 제목 1.2~1.3
+   - 숫자는 자릿수를 맞춘다(tabular-nums) */
+#stage > section, #stage section * { word-break: keep-all; overflow-wrap: break-word; line-break: strict; }
+.r-title, .r-head, .s-part .r-title, .s-statement.solo .t { text-wrap: balance; line-height: 1.25; }
+.stmt .r-title { line-height: 1.22; }
+.r-body, .r-strong, .r-cbody, .r-caption, .t.quote, .ls, .box .t:not(.r-ctitle):not(.tag) { text-wrap: pretty; line-height: 1.65; }
+.r-ctitle, .r-label { line-height: 1.35; text-wrap: balance; }
+.t.quote { line-height: 1.6; }
+#stage section { font-variant-numeric: tabular-nums; }
+
+/* design-taste 기준(11-03 밤)
+   - 모서리는 한 체계: 카드 · 사진 · 영상 16px
+   - 겹친 카드 없애기: 카드 안 카드는 바탕 · 여백 없이
+   - 옆줄 테두리 상자 없애기
+   - 순수 흰색 대신 아주 옅은 흰색
+   - 강한 감속 곡선, 본문 한 줄은 1280px까지 */
+#stage > section { --card: #fffefb; }
+.box, .g-grid.cards > .box, .g-row.flow > .g-col, .g-row.flow > .t, .im, .vid, .g-row.mimgs > .im, .box.kakaobar { border-radius: 16px; }
+.box.kakao { border-radius: 16px 4px 16px 16px; }
+.box .box, .box .g-grid.cards > .box { background: transparent !important; padding: 0 !important; color: inherit; --fg: inherit; }
+.box.rule { border: 0; padding-left: 0; }
+.pill, .dark .pill { background: var(--card); }
+.bd > .t, .step > .t, .mcol > .t { max-width: 1280px; }
+/* 글 왼쪽 열: 안의 가로 묶음도 세로로, 열 폭을 넘지 않게 */
+.mcol .g-row, .mcol .g-grid { display: flex; flex-direction: column; align-items: flex-start; gap: calc(var(--k) * 14px); }
+.mcol .g-row.wrap { flex-direction: row; flex-wrap: wrap; }
+.mcol *, .mcol .t.fw { max-width: 100%; flex: none; }
+.mcol .box { width: 100%; }
+.g-row.mimgs { height: calc(var(--k) * 600px); }
+.g-row.msplit.mwide { grid-template-columns: minmax(0, 55%) minmax(0, 1fr); }
+.msplit.mwide .g-row.mimgs { height: calc(var(--k) * 560px); }
