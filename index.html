@@ -618,7 +618,7 @@ hr.rule { display: none; }
   function fitAll() { slides.forEach(shrink); }
 
   function builds(s) {  // 나타나는 차례는 화면 순서(위 → 아래, 왼쪽 → 오른쪽)
-    return Array.prototype.slice.call(s.querySelectorAll('[data-build-in]'));
+    return [];  // 11-03: 차례 등장 끔. 쪽을 열면 글이 한 번에 다 보이고, 클릭은 바로 다음 쪽으로
   }
   function fit() {
     var k = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
@@ -643,6 +643,7 @@ hr.rule { display: none; }
     // 숨김은 효과 없이 즉시(쪽에 들어갈 때 나중 글이 보였다 사라지지 않게), 나타날 때만 서서히
     s.classList.add('no-anim');
     b.forEach(function (el, k) { el.classList.toggle('pending', k >= step); });
+    Array.prototype.forEach.call(s.querySelectorAll('[data-build-in].pending'), function (el) { el.classList.remove('pending'); });
     void s.offsetWidth;
     s.classList.remove('no-anim');
     s.classList.add('on');
