@@ -10543,7 +10543,7 @@
      "step": "xl",
      "tone": "light",
      "bold": true,
-     "html": "디자인은<br>이렇게 말해서 고칩니다",
+     "html": "디자인은<br>이렇게 말해서 <em>(잡도리해서)</em> 고칩니다",
      "head": true
     },
     {
@@ -11387,6 +11387,90 @@
    ]
   },
   {
+   "id": "nag",
+   "members": [
+    "nag"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "나다운 AI"
+    },
+    {
+     "t": "text",
+     "step": "xl",
+     "tone": "ink",
+     "bold": true,
+     "html": "10번 말하고 10번 잡도리하는 거,<br><em>힘들죠?</em>",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "build": "fade 1",
+     "step": true,
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "dim",
+       "bold": false,
+       "html": "그런데 우리, 조교나 신입 직원이 들어와도<br>이 정도는 계속 이야기하잖아요."
+      }
+     ]
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "build": "fade 2",
+     "step": true,
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "똑같습니다. 근데 <em>차이점은 뭘까요?</em>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "yt-break",
+   "members": [
+    "yt-break"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xl",
+     "tone": "ink",
+     "bold": true,
+     "html": "여러분, 이쯤 되면<br><em>조금 힘드시죠?</em>",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "build": "fade 1",
+     "step": true,
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "dim",
+       "bold": false,
+       "html": "저희 유튜브 하나 짧게 볼게요? ㅎㅎ"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "busy",
    "body": [
     {
@@ -11659,112 +11743,6 @@
        "box": true
       }
      ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "바로잡고 싶은 세 가지"
-      },
-      {
-       "t": "group",
-       "dir": "grid",
-       "cols": 3,
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "01"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "정성은 자동화하는 순간 값이 떨어진다"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "사람이 시간을 썼다는 사실에서 나옵니다"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "02"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "돈을 내는 이유는 성적과 습관"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "따뜻함에서 끝나지 않고 결과로 이어져야 합니다"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "03"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "미친 정성은 사람을 갈아 넣기 쉽다"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "덜어 준 시간이 아이 앞으로 가는지 재 봅니다"
-          }
-         ],
-         "box": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
     }
    ],
    "members": [
@@ -12020,182 +11998,6 @@
    ]
   },
   {
-   "id": "lines",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "한 시즌을 AI로"
-      },
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "교재 라인마다 맡은 일",
-       "head": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "주간내신"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "dim",
-           "bold": true,
-           "html": "학생에게 주는 것"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "케어"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "주간 모의고사"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "케어"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "외부지문 (프린트, 부교재)"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "케어"
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "dim",
-           "bold": true,
-           "html": "FINAL 직보"
-          },
-          {
-           "t": "group",
-           "dir": "col",
-           "kids": [
-            {
-             "t": "text",
-             "step": "l",
-             "tone": "ink",
-             "bold": true,
-             "html": "동형 모의고사"
-            }
-           ]
-          }
-         ]
-        }
-       ],
-       "build": "fade 1",
-       "step": true
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    }
-   ],
-   "members": [
-    "lines",
-    "lines-2",
-    "lines-3",
-    "lines-4",
-    "lines-5"
-   ]
-  },
-  {
    "id": "lines-6",
    "body": [
     {
@@ -12270,64 +12072,6 @@
    "members": [
     "lines-6",
     "lines-7"
-   ]
-  },
-  {
-   "id": "grade-ex",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "한 시즌을 AI로"
-      },
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "학년마다, 질문마다<br><em>다른 예문</em>",
-       "head": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "같은 개념도 초등, 중등, 고등 학생이 요즘 즐기는 것으로 예를 듭니다."
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "세대 차이는 AI가 메웁니다."
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "grade-ex",
-    "grade-ex-2"
    ]
   },
   {
@@ -12530,21 +12274,6 @@
      "bold": true,
      "html": "사람은 불안보다<br><em>편리함</em>을 고릅니다",
      "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "걱정은 내려놓고 시작하세요. 결제, 발송, 삭제 앞에서만 멈추면 됩니다."
-      }
-     ],
-     "build": "fade 1",
-     "step": true
     }
    ],
    "members": [
@@ -12699,7 +12428,7 @@
        "step": "m",
        "tone": "accent",
        "bold": true,
-       "html": "마지막 이야기"
+       "html": "진짜 마지막 이야기!"
       },
       {
        "t": "text",
@@ -12923,36 +12652,6 @@
       }
      ],
      "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "“나는 낙관주의자가 아닙니다. 가능주의자입니다.”"
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "한스 로슬링(Hans Rosling) | 스웨덴의 의사이자 통계학자, 『팩트풀니스』의 저자"
-      }
-     ],
-     "build": "fade 4",
      "step": true
     }
    ],
