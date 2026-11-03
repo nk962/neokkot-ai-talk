@@ -203,125 +203,6 @@
    ]
   },
   {
-   "id": "meetings",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "AI 세미나를 접하기 시작하며"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "유튜브나 릴스보다 현장의 이야기를 들었습니다",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "2025"
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": true,
-           "html": "카페 사장님 림님(인스타)의 AI 세미나"
-          }
-         ]
-        },
-        {
-         "t": "img",
-         "src": "/_blob/9f0fc040f13b0e8e18611126a38cff79",
-         "alt": "림님 인터뷰 카드뉴스 1"
-        },
-        {
-         "t": "img",
-         "src": "/_blob/ad02c5a0e9cae1aa05473a622e4616d7",
-         "alt": "림님 인터뷰 카드뉴스 2"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "meetings",
-    "meetings-2"
-   ]
-  },
-  {
-   "id": "meetings-3",
-   "body": [
-    {
-     "t": "group",
-     "dir": "row",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "AI 세미나를 접하기 시작하며"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "HFK"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "직장인 커뮤니티 「AI 부사수」 세션"
-        }
-       ]
-      },
-      {
-       "t": "img",
-       "src": "/_blob/8619fd253f763f4fd2c5c8b0a5bafd4e",
-       "alt": "HFK 커뮤니티 소개 화면"
-      },
-      {
-       "t": "img",
-       "src": "/_blob/69e0a404fc8883b50f5355966c774f08",
-       "alt": "HFK AI부사수 세션 카드: 1인 실무자가 AI를 부사수로 만드는 과정, 이슬기 HFK 커뮤니티 매니저"
-      }
-     ]
-    }
-   ],
-   "members": [
-    "meetings-3"
-   ]
-  },
-  {
    "id": "meetings-3b",
    "body": [
     {
@@ -333,7 +214,7 @@
        "step": "xs",
        "tone": "accent",
        "bold": true,
-       "html": "2025년, HFK AI 컨퍼런스"
+       "html": "2025년 AI Conference"
       },
       {
        "t": "text",
@@ -477,6 +358,125 @@
    ],
    "members": [
     "meetings-3b"
+   ]
+  },
+  {
+   "id": "meetings",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "AI 세미나를 접하기 시작하며"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "유튜브나 릴스보다 현장의 이야기를 들었습니다",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "group",
+         "dir": "col",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "accent",
+           "bold": true,
+           "html": "2025"
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": true,
+           "html": "카페 사장님 림님의 AI 세미나"
+          }
+         ]
+        },
+        {
+         "t": "img",
+         "src": "/_blob/9f0fc040f13b0e8e18611126a38cff79",
+         "alt": "림님 인터뷰 카드뉴스 1"
+        },
+        {
+         "t": "img",
+         "src": "/_blob/ad02c5a0e9cae1aa05473a622e4616d7",
+         "alt": "림님 인터뷰 카드뉴스 2"
+        }
+       ]
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "members": [
+    "meetings",
+    "meetings-2"
+   ]
+  },
+  {
+   "id": "meetings-3",
+   "body": [
+    {
+     "t": "group",
+     "dir": "row",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "AI 세미나를 접하기 시작하며"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "HFK"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "직장인 커뮤니티 「AI 부사수」 세션"
+        }
+       ]
+      },
+      {
+       "t": "img",
+       "src": "/_blob/8619fd253f763f4fd2c5c8b0a5bafd4e",
+       "alt": "HFK 커뮤니티 소개 화면"
+      },
+      {
+       "t": "img",
+       "src": "/_blob/69e0a404fc8883b50f5355966c774f08",
+       "alt": "HFK AI부사수 세션 카드: 1인 실무자가 AI를 부사수로 만드는 과정, 이슬기 HFK 커뮤니티 매니저"
+      }
+     ]
+    }
+   ],
+   "members": [
+    "meetings-3"
    ]
   },
   {
@@ -1629,64 +1629,18 @@
      ]
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "VS Code 터미널에서 씁니다"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "t": "text",
+     "step": "l",
+     "tone": "dim",
+     "bold": false,
+     "html": "VS Code 터미널에서 씁니다"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "챗지피티, 제미나이, 클로드 웹 버전까지 저마다 장단점이 있습니다."
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "강사이면서 콘텐츠 생사자인 저를 정의해 보니 <br>제게 중요한 것은 <b>작업의 정확성과 검수</b>였고,"
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "콘텐츠를 만드는 사람에게는 클로드 코드가 맞다고 판단했습니다."
-      }
-     ],
-     "build": "fade 4",
-     "step": true
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": false,
+     "html": "챗지피티, 제미나이, 클로드 웹 버전까지 저마다 장단점이 있습니다.<br>강사이면서 콘텐츠 생산자인 저를 정의해 보니<br>제게 중요한 것은 <b>작업의 정확성과 검수</b>였고,<br>콘텐츠를 만드는 사람에게는 클로드 코드가 맞다고 판단했습니다."
     }
    ],
    "members": [
@@ -2181,114 +2135,11 @@
      "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "나는 무엇이 힘든가"
-        }
-       ],
-       "line": true
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "무엇을 맡기고 싶은가"
-        }
-       ],
-       "line": true
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "내 일은 어떤 순서로 흘러가는가"
-        }
-       ],
-       "line": true
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "이 일과 저 일은 어떻게 이어지는가"
-        }
-       ],
-       "line": true
-      }
-     ],
-     "build": "fade 4",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "일의 처음과 끝 사이, 챙길 디테일은 무엇인가"
-        }
-       ],
-       "line": true
-      }
-     ],
-     "build": "fade 5",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": true,
+     "html": "나는 무엇이 힘든가<br>무엇을 맡기고 싶은가<br>내 일은 어떤 순서로 흘러가는가<br>이 일과 저 일은 어떻게 이어지는가<br>일의 처음과 끝 사이, 챙길 디테일은 무엇인가"
     }
    ],
    "members": [
@@ -2522,7 +2373,7 @@
      "step": "xs",
      "tone": "accent",
      "bold": true,
-     "html": "내 일을 해체하기 | 실습 5분"
+     "html": "내 일을 해체하기"
     },
     {
      "t": "text",
@@ -2533,65 +2384,11 @@
      "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "accent",
-         "bold": true,
-         "html": "할 일을 받는 곳",
-         "head": true
-        },
-        {
-         "t": "rule"
-        },
-        {
-         "t": "rule"
-        },
-        {
-         "t": "rule"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "accent",
-       "bold": true,
-       "html": "일을 하고 나서",
-       "head": true
-      },
-      {
-       "t": "rule"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": true,
-       "html": "어디에 남기고, 누구에게 알리나요",
-       "head": true
-      },
-      {
-       "t": "rule"
-      }
-     ],
-     "build": "fade 2",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": true,
+     "html": "할 일을 받는 곳<br>일을 하고 나서<br>어디에 남기고, 누구에게 알리나요"
     }
    ],
    "members": [
@@ -3554,21 +3351,6 @@
        "box": true
       }
      ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "퇴원생"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
     }
    ],
    "members": [
@@ -3585,6 +3367,13 @@
      "tone": "accent",
      "bold": true,
      "html": "대표 자동화 1 | 카톡"
+    },
+    {
+     "t": "text",
+     "step": "m",
+     "tone": "accent",
+     "bold": true,
+     "html": "퇴원생"
     },
     {
      "t": "group",
@@ -3727,31 +3516,10 @@
      "html": "대표 자동화 1 | 카톡"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": false,
-       "html": "실장님"
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "[신규등록]<br>다정고1 ○○○ 학생<br>학부모(어머니) 010-○○○○-○○○○<br>월 · 목 수업 시작합니다"
-        }
-       ],
-       "box": true
-      }
-     ]
+     "t": "img",
+     "src": "/_blob/733cdcb96dc864488fc539829b78b26f",
+     "alt": "실장님이 올린 신규등록 카톡",
+     "fit": "contain"
     }
    ],
    "members": [
@@ -4073,85 +3841,61 @@
     },
     {
      "t": "group",
-     "dir": "col",
+     "dir": "row",
      "kids": [
       {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "[너꽃] 다정고1 ○○○ 관리톡"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "송별"
-        }
-       ],
-       "box": true,
-       "kakaobar": true
+       "t": "text",
+       "step": "l",
+       "tone": "accent",
+       "bold": true,
+       "html": "송별 글"
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": false,
+       "html": "학생과 학부모님께 먼저 마음을 전합니다"
+      }
+     ]
+    },
+    {
+     "t": "group",
+     "dir": "row",
+     "kids": [
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "ink",
+       "bold": true,
+       "html": "[너꽃] 다정고1 ○○○ 관리톡"
+      },
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "ink",
+       "bold": false,
+       "html": "송별"
       }
      ],
-     "build": "fade 1",
-     "step": true
+     "box": true,
+     "kakaobar": true
     },
     {
      "t": "group",
      "dir": "col",
      "kids": [
       {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": false,
-         "html": "안녕하세요, 어머님! 😊<br>○○의 퇴원 소식 전해 들었습니다. 아쉬운 결정이지만, 앞으로 ○○가 더 크게 성장해 나갈 모습을 진심으로 기대하고 응원하겠습니다.<br><br>○○야, 그동안 정말 수고 많았어! 공부하다가 막히는 부분이나 도움이 필요한 일이 생기면 언제든 편하게 연락 줘 ㅎㅎ<br><br>그동안 ○○를 믿고 맡겨 주셔서 진심으로 감사했습니다. 🙏"
-        }
-       ],
-       "box": true,
-       "kakao": true,
-       "right": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "accent",
-           "bold": true,
-           "html": "송별 글"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": false,
-           "html": "학생과 학부모님께 먼저 마음을 전합니다"
-          }
-         ]
-        }
-       ],
-       "build": "fade 1",
-       "step": true
+       "t": "text",
+       "step": "s",
+       "tone": "ink",
+       "bold": false,
+       "html": "안녕하세요, 어머님! 😊<br>○○의 퇴원 소식 전해 들었습니다. 아쉬운 결정이지만, 앞으로 ○○가 더 크게 성장해 나갈 모습을 진심으로 기대하고 응원하겠습니다.<br><br>○○야, 그동안 정말 수고 많았어! 공부하다가 막히는 부분이나 도움이 필요한 일이 생기면 언제든 편하게 연락 줘 ㅎㅎ<br><br>그동안 ○○를 믿고 맡겨 주셔서 진심으로 감사했습니다. 🙏"
       }
      ],
-     "build": "fade 2",
-     "step": true
+     "box": true,
+     "kakao": true,
+     "right": true
     }
    ],
    "members": [
@@ -4159,90 +3903,6 @@
     "a3-2",
     "a3-3",
     "a3-4"
-   ]
-  },
-  {
-   "id": "a3-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 1 | 카톡"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "3시간 뒤",
-         "w": 240.0
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": false,
-         "html": "첫 정시 확인 때 관리톡(팀채팅)을 지웁니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "같은 때",
-         "w": 240.0
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": false,
-         "html": "학교 반톡에서 내보냅니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "휴원",
-         "w": 240.0
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": false,
-         "html": "처리하지 않습니다. 퇴원, 수강 취소만"
-        }
-       ]
-      }
-     ]
-    }
-   ],
-   "members": [
-    "a3-5"
    ]
   },
   {
@@ -4472,28 +4132,6 @@
     "a5-2",
     "a5-3",
     "a5-4"
-   ]
-  },
-  {
-   "id": "a5-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 1 | 카톡"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "dim",
-     "bold": false,
-     "html": "방이 수백 개여도 사람이 한 곳씩 열지 않습니다."
-    }
-   ],
-   "members": [
-    "a5-5"
    ]
   },
   {
@@ -5115,29 +4753,15 @@
        "tone": "ink",
        "bold": false,
        "html": "<b><em>2</em></b> 올라간 파일을 학교별 반톡에 올려"
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": false,
+       "html": "<b><em>3</em></b> 영상에서 내가 중요하다고 한 것을 정리해 빅북에 반영하고, 강의 리뷰 테스트를 만들어"
       }
      ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": false,
-         "html": "<b><em>3</em></b> 영상에서 내가 중요하다고 한 것을 정리해 빅북에 반영하고, 강의 리뷰 테스트를 만들어"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
     }
    ],
    "members": [
