@@ -9668,6 +9668,20 @@
    "dark": true
   },
   {
+   "id": "smell",
+   "members": [
+    "smell"
+   ],
+   "body": [
+    {
+     "t": "img",
+     "src": "/_blob/32a53eebd919fbdf3bba0eafed2e0a7e",
+     "alt": "사람 냄새와 클로드 냄새: 같은 당근 화면 비교",
+     "fit": "contain"
+    }
+   ]
+  },
+  {
    "id": "ref-skill",
    "body": [
     {

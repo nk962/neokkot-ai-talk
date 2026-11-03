@@ -299,6 +299,9 @@ hr.rule { display: none; }
 #consult-4 .im img { max-height: calc(var(--k) * 560px); width: auto; max-width: 100%; object-fit: contain; }
 #aside-intro .bd > .im { height: calc(var(--k) * 96px) !important; min-height: calc(var(--k) * 96px); width: auto; background: none; box-shadow: none; padding: 0; align-self: flex-start; }
 #aside-intro .bd > .im img { height: calc(var(--k) * 96px) !important; width: auto !important; max-height: none !important; }
+#smell .bd { align-items: center; justify-content: center; }
+#smell .bd > .im { height: calc(var(--k) * 790px); width: auto; align-self: center; background: #fff; border-radius: 16px; padding: calc(var(--k) * 16px); box-shadow: 0 2px 24px rgba(31, 27, 24, .08); }
+#smell .bd > .im img { height: 100%; width: auto; max-height: none; }
 #weekly-3 .bd { align-items: center; text-align: center; }
 #weekly-3 .bd > .k, #weekly-3 .bd > .t { align-self: center; text-align: center; }
 #weekly-3 .r-title { font-size: calc(var(--k) * 72px); }
