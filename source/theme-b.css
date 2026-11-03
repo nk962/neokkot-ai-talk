@@ -297,6 +297,8 @@ hr.rule { display: none; }
 #consult-4 .g-row.flow > .g-col > .t { font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 26px) !important; color: var(--otext); background: rgba(210, 71, 10, .10); border-radius: 999px; padding: .35em .9em; align-self: center; }
 #consult-4 .im { background: #fff; border-radius: 16px; padding: calc(var(--k) * 24px); box-shadow: 0 2px 24px rgba(31, 27, 24, .08); }
 #consult-4 .im img { max-height: calc(var(--k) * 560px); width: auto; max-width: 100%; object-fit: contain; }
+#aside-intro .bd > .im { height: calc(var(--k) * 96px) !important; min-height: calc(var(--k) * 96px); width: auto; background: none; box-shadow: none; padding: 0; align-self: flex-start; }
+#aside-intro .bd > .im img { height: calc(var(--k) * 96px) !important; width: auto !important; max-height: none !important; }
 #weekly-3 .bd { align-items: center; text-align: center; }
 #weekly-3 .bd > .k, #weekly-3 .bd > .t { align-self: center; text-align: center; }
 #weekly-3 .r-title { font-size: calc(var(--k) * 72px); }

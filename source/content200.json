@@ -1931,6 +1931,134 @@
    ]
   },
   {
+   "id": "aside-intro",
+   "members": [
+    "aside-intro"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "쓰는 도구 | 클코와 함께 쓰면 좋은 도구 하나 더!"
+    },
+    {
+     "t": "img",
+     "src": "/_blob/42c9e172026b8d9cc08b1fa918f7da53",
+     "alt": "Aside 로고",
+     "fit": "contain"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "내 브라우저에서 일하는 <em>AI 직원</em>",
+     "head": true
+    },
+    {
+     "t": "text",
+     "step": "m",
+     "tone": "dim",
+     "bold": false,
+     "html": "크롬처럼 쓰는 AI 브라우저입니다. 클코가 내 폴더에서 일한다면,<br>Aside는 내가 로그인해 둔 사이트에서 일합니다."
+    },
+    {
+     "t": "group",
+     "dir": "grid",
+     "cols": 3,
+     "cards": true,
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "01"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "연동 없이 그대로"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "메일 · 노션 · 구글 시트 · 카톡 웹까지, 사람처럼 사이트를 직접 씁니다"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "02"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "일을 기억합니다"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "방문 기록과 지난 작업을 기억해서, 매번 처음부터 설명하지 않아도 됩니다"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "03"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "중요한 건 내 확인 뒤에"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "비밀번호는 AI에게 보이지 않게 넣고,<br>결제&nbsp;·&nbsp;발송은 승인한 뒤에만 합니다"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p2",
    "body": [
     {
