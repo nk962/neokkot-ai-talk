@@ -73,10 +73,49 @@ def texts(nodes):
         yield from texts(n.get('kids', []))
 
 
+def opens(x):
+    """머리말을 빼고 첫 글이 제목(h2 · 큰 굵은 글)이면 새 주제를 여는 장"""
+    b = x['body'][1:] if kicker(x['body']) and x['body'][0]['t'] == 'text' else x['body']
+    n = b[0] if b else None
+    while n and n['t'] == 'group' and n['dir'] == 'col' and not n.get('box') and n['kids']:
+        n = n['kids'][0]
+    return bool(n and n['t'] == 'text' and (n.get('head') or (n.get('bold') and n['step'] in ('m', 'l', 'xl'))))
+
+
 def arrow_card(x):
     b = x['body'][1:] if kicker(x['body']) and x['body'][0]['t'] == 'text' else x['body']
     return b[0] if len(b) == 1 and b[0]['t'] == 'group' and b[0]['kids'] and b[0]['kids'][0]['t'] == 'shape' else None
 
+
+# 0. 표지 정리(슬기님 11-03): 날짜 줄은 첫 표지에만 두고, 한 줄짜리 book-2(2025년과 2026년, 현재까지)는
+#    셋째 표지의 숫자(외부 교육 100시간 | 현장 활용 5,000시간+) 아래로 옮긴다 [나윤님 확인]
+def _strip_date(body, date):
+    out = []
+    for n in body:
+        if n['t'] == 'text' and plain(n['html']) == date:
+            continue
+        if n.get('kids'):
+            n = dict(n, kids=_strip_date(n['kids'], date))
+        out.append(n)
+    return out
+
+
+slides0, book = [], None
+date = next((plain(n['html']) for x in deck['slides'] if x['id'] == 'cover' for n in x['body']
+             if n['t'] == 'text' and plain(n['html']).startswith('2026.')), None)
+for x in deck['slides']:
+    if x['id'] in ('cover-2', 'cover-3') and date:
+        x = dict(x, body=_strip_date(x['body'], date))
+    if x['id'] == 'book-2':
+        book = x
+        continue
+    slides0.append(x)
+if book:
+    for i, x in enumerate(slides0):
+        if x['id'] == 'cover-3':
+            line = dict(book['body'][0], step='s', tone='dim', bold=False)
+            slides0[i] = dict(x, body=x['body'] + [line], members=['book-2'])
+deck['slides'] = slides0
 
 # 1. 소항목 장을 다음 장 머리에 붙인다
 units, carry = [], None
@@ -105,9 +144,10 @@ for s in units:
         cur.append(s)
         continue
     same = run_of(s['id']) == run_of(cur[0]['id']) if cur else False
-    follows = cur and kicker(s['body']) in (None, kicker(cur[0]['body']))
+    # 이웃 장은 제목으로 시작하지 않을 때만 붙인다(새 주제의 제목이 앞 쪽 맨 아래에 붙지 않게)
+    follows = cur and kicker(s['body']) in (None, kicker(cur[0]['body'])) and not opens(s)
     ok = cur and not solid(s) and not solid(cur[0]) and (same or follows) and len(cur) < 6 \
-        and (cur_h + GAP + h <= CAP or (same and arrow_card(s) and len(cur) < 5))
+        and (cur_h + GAP + h <= (CAP * 1.15 if same else CAP) or (same and arrow_card(s) and len(cur) < 5))
     if ok:
         cur.append(s)
         cur_h += GAP + h
@@ -127,11 +167,11 @@ for grp in pages:
                      'members': [x['id'] for x in grp], 'keep_body': [x['body'] for x in grp]})
         continue
     if len(grp) == 1:
-        outs.append(dict(first, members=first.get('members', []) + [first['id']]))
+        outs.append(dict(first, body=drop_text(first['body'], set()), members=first.get('members', []) + [first['id']]))
         continue
     k = kicker(first['body'])
-    seen = set(texts(first['body']))
-    body = list(first['body'])
+    seen = set()
+    body = drop_text(list(first['body']), seen)
     # 화살표 카드(화살표 + 낱말 + 설명)만 이어지는 흐름은 한 줄 카드로(중요도 ↑ · 난이도 ↓ · 귀찮음 ↑ · 반복 ↑)
     cards = [arrow_card(x) for x in grp[1:]]
     if len(cards) >= 2 and all(cards):

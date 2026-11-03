@@ -33,7 +33,7 @@
 
 /* 쪽 틀: 모두 위에서 시작 */
 .bd { justify-content: flex-start; gap: calc(var(--k) * 28px); }
-.bd > *, .step > * { max-width: 1560px; }
+.bd > .t, .step > .t { max-width: 1500px; }
 
 /* 글 역할 */
 .t { color: var(--fg); margin: 0; }
@@ -166,3 +166,8 @@ hr.rule { display: none; }
 
 /* 73 dump: 원래 배치 그대로(이름표가 제목 둘레를 덮는 것이 의도) */
 #dump .keep [style*="left:110px"] { left: 128px !important; }
+
+/* 카드 속 그림은 카드 폭에 맞춰 크게 */
+.box > .im { width: 100%; }
+.box > .im img { width: 100%; height: auto; max-height: calc(var(--ki, 1) * 620px); }
+.box:has(> .im) { padding: calc(var(--k) * 16px); }

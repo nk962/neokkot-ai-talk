@@ -97,7 +97,9 @@ def text(n, in_box=False):
     if n.get('chip'):
         long = ' chip-long' if len(plain(n['html'])) > 14 else ''
         return f'<p{attrs(n, "t chip chip-" + n["chip"] + long + " " + n["tone"])}>{n["html"]}</p>'
-    cls = ['t', role(n, in_box), n['tone']]
+    r = role(n, in_box)
+    tone = 'ink' if r == 'r-title' and n['tone'] == 'accent' else n['tone']  # 제목은 검정으로 통일
+    cls = ['t', r, tone]
     if n.get('bold'):
         cls.append('b')
     if n.get('head'):
@@ -302,10 +304,10 @@ for i, s in enumerate(slides, 1):
     if kind == 'part':
         pill = f'PART {num}'
     else:
-        if kicker and ' | ' in plain(kicker) and kind == 'keep':
-            kicker = kicker.partition(' | ')[0]  # 원래 배치 장은 본문 머리말이 그대로 보이므로 알약만 줄인다
-        if kicker and ' | ' in plain(kicker) and kind != 'keep':
-            head_k, _, tail_k = kicker.partition(' | ')
+        if kicker and '|' in plain(kicker) and kind == 'keep':
+            kicker = plain(kicker).partition('|')[0].strip()  # 원래 배치 장은 본문 머리말이 그대로 보이므로 알약만 줄인다
+        if kicker and '|' in plain(kicker) and kind != 'keep':
+            head_k, _, tail_k = (x.strip() for x in plain(kicker).partition('|'))
             kicker = head_k
             body = [{'t': 'text', 'step': 'xs', 'tone': 'accent', 'bold': True, 'html': tail_k, 'sub': True}] + body
         run = re.sub(r'-\d+[a-z]?$', '', s['id'])  # 같은 흐름: busy · busy-2 · busy-3
