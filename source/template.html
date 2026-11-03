@@ -53,6 +53,7 @@ body { -webkit-font-smoothing: antialiased; touch-action: pan-y; }
 .ar, .circ { display: inline-flex; align-items: center; justify-content: center; flex: none; }
 .ar svg, .circ svg, .ic { display: block; }
 [data-build-in] { transition: opacity .25s ease; }
+.no-anim [data-build-in] { transition: none !important; }
 [data-build-in].pending { opacity: 0; }
 #bar { position: fixed; left: 0; right: 0; bottom: 0; height: 3px; background: rgba(255,255,255,.08); }
 #bar i { display: block; height: 100%; width: 0; background: #ff6a00; transition: width .25s ease; }
@@ -140,7 +141,11 @@ body.show-ui #ui { opacity: .9; }
     cur = i;
     var s = slides[cur], b = builds(s);
     step = atEnd ? b.length : 0;
+    // 숨김은 효과 없이 즉시(쪽에 들어갈 때 나중 글이 보였다 사라지지 않게), 나타날 때만 서서히
+    s.classList.add('no-anim');
     b.forEach(function (el, k) { el.classList.toggle('pending', k >= step); });
+    void s.offsetWidth;
+    s.classList.remove('no-anim');
     s.classList.add('on');
     count.textContent = (cur + 1) + ' / ' + n;
     bar.style.width = ((cur + 1) / n * 100) + '%';
@@ -153,7 +158,11 @@ body.show-ui #ui { opacity: .9; }
   }
   function prev() {
     var b = builds(slides[cur]);
-    if (step > 0) { step--; b[step].classList.add('pending'); return; }
+    if (step > 0) {
+      step--;
+      b[step].style.transition = 'none'; b[step].classList.add('pending'); void b[step].offsetWidth; b[step].style.transition = '';
+      return;
+    }
     if (cur > 0) show(cur - 1, true);
   }
   function fromHash() { var h = parseInt(location.hash.slice(1), 10); return isNaN(h) ? 0 : h - 1; }

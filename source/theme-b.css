@@ -171,3 +171,15 @@ hr.rule { display: none; }
 .box > .im { width: 100%; }
 .box > .im img { width: 100%; height: auto; max-height: calc(var(--ki, 1) * 620px); }
 .box:has(> .im) { padding: calc(var(--k) * 16px); }
+
+/* 11-03 밤: 테두리만 있는 모양 줄이기 · 왼쪽 선 맞추기 · 위아래 가운데 */
+.hd > .circ { display: none; }
+.pill { border: 0; background: #ffffff; color: var(--ink); padding: 14px 24px 13px; }
+.dark .pill { background: var(--soft); color: var(--ink); }
+.ft .circ { border: 0; background: var(--ink); color: var(--soft); }
+.dark .ft .circ { background: var(--soft); color: var(--ink); }
+.tag { border: 0; background: rgba(255, 106, 0, .14); color: var(--orange); }
+.box.dark .tag, .g-row > .box:first-child .tag, .g-grid > .box:first-child .tag { background: rgba(255, 106, 0, .24); color: #ffb27a; }
+.chip-outline { border: 0; background: #ffffff; color: var(--ink); }
+.chip { font-size: calc(var(--k) * 36px); padding: .35em .85em; }
+.bd { justify-content: center; }

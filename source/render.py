@@ -63,6 +63,8 @@ def asset(src):
 def attrs(n, cls):
     if n.get('space'):
         cls += ' sp'
+    if n.get('build'):
+        cls += ' pending'  # 처음부터 숨겨 둔다(쪽을 열 때 미리 보였다 사라지지 않게)
     a = f' class="{cls}"'
     if n.get('build'):
         a += f' data-build-in="{n["build"]}"'
