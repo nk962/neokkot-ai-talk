@@ -73,21 +73,34 @@ def is_tag(n):
     return n['t'] == 'text' and n['tone'] == 'accent' and len(plain(n['html'])) <= 8 and '<br>' not in n['html']
 
 
+CTX = {'title': False}  # 쪽마다 첫 제목을 지났는지
+
+
+def role(n, in_box):
+    """원본 크기 단계 대신 역할로 크기를 정한다. 크기는 theme 의 r-* 다섯 단계 + 카드 두 단계"""
+    big, bold, short = n['step'] in ('m', 'l', 'xl'), n.get('bold') or n.get('head'), len(plain(n['html'])) <= 30
+    if in_box:
+        return 'r-ctitle' if (bold or big) else 'r-cbody'
+    if n['tone'] == 'accent' and short and n['step'] in ('xs', 's') or n.get('sub'):
+        return 'r-label'
+    if n.get('head') or (bold and big):
+        return 'r-title'  # 같은 수준의 제목은 덱 전체에서 한 크기
+    return 'r-strong' if bold else 'r-body'  # 문장은 원본 크기와 상관없이 한 크기
+
+
 def text(n, in_box=False):
+    if plain(n['html']) == '|':
+        return ''  # 커서 모양 회색 막대(38 core-2). 글이 아닌 장식이라 뺀다(슬기님 11-03)
     if in_box and is_tag(n):
         return f'<p{attrs(n, "tag")}>{n["html"]}</p>'
-    step = n['step']
-    if (step == 'xl' and len(plain(n['html'])) > 18) or (step == 'l' and len(plain(n['html'])) > 30):
-        step += ' long'
-    cls = ['t', step, n['tone']]
+    if n.get('chip'):
+        long = ' chip-long' if len(plain(n['html'])) > 14 else ''
+        return f'<p{attrs(n, "t chip chip-" + n["chip"] + long + " " + n["tone"])}>{n["html"]}</p>'
+    cls = ['t', role(n, in_box), n['tone']]
     if n.get('bold'):
         cls.append('b')
     if n.get('head'):
         cls.append('h')
-    if n.get('center'):
-        cls.append('c')
-    if n.get('chip'):
-        cls += ['chip', 'chip-' + n['chip']]
     style = f' style="--w:{int(n["w"])}px"' if n.get('w') else ''
     if style:
         cls.append('fw')
@@ -105,6 +118,9 @@ def render(n, in_box=False):
     if t == 'img':
         fit = ' contain' if n.get('fit') == 'contain' else ''
         return f'<figure{attrs(n, "im" + fit)}><img src="{asset(n["src"])}" alt="{html.escape(n["alt"])}"></figure>'
+    if t == 'video':  # 누르면 재생. 장 넘김 클릭과 겹치지 않게 template 이 영상 클릭은 넘기지 않는다
+        return (f'<figure{attrs(n, "vid")}><video controls playsinline preload="auto" poster="{asset(n["poster"])}" '
+                f'aria-label="{html.escape(n["alt"])}"><source src="{asset(n["src"])}" type="video/mp4"></video></figure>')
     if t == 'icon':
         return svg(ICONS[n['name']], 'ic ' + n.get('tone', 'accent'))
     if t == 'list':
@@ -118,17 +134,21 @@ def render(n, in_box=False):
     if t == 'shape':
         if n['kind'] in ARROW and not n['kids']:
             path = '<path d="%s"/>' % ARROW[n['kind']]
-            return f'<span{attrs(n, "ar")}>{svg(path, "")}</span>'
+            return f'<span{attrs(n, "ar " + n["kind"] + " " + n.get("tone", "accent"))}>{svg(path, "")}</span>'
         inner = ''.join(render(k, True) for k in n['kids'])
         return f'<div{attrs(n, "g g-col box" + (" accent" if n.get("tone") == "accent" else ""))}>{inner}</div>'
     if t == 'group':
         cls = ['g', 'g-' + n['dir']]
         box = n.get('box')
-        for k in ('box', 'dark', 'accent', 'rule', 'wrap', 'line'):
+        for k in ('box', 'dark', 'accent', 'rule', 'wrap', 'line', 'step', 'kakao', 'kakaobar', 'right'):
             if n.get(k):
                 cls.append(k)
         if n['dir'] == 'row' and any(k['t'] == 'img' for k in n['kids']):
             cls.append('media')
+        if n['dir'] == 'row' and any(k['t'] == 'shape' and not k['kids'] for k in n['kids']):
+            cls.append('flow')  # 화살표로 잇는 흐름: 칸마다 둥근 카드
+        if n['dir'] == 'row' and any(k['t'] == 'embed' for k in n['kids']):
+            cls.append('withphone')
         style = f' style="--cols:{n["cols"]}"' if n['dir'] == 'grid' else ''
         inner = ''.join(render(k, in_box or box) for k in n['kids'])
         return f'<div{attrs(n, " ".join(cls))}{style}>{inner}</div>'
@@ -151,8 +171,11 @@ CLIP = {
 }
 
 
-def keep_html(k):
+def keep_html(k, extra='', pill=None):
     h = re.sub(r'<aside>.*?</aside>', '', k['html'], flags=re.S)
+    if pill:  # 알약과 글이 똑같은 머리말만 숨긴다(카드 안 이름표는 그대로)
+        h = re.sub(r'<p (style="[^"]*letter-spacing:\s*2px[^"]*")>' + re.escape(pill) + r'</p>',
+                   r'<p class="kick" \1>' + pill + '</p>', h)
     h = re.sub(r'<td>.*?</td>', '', h, flags=re.S)
     h = re.sub(r'#[0-9a-fA-F]{6}\b', lambda m: KEEP_COLOR.get(m.group(0).lower(), m.group(0).lower()), h)
     h = re.sub(r"font-family:\s*(?:'[^']*'|[^;\"'])*?(?=;|\")\s*;?\s*", '', h)
@@ -180,7 +203,26 @@ def keep_html(k):
     if re.search(r'<x-|/_blob/', h):
         sys.exit('원래 배치 장에 처리 못 한 요소')
     st = ';'.join(d for d in k['style'].split(';') if d.split(':')[0].strip() not in ('background', 'color', 'font-family'))
-    return f'<div class="keep" style="{st}">{h}</div>'
+    return f'<div class="keep {extra}" style="{st}">{h}</div>'
+
+
+def scatter_html(k):
+    """73 dump: 원본의 흩어진 이름표 좌표를 제목 아래 영역(가로 1680 · 세로 460)으로 줄여 옮긴다. 흩어진 모양은 그대로"""
+    pts = []
+    for attrs_, txt in re.findall(r'<p ([^>]*position:\s*absolute[^>]*)>(.*?)</p>', k['html']):
+        x, y = re.search(r'left:\s*(\d+)px', attrs_), re.search(r'top:\s*(\d+)px', attrs_)
+        b = re.search(r'data-build-in="([^"]+)"', attrs_)
+        if x and y:
+            pts.append((int(x.group(1)), int(y.group(1)), re.sub(r'<[^>]+>', '', txt), b.group(1) if b else ''))
+    x0, x1 = min(p[0] for p in pts), max(p[0] for p in pts)
+    y0, y1 = min(p[1] for p in pts), max(p[1] for p in pts)
+    out = []
+    for x, y, txt, b in pts:  # 원본처럼 하나씩 나타난다(data-build-in)
+        nx = (x - x0) / max(1, x1 - x0) * 1380
+        ny = (y - y0) / max(1, y1 - y0) * 380
+        bi = f' data-build-in="{b}"' if b else ''
+        out.append(f'<p class="t chip chip-outline"{bi} style="position:absolute;left:{nx:.0f}px;top:{ny:.0f}px">{txt}</p>')
+    return '<div class="scatter">' + ''.join(out) + '</div>'
 
 
 def kicker_of(body):
@@ -202,6 +244,8 @@ def kind_of(body):
         m = re.fullmatch(r'(첫|두|세|네|다섯|여섯|일곱)\s?번째', word)
         if m:
             return 'divider', ORDINAL[m.group(1)]
+    if any(n['t'] == 'video' for n in body):
+        return 'compose', None
     if all(n['t'] in ('text', 'list') for n in body):
         return 'statement', None
     if all(n['t'] in ('text', 'list') or (n['t'] == 'group' and n['dir'] == 'col' and not n.get('box')
@@ -222,13 +266,18 @@ slides = deck['slides']
 last_kicker = None
 for i, s in enumerate(slides, 1):
     kicker, body = kicker_of(s['body'])
-    kind, num = ('keep', None) if s.get('keep') else kind_of(body)
+    if s.get('keeps'):  # 겹친 장의 알약: 처음 나오는 머리말
+        kicker = next((kicker_of(b)[0] for b in s['keep_body'] if kicker_of(b)[0]), None)
+    kind, num = ('keep', None) if (s.get('keep') or s.get('keeps')) else kind_of(body)
     if kind == 'statement' and not body and kicker:
         kind, body, kicker = 'opener', [{'t': 'text', 'step': 'l', 'tone': 'accent', 'bold': True, 'html': kicker}], None
     solo = kind == 'statement' and len(body) == 1 and body[0]['t'] == 'text' and body[0]['tone'] == 'accent' and len(plain(body[0]['html'])) <= 12
     if s['id'] in PART_IDS:
         kind, num = 'part', f'{PART_IDS.index(s["id"]) + 1:02d}'
         last_kicker = None
+        if kicker:  # 부 나눔 장의 머리말(첫번째 이야기)은 알약이 PART 번호라 본문에 남긴다
+            body = [{'t': 'text', 'step': 's', 'tone': 'accent', 'bold': True, 'html': kicker}] + body
+            kicker = None
     cls = ['s', 's-' + kind]
     if s.get('dark') or kind in ('part', 'opener'):
         cls.append('dark')
@@ -249,15 +298,42 @@ for i, s in enumerate(slides, 1):
     if kind == 'part':
         pill = f'PART {num}'
     else:
+        if kicker and ' | ' in plain(kicker) and kind == 'keep':
+            kicker = kicker.partition(' | ')[0]  # 원래 배치 장은 본문 머리말이 그대로 보이므로 알약만 줄인다
+        if kicker and ' | ' in plain(kicker) and kind != 'keep':
+            head_k, _, tail_k = kicker.partition(' | ')
+            kicker = head_k
+            body = [{'t': 'text', 'step': 'xs', 'tone': 'accent', 'bold': True, 'html': tail_k, 'sub': True}] + body
         run = re.sub(r'-\d+[a-z]?$', '', s['id'])  # 같은 흐름: busy · busy-2 · busy-3
         pill = kicker or (last_kicker[1] if last_kicker and last_kicker[0] == run else 'AI 강연')
         if kicker:
             last_kicker = (run, kicker)
     head = (f'<header class="hd">{ARROW_CIRCLE}<span class="pill">{pill}</span>'
             f'<span class="meta">{META}</span></header>')
-    if kind == 'keep':
-        sections.append(f'<section id="{s["id"]}" class="{" ".join(cls)}">{keep_html(s["keep"])}{head}{foot_of(i)}</section>')
+    if any(n['t'] == 'embed' for n in body):
+        texts_ = [n for n in body if n['t'] != 'embed']
+        phone = [n for n in body if n['t'] == 'embed']
+        body = [{'t': 'group', 'dir': 'row', 'kids': [{'t': 'group', 'dir': 'col', 'kids': texts_}] + phone}]
+    if False and kind == 'keep' and s['id'] == 'dump':  # 슬기님: 37쪽은 원래 배치대로(11-03). 흩어 옮기기는 쓰지 않는다
+        heads = [n for n in body if n['t'] == 'text' and not n.get('chip')]
+        k0 = kicker_of(s['body'])[0] or ''
+        if ' | ' in k0:  # 알약에는 앞부분만, 뒷부분(첫째, 쏟아 놓기)은 제목 위 머리말로
+            heads = [{'t': 'text', 'step': 'xs', 'tone': 'accent', 'bold': True, 'html': k0.partition(' | ')[2], 'sub': True}] + heads
+        CTX['title'] = False
+        inner = ''.join(render(n) for n in heads) + scatter_html(s['keep'])
+        sections.append(f'<section id="dump" class="s s-compose">{head}<div class="bd">{inner}</div>{foot_of(i)}</section>')
         continue
+    if kind == 'keep':
+        if s.get('keeps'):  # 같은 위치에서 바뀌는 연속 장: 겹쳐 두고 클릭마다 다음 장으로
+            layers = ''.join(keep_html(k, f'layer" data-build-in="swap {j}' if j else 'layer', pill)
+                             for j, k in enumerate(s['keeps']))
+            sections.append(f'<section id="{s["id"]}" class="{" ".join(cls)} layered">{layers}{head}{foot_of(i)}</section>')
+        else:
+            sections.append(f'<section id="{s["id"]}" class="{" ".join(cls)}">{keep_html(s["keep"], "", pill)}{head}{foot_of(i)}</section>')
+        continue
+    if len(s.get('members', [])) > 1:
+        cls.append('multi')
+    CTX['title'] = False
     inner = ''
     if kicker:
         inner += f'<p class="k">{kicker}</p>'

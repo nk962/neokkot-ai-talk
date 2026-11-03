@@ -13,10 +13,14 @@ body { -webkit-font-smoothing: antialiased; touch-action: pan-y; }
 #stage > section {
   --k: 1;
   position: absolute; inset: 0; overflow: hidden; box-sizing: border-box;
-  opacity: 0; visibility: hidden; transition: opacity .3s ease, visibility 0s linear .3s;
+  opacity: 0; visibility: hidden;
   word-break: keep-all; overflow-wrap: break-word;
 }
-#stage > section.on { opacity: 1; visibility: visible; transition: opacity .3s ease; }
+#stage > section.on { opacity: 1; visibility: visible; animation: enter .22s ease-out; }
+@keyframes enter { from { opacity: 0; } to { opacity: 1; } }
+/* 글꼴 · 그림이 다 들어오고 크기를 맞춘 뒤에 보인다(처음 화면이 움찔하지 않게) */
+#stage { visibility: hidden; }
+#stage.ready { visibility: visible; }
 #stage section *, #stage section *::before, #stage section *::after { box-sizing: border-box; }
 #stage section p, #stage section figure, #stage section ul, #stage section ol { margin: 0; }
 #stage section em, #stage section i { font-style: normal; }
@@ -47,8 +51,8 @@ body { -webkit-font-smoothing: antialiased; touch-action: pan-y; }
 .em { border: 0; display: block; transform-origin: 0 0; }
 .ar, .circ { display: inline-flex; align-items: center; justify-content: center; flex: none; }
 .ar svg, .circ svg, .ic { display: block; }
-[data-build-in] { transition: opacity .3s ease, transform .3s ease; }
-[data-build-in].pending { opacity: 0; transform: translateY(16px) scale(.96); }
+[data-build-in] { transition: opacity .25s ease; }
+[data-build-in].pending { opacity: 0; }
 #bar { position: fixed; left: 0; right: 0; bottom: 0; height: 3px; background: rgba(255,255,255,.08); }
 #bar i { display: block; height: 100%; width: 0; background: #ff6a00; transition: width .25s ease; }
 #ui { position: fixed; right: 14px; bottom: 12px; display: flex; gap: 6px; font: 600 13px/1 sans-serif; color: #f6f4f1;
@@ -60,7 +64,7 @@ body.show-ui #ui { opacity: .9; }
   html, body { overflow: visible; height: auto; background: #fff; }
   #stage { position: static; transform: none !important; }
   #stage > section { position: relative; width: 1920px; height: 1080px; opacity: 1; visibility: visible; break-after: page; }
-  [data-build-in].pending { opacity: 1; transform: none; }
+  [data-build-in].pending { opacity: 1; }
   #bar, #ui { display: none; }
   @page { size: 1920px 1080px; margin: 0; }
 }
@@ -107,7 +111,7 @@ body.show-ui #ui { opacity: .9; }
     // 사진이 있는 장은 사진부터 줄이고(0.45까지), 그래도 넘칠 때 글을 줄인다
     var ki = 1;
     s.style.setProperty('--ki', 1);
-    if (bd.querySelector('.im')) {
+    if (bd.querySelector('.im, .vid')) {
       while (ki > 0.45 && over(bd)) { ki = Math.round((ki - 0.05) * 100) / 100; s.style.setProperty('--ki', ki); }
     }
     while (k > 0.55 && over(bd)) {
@@ -115,10 +119,6 @@ body.show-ui #ui { opacity: .9; }
       s.style.setProperty('--k', k);
     }
     s.dataset.k = k;
-    if (s.classList.contains('s-compose')) {
-      var h = 0; Array.prototype.forEach.call(bd.children, function (el) { if (getComputedStyle(el).position !== 'absolute') h = Math.max(h, el.offsetTop + el.offsetHeight); });
-      bd.style.justifyContent = h < bd.clientHeight * 0.6 ? 'flex-end' : '';
-    }
   }
   function fitAll() { slides.forEach(shrink); }
 
@@ -134,6 +134,7 @@ body.show-ui #ui { opacity: .9; }
   }
   function show(i, atEnd) {
     i = Math.max(0, Math.min(n - 1, i));
+    Array.prototype.forEach.call(slides[cur].querySelectorAll('video'), function (v) { v.pause(); });
     slides[cur].classList.remove('on');
     cur = i;
     var s = slides[cur], b = builds(s);
@@ -170,7 +171,7 @@ body.show-ui #ui { opacity: .9; }
     else if (k === 'f' || k === 'F') full();
   });
   document.addEventListener('click', function (e) {
-    if (e.target.closest('#ui')) return;
+    if (e.target.closest('#ui') || e.target.closest('video')) return;  // 영상은 눌러서 재생
     (e.clientX < window.innerWidth / 3) ? prev() : next();
   });
   var tx = null, ty = null;
@@ -193,10 +194,15 @@ body.show-ui #ui { opacity: .9; }
   window.addEventListener('resize', fit);
   window.addEventListener('hashchange', function () { var h = fromHash(); if (h !== cur) show(h); });
   fit();
-  fitAll();
   show(fromHash());
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
-  Array.prototype.forEach.call(document.images, function (im) { if (!im.complete) im.addEventListener('load', function () { shrink(im.closest('section')); }); });
+  var imgs = Array.prototype.map.call(document.images, function (im) {
+    return im.complete ? Promise.resolve() : new Promise(function (r) { im.addEventListener('load', r); im.addEventListener('error', r); });
+  });
+  Promise.all([document.fonts ? document.fonts.ready : Promise.resolve()].concat(imgs)).then(function () {
+    fitAll();
+    stage.classList.add('ready');
+  });
+  setTimeout(function () { if (!stage.classList.contains('ready')) { fitAll(); stage.classList.add('ready'); } }, 4000);
 })();
 </script>
 </body>

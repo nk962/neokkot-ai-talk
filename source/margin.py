@@ -45,6 +45,15 @@ JS = r"""
       if (b[3] > ftT - 8) hit('꼬리 줄 겹침', e, b);
       if (/^(P|H1|H2|H3|LI)$/.test(e.tagName) && (e.scrollWidth > e.clientWidth + 2 || e.scrollHeight > e.clientHeight + 2) && getComputedStyle(e).overflow !== 'visible') hit('잘린 글', e, b);
     }
+    // 겹침: 글끼리, 글과 그림이 서로 덮는 곳(한쪽이 다른 쪽 안에 든 경우는 뺀다)
+    const ink = leaves.filter(e => /^(P|LI|FIGURE|IFRAME)$/.test(e.tagName) && !e.closest('svg') && !e.closest('.layer.pending'));
+    for (let a = 0; a < ink.length; a++) for (let c = a + 1; c < ink.length; c++) {
+      const A = ink[a], C = ink[c];
+      if (A.contains(C) || C.contains(A)) continue;
+      const p = box(A), q = box(C);
+      const w = Math.min(p[2], q[2]) - Math.max(p[0], q[0]), h = Math.min(p[3], q[3]) - Math.max(p[1], q[1]);
+      if (w > 6 && h > 6) hit('겹침', A, p.concat(q));
+    }
     const kk = +(s.dataset.k || 1);
     if (kk < 0.8) out.push([i + 1, s.id, '줄인 장', '배율 ' + kk, []]);
   }
@@ -55,6 +64,7 @@ with sync_playwright() as p:
     b = p.chromium.launch()
     pg = b.new_page(viewport={'width': 1920, 'height': 1080})
     pg.goto(f'http://127.0.0.1:{srv.server_port}/{theme}/index.html#1')
+    pg.wait_for_selector('#stage.ready', state='attached', timeout=20000)
     pg.evaluate('document.fonts.ready')
     pg.wait_for_timeout(1200)
     # 숨은 장도 재려면 잠깐 모두 보이게

@@ -1,152 +1,168 @@
-/* 2안: 강연 장표 색은 그대로, 글꼴은 너희가 꽃이다 학원 사이트(youareflower.com)와 같게,
-   생김새는 핀 장표(pin.it/4aUyGnLHl) 요소로: 알약 이름표 · 동그라미 화살표 · 장 나누기 큰 번호 ·
-   둥근 카드(첫 칸은 어둡게) · 뒷부분을 흐리게 쓰는 두 색 문장. 짧은 장은 왼쪽 아래에 앉힌다 */
+/* 2안 (11-03 2차 정리판)
+   색: 강연 장표 색 그대로(오렌지 #FF6A00 · 글자 #1F1B18 · 회색 #6B6560 · 바탕 #F6F4F1 · 선 #E4E0DB · 흰색 + 연회색 두 가지)
+   글꼴: 너희가 꽃이다 학원 사이트(youareflower.com)와 같게. 제목 Paperlogy(굵기 한 단계 낮춰 Bold · Medium), 본문 KoPub 돋움 Light
+   핀 장표(pin.it/4aUyGnLHl) 요소: 알약 이름표 · 동그라미 화살표 · 부 나눔 큰 번호 · 둥근 카드(첫 칸은 어둡게)
+   규칙: 글자 크기는 역할별 고정(머리말 28 · 제목 64 · 소제목 46 · 부제 40 · 본문 34 · 카드 32/26),
+         모든 쪽은 같은 높이(y 190)에서 시작, 좌우 여백 120. 부 나눔 7장만 아래에 앉힌다 */
 @font-face { font-family: 'Paperlogy'; font-weight: 400; font-display: block; src: url('fonts/Paperlogy-4Regular.woff2') format('woff2'); }
 @font-face { font-family: 'Paperlogy'; font-weight: 500; font-display: block; src: url('fonts/Paperlogy-5Medium.woff2') format('woff2'); }
 @font-face { font-family: 'Paperlogy'; font-weight: 700; font-display: block; src: url('fonts/Paperlogy-7Bold.woff2') format('woff2'); }
 @font-face { font-family: 'KoPub Dotum'; font-weight: 300; font-display: block; src: url('fonts/KoPubWorldDotum-Light.woff2') format('woff2'); }
+
 #stage > section {
-  --m: 120px; --hd-top: 50px; --ft-bottom: 46px; --band-top: 170px; --band-bottom: 150px;
-  --orange: #ff6a00; --ink: #1f1b18; --gray: #6b6560; --soft: #f6f4f1; --line: #e4e0db; --pale: #9c958e;
-  --fg: var(--ink); --sub: var(--gray); --fade: var(--pale); --rim: var(--ink);
+  --m: 120px; --hd-top: 50px; --ft-bottom: 46px; --band-top: 190px; --band-bottom: 140px;
+  --orange: #ff6a00; --ink: #1f1b18; --gray: #6b6560; --soft: #f6f4f1; --line: #e4e0db; --pale: #9c958e; --mute: #c9c3bc;
+  --fg: var(--ink); --sub: var(--gray); --fade: var(--pale); --rim: var(--ink); --card: #ffffff;
   background: var(--soft); color: var(--fg);
   font-family: 'KoPub Dotum', sans-serif; font-weight: 300; letter-spacing: -0.02em;
 }
-#stage > section.dark {
-  --fg: var(--soft); --sub: #c9c3bc; --fade: var(--gray); --rim: var(--soft);
-  background: var(--ink);
-}
+#stage > section.dark { --fg: var(--soft); --sub: var(--mute); --fade: var(--pale); --rim: var(--soft); --card: transparent; background: var(--ink); }
 
-/* 머리 줄: 동그라미 화살표 + 알약 이름표(이 장의 머리말) · 오른쪽 끝 작은 강연 이름 */
+/* 머리 줄: 동그라미 화살표 + 알약 이름표 · 오른쪽 강연 이름 / 꼬리 줄: 학원 | 이름 · 쪽 번호 · 동그라미 화살표 */
 .hd { gap: 14px; }
 .circ { width: 56px; height: 56px; border: 1.5px solid var(--rim); border-radius: 50%; color: var(--rim); }
 .circ svg { width: 24px; height: 24px; stroke-width: 1.75; }
 .pill { font-family: 'Paperlogy'; font-weight: 500; font-size: 22px; line-height: 1; color: var(--rim);
         border: 1.5px solid var(--rim); border-radius: 999px; padding: 15px 26px 14px; white-space: nowrap; }
-.pill em { color: var(--orange); }
-.hd .meta { margin-left: auto; font-size: 18px; color: var(--sub); max-width: 760px; text-align: right;
-            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.hd .meta em, .ft em { color: var(--orange); }
+.hd .meta { margin-left: auto; font-size: 18px; color: var(--sub); white-space: nowrap; }
+.hd em, .ft em { color: var(--orange); }
 .ft { font-size: 19px; color: var(--sub); gap: 18px; }
 .ft .pg { margin-left: auto; font-family: 'Paperlogy'; font-weight: 500; font-size: 20px; color: var(--fg); font-variant-numeric: tabular-nums; }
 .ft .circ svg { transform: rotate(-90deg); }
 .k { display: none; }
 
-.bd { gap: calc(var(--k) * 28px); }
-.s-statement .bd, .s-divider .bd, .s-part .bd { justify-content: flex-end; }
+/* 쪽 틀: 모두 위에서 시작 */
+.bd { justify-content: flex-start; gap: calc(var(--k) * 28px); }
+.bd > *, .step > * { max-width: 1560px; }
 
-.t { line-height: 1.5; color: var(--fg); }
-.t.b, .t.h { font-family: 'Paperlogy'; font-weight: 700; line-height: 1.22; }
-.t.xs.b, .t.s.b { font-weight: 500; line-height: 1.4; }
-.t.xs { font-size: calc(var(--k) * 28px); }
-.t.s { font-size: calc(var(--k) * 40px); }
-.t.m { font-size: calc(var(--k) * 58px); line-height: 1.35; }
-.t.l { font-size: calc(var(--k) * 96px); line-height: 1.2; }
-.t.xl { font-size: calc(var(--k) * 140px); line-height: 1.12; }
-.t.m.b, .t.m.h { line-height: 1.25; }
-.t.c { text-align: center; }
+/* 글 역할 */
+.t { color: var(--fg); margin: 0; }
+.r-label  { font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 30px); line-height: 1.35; color: var(--orange); }
+.r-title  { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 60px); line-height: 1.25; }
+.r-head   { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 52px); line-height: 1.3; }
+.r-lead   { font-size: calc(var(--k) * 44px); line-height: 1.5; }
+.r-body   { font-size: calc(var(--k) * 40px); line-height: 1.55; }
+.r-strong { font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 40px); line-height: 1.5; }
+.r-label + .r-title, .r-label + .r-head { margin-top: calc(var(--k) * -14px); }
+.t.r-title, .t.r-head { text-wrap: balance; }
 .t.accent { color: var(--orange); }
-/* 회색 글은 진한 회색. 진한 글과 함께 놓인 두 색 문장에서만 한 단계 흐리게 */
 .t.dim { color: var(--sub); }
-.s-statement.two .t.dim { color: var(--fade); }
 .t.light { color: var(--fg); }
 .bd em { color: var(--orange); }
 .bd i { color: var(--fade); }
+.bd .ink { color: var(--fg); }
+.t:not(.r-title):not(.r-head) b { font-family: 'Paperlogy'; font-weight: 700; }
 .bd mark { background: rgba(255, 106, 0, .16); color: inherit; padding: 0 .12em; border-radius: .2em; }
+.sp { margin-top: calc(var(--k) * 20px); }
+
+/* 클릭할 때마다 나타나는 단계: 앞 단계와 한 칸 더 띄운다 */
+.step { gap: calc(var(--k) * 12px); margin-top: calc(var(--k) * 16px); }
+
+/* 주황 낱말 하나로 말을 여는 장(왜 쓰는가 · 가설 · CLOSING) */
+.s-statement.solo .t { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 96px); line-height: 1.15; }
 
 /* 부 나눔(7장): 어두운 바탕, 오른쪽 위 큰 번호, 왼쪽 아래 큰 글 */
 .num { font-family: 'Paperlogy'; font-weight: 400; line-height: .9; letter-spacing: -0.04em; }
-.s-part .num { position: absolute; right: 0; top: calc(var(--k) * -30px); font-size: 360px; color: var(--line); }
 .s-part .bd { justify-content: flex-end; }
-.s-part .t:not(.b):not(.h) { font-size: calc(var(--k) * 48px); }
-/* 소항목(첫 번째 · 두 번째): 밝은 바탕, 주황 큰 번호 아래 낱말 */
-.s-divider .num { font-size: calc(var(--k) * 300px); color: var(--orange); }
-.s-divider .t { font-size: calc(var(--k) * 96px); color: var(--fg); }
+.s-part .num { position: absolute; right: 0; top: calc(var(--k) * -30px); font-size: 360px; color: var(--line); }
+.s-part .r-title, .s-part .r-head { font-size: calc(var(--k) * 96px); line-height: 1.15; }
+.s-divider .num { font-size: calc(var(--k) * 200px); color: var(--orange); }
 
-/* 둥근 카드. 가로 줄 · 칸 묶음에서 첫 카드는 어둡게(핀의 검은 칸) */
-.g-col { gap: calc(var(--k) * 12px); }
+/* 묶음 · 카드 */
+.g-col { gap: calc(var(--k) * 10px); }
 .g-row { gap: calc(var(--k) * 20px); }
 .g-grid { gap: calc(var(--k) * 20px); }
-.bd > .g-col { gap: calc(var(--k) * 16px); }
-.box { background: #ffffff; border-radius: 32px; padding: calc(var(--k) * 38px) calc(var(--k) * 44px); gap: calc(var(--k) * 14px); }
-.dark .box { background: transparent; border: 1.5px solid var(--gray); }
+.bd > .g-col { gap: calc(var(--k) * 14px); }
+.g-row > .t { flex: 0 1 auto; }
+.g-row > .t:last-child { flex: 1 1 0; }
+.g-row > .t.fw { flex: 0 0 calc(var(--k) * var(--w)); }
+.g-row.line { align-items: baseline; gap: calc(var(--k) * 32px); }
+.box { background: var(--card); border-radius: 28px; padding: calc(var(--k) * 32px) calc(var(--k) * 36px); gap: calc(var(--k) * 10px); }
+.dark .box { border: 1.5px solid var(--gray); }
 .g-row.box { align-items: center; }
-.box.dark, .g-row > .box:first-child:not(.accent), .g-grid > .box:first-child:not(.accent) {
-  background: var(--ink); --fg: var(--soft); --sub: #c9c3bc; --fade: #9c958e; color: var(--soft);
-}
-.dark .box.dark, .dark .g-row > .box:first-child:not(.accent), .dark .g-grid > .box:first-child:not(.accent) { background: var(--soft); --fg: var(--ink); --sub: var(--gray); --fade: var(--pale); color: var(--ink); }
-.box.accent { background: var(--orange); --fg: #ffffff; --fade: var(--soft); color: #ffffff; }
+.box.dark, .g-row > .box:first-child:not(.accent):not(.kakao):not(.kakaobar), .g-grid > .box:first-child:not(.accent) {
+  background: var(--ink); --fg: var(--soft); --sub: var(--mute); --fade: var(--pale); color: var(--soft); }
+.box.accent { background: var(--orange); --fg: #ffffff; --sub: var(--soft); --fade: var(--soft); color: #ffffff; }
 .box.accent em { color: var(--ink); }
-.box.rule { background: #ffffff; }
-.box .t.m { font-size: calc(var(--k) * 46px); }
-.box .t.l, .box .t.xl { font-size: calc(var(--k) * 64px); }
-/* 알약 이름표: 상자 안 짧은 오렌지 글(1 · 02 · STEP 1) */
+.r-ctitle { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 36px); line-height: 1.35; }
+.r-cbody  { font-size: calc(var(--k) * 30px); line-height: 1.5; }
+.box .t.dim { color: var(--sub); }
+/* 카드 안 짧은 번호(01 · STEP 1)는 알약 */
 .tag { align-self: flex-start; font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 24px); line-height: 1;
        color: var(--orange); border: 1.5px solid var(--orange); border-radius: 999px; padding: .5em 1em .45em; white-space: nowrap; }
 .g-row > .tag { align-self: center; }
-
-.im { border-radius: 28px; background: #ffffff; }
-.im img { max-height: calc(var(--ki, 1) * 600px); }
-.bd > .im { align-self: flex-start; max-width: 100%; }
-.bd > .im img { width: auto; max-width: 100%; }
-/* 흐름 화살표는 동그라미 안에 */
-.ar { width: calc(var(--k) * 76px); height: calc(var(--k) * 76px); border: 1.5px solid var(--fg); border-radius: 50%; color: var(--fg); align-self: center; }
-.ar svg { width: 46%; height: 46%; stroke-width: 1.75; }
-.ic { width: calc(var(--k) * 76px); height: calc(var(--k) * 76px); padding: calc(var(--k) * 18px); border-radius: 50%;
-      background: var(--soft); color: var(--orange); stroke-width: 1.75; flex: none; }
-.dark .ic, .box.dark .ic { background: transparent; border: 1.5px solid var(--gray); }
-.ls { font-size: calc(var(--k) * 40px); line-height: 1.6; padding-left: 1.2em; }
-.ls li::marker { color: var(--orange); }
-
-/* 짧은 장(글만 있는 장)은 글을 한 단계 키워 두 색 큰 문장으로 */
-.s-statement .t.xs { font-size: calc(var(--k) * 44px); }
-.s-statement .t.s { font-size: calc(var(--k) * 60px); line-height: 1.38; }
-.s-statement .t.xs.b, .s-statement .t.s.b { font-weight: 700; line-height: 1.25; }
-.chip { border-radius: 999px; padding: .32em .9em .3em; line-height: 1.25; font-family: 'Paperlogy'; font-weight: 500; }
+/* 글에 붙은 알약: 짧으면 알약, 길면 둥근 상자 */
+.chip { align-self: flex-start; font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 28px); line-height: 1.3;
+        border-radius: 999px; padding: .35em .9em; flex: none; }
+.chip-long { border-radius: 24px; padding: .7em 1em; font-size: calc(var(--k) * 40px); max-width: 1400px; }
 .chip-accent { background: var(--orange); color: #ffffff; }
-.chip-fill { background: #ffffff; }
-.chip-outline { border: 1.5px solid var(--fg); }
-.rule { border-top: 1.5px solid var(--line); }
-.dark .rule { border-top-color: var(--gray); }
-.rule.short { width: 120px; border-top-width: 6px; border-radius: 3px; }
-.bar { width: 14px; min-height: calc(var(--k) * 64px); background: var(--line); border-radius: 7px; }
+.chip-fill { background: var(--card); color: var(--fg); }
+.chip-outline { border: 1.5px solid var(--fg); color: var(--fg); }
+.chip-dark { background: var(--ink); color: var(--soft); }
+.g-row.wrap { flex-wrap: wrap; gap: calc(var(--k) * 10px); }
+.g-row.wrap > *, .g-row > .chip:last-child, .g-row.wrap > .t:last-child { flex: none; }
+
+/* 그림 · 영상 */
+.im { border-radius: 24px; background: var(--card); }
+.im img { max-height: calc(var(--ki, 1) * 560px); object-fit: contain; }
+.bd > .im, .step > .im { align-self: flex-start; max-width: 100%; }
+.bd > .im img, .step > .im img { width: auto; max-width: 100%; }
+.box:has(> .im) { justify-content: center; }
+.box > .im { align-self: center; background: transparent; }
+.vid { border-radius: 24px; overflow: hidden; background: var(--ink); align-self: flex-start; max-width: 100%; }
+.vid video { display: block; max-width: 100%; max-height: calc(var(--ki, 1) * 600px); cursor: pointer; }
+
+/* 화살표: 방향 그대로. 주황은 높일수록, 회색은 낮을수록 */
+.ar { color: var(--orange); align-self: center; }
+.ar svg { width: calc(var(--k) * 44px); height: calc(var(--k) * 44px); stroke-width: 2.5; }
+.ar.dim { color: var(--pale); }
+.box > .ar:first-child { align-self: flex-start; }
+.box > .ar:first-child svg { width: calc(var(--k) * 64px); height: calc(var(--k) * 64px); }
+.ic { width: calc(var(--k) * 64px); height: calc(var(--k) * 64px); padding: calc(var(--k) * 14px); border-radius: 50%;
+      background: var(--card); color: var(--orange); stroke-width: 1.75; flex: none; }
+.g-row.flow { align-items: stretch; gap: calc(var(--k) * 10px); }
+.g-row.flow > .g-col, .g-row.flow > .t { background: var(--card); border-radius: 24px; padding: calc(var(--k) * 28px) calc(var(--k) * 26px); justify-content: center; flex: 1 1 0; }
+.g-row.flow > .g-col .t, .g-row.flow > .t { font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 30px); line-height: 1.35; }
+.g-row.flow > .t { display: flex; align-items: center; flex: 1 1 0; }
+.g-row.flow > .g-col .t.accent { font-size: calc(var(--k) * 24px); }
+.g-row.flow > .g-col .t.dim { font-family: 'KoPub Dotum'; font-weight: 300; font-size: calc(var(--k) * 22px); }
+.g-row.flow > .ar { flex: none; }
+.g-row.flow > .ar svg { width: calc(var(--k) * 32px); height: calc(var(--k) * 32px); }
+
+/* 카톡 화면: 노란 말풍선은 오른쪽, 방 이름 띠는 하늘색 */
+.box.kakao { background: #fee500; --fg: var(--ink); --sub: var(--ink); color: var(--ink); border-radius: 28px 8px 28px 28px; max-width: 76%; }
+.box.right, .right { align-self: flex-end; }
+.box.kakaobar { background: #8fa7bc; --fg: var(--ink); color: var(--ink); border-radius: 20px; flex-direction: row;
+                justify-content: space-between; align-items: center; padding: calc(var(--k) * 22px) calc(var(--k) * 32px); }
+.g-row.withphone { align-items: center; gap: calc(var(--k) * 64px); }
+.g-row.withphone > .em { flex: none; }
+
+/* 목록 · 막대 */
+.ls { font-size: calc(var(--k) * 34px); line-height: 1.6; padding-left: 1.2em; }
+.ls li::marker { color: var(--orange); }
+.bar { display: block; width: 12px; min-height: calc(var(--k) * 56px); border-radius: 6px; }
 .bar.on { background: var(--orange); }
 
-/* 원래 배치를 살린 장: 좌표는 원본, 글꼴만 2안으로(굵은 글 Paperlogy Bold · 나머지 KoPub 돋움 Light) */
+/* 아티팩트에서 온 의미 없는 장식은 지운다: 회색 구분선 · 차례가 아닌 회색 막대 */
+hr.rule { display: none; }
+.bar:not(.on) { visibility: hidden; }
+
+/* 원래 배치를 살린 장(73 흩어진 이름표 · 408 산 그림): 좌표는 원본, 글꼴만 2안으로 */
 .keep { position: absolute; inset: 0; width: 1920px; height: 1080px; color: var(--fg); }
 .keep, .keep * { font-family: 'KoPub Dotum', sans-serif; letter-spacing: -0.02em !important; }
 .keep h1, .keep h2, .keep h3, .keep [style*="font-weight:6"], .keep [style*="font-weight:7"], .keep [style*="font-weight:8"],
-.keep [style*="font-weight:9"], .keep [style*="font-weight: 7"], .keep [style*="font-weight: 8"], .keep b, .keep strong,
-.keep text[font-weight] { font-family: 'Paperlogy', sans-serif; font-weight: 700; }
+.keep [style*="font-weight:9"], .keep b, .keep strong, .keep text[font-weight] { font-family: 'Paperlogy', sans-serif; font-weight: 700; }
 .keep p, .keep h1, .keep h2, .keep h3 { margin: 0; }
-.keep img { display: block; }
-.keep .kic { display: block; }
+.keep p.kick { display: none; }
+.keep [style*="solid #e4e0db"], .keep [style*="solid #c9c3bc"] { border-color: transparent !important; }
 
-/* 73 dump: 원본에서 이름표가 제목을 덮었다. 이름표는 흩어진 자리 그대로, 제목만 아래로 */
-#dump .keep { justify-content: flex-end; padding-bottom: 170px; }
+/* 알약 글자색은 톤 규칙보다 앞선다(검은 알약 · 주황 알약의 글이 바탕에 묻히지 않게) */
+.t.chip.chip-dark { color: var(--soft); }
+.t.chip.chip-accent { color: #ffffff; }
+.t.chip.chip-fill, .t.chip.chip-outline { color: var(--fg); }
+/* 73 흩어진 이름표: 제목 아래 영역에 원본처럼 흩어 놓는다 */
+.scatter { position: relative; height: 470px; margin-top: calc(var(--k) * 20px); }
+.scatter .chip { font-size: 30px; background: var(--card); border: 1.5px solid var(--fg); }
+
+/* 73 dump: 원래 배치 그대로(이름표가 제목 둘레를 덮는 것이 의도) */
 #dump .keep [style*="left:110px"] { left: 128px !important; }
-#a2-4 .keep { padding-top: 160px !important; }
-
-/* 검수 뒤 고침(11-03) */
-.t:not(.b):not(.h) b { font-family: 'Paperlogy'; font-weight: 700; }
-.bd .ink { color: var(--fg); }
-.sp { margin-top: calc(var(--k) * 28px); }
-.t.l.long { font-size: calc(var(--k) * 76px); }
-.t.xl.long { font-size: calc(var(--k) * 104px); }
-.g-col.line > .g-row, .g-row.line { border-top: 1.5px solid var(--line); padding-top: calc(var(--k) * 22px); padding-bottom: calc(var(--k) * 6px); align-items: baseline; gap: calc(var(--k) * 32px); }
-.dark .g-row.line { border-top-color: var(--gray); }
-/* 구역을 여는 장: 검은 바탕에 큰 주황 글 */
-.s-opener .bd { justify-content: flex-end; }
-.s-opener .t { font-size: calc(var(--k) * 150px); }
-/* 그림은 자르지 않고 전체를 보인다. 카드에 그림 하나면 가운데로 */
-.im img { object-fit: contain; }
-.box:has(> .im) { justify-content: center; }
-.box > .im { align-self: center; background: transparent; }
-/* 원래 배치를 살린 장: 머리말은 알약에만 */
-.keep p[style*="letter-spacing:2px"] { display: none; }
-#possib-3 .keep [style*="border-radius"], #possib-4 .keep [style*="border-radius"], #tone-rule-5 .keep [style*="border"] { padding: 32px 40px !important; }
-#possib-4 .keep [style*="#1f1b18"] p { color: var(--line) !important; }
-.s-statement.solo .t { font-size: calc(var(--k) * 140px); line-height: 1.1; }
-.s-compose.textonly .t.xs { font-size: calc(var(--k) * 40px); }
-.s-compose.textonly .t.s { font-size: calc(var(--k) * 52px); }
-.s-part .t.m, .s-part .t.l, .s-part .t.xl { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 112px); line-height: 1.15; }

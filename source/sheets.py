@@ -25,6 +25,7 @@ with sync_playwright() as p:
     b = p.chromium.launch()
     pg = b.new_page(viewport={'width': 1920, 'height': 1080})
     pg.goto(f'http://127.0.0.1:{srv.server_port}/{theme}/index.html#1')
+    pg.wait_for_selector('#stage.ready', state='attached', timeout=20000)
     pg.evaluate('document.fonts.ready')
     pg.wait_for_timeout(800)
     n = pg.evaluate('document.querySelectorAll("#stage > section").length')
