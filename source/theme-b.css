@@ -292,3 +292,16 @@ hr.rule { display: none; }
 #meetings-3b .g-row.mimgs > .im, #b2-7 .g-row.mimgs > .im { background: none; box-shadow: none; }
 #meetings-3b .g-row.mimgs > .im img, #b2-7 .g-row.mimgs > .im img { border-radius: 16px; box-shadow: 0 2px 24px rgba(31, 27, 24, .08); width: auto; max-width: 100%; }
 #objection .r-title { font-size: calc(var(--k) * 84px); }
+#consult-4 .g-row.flow { align-items: center; }
+#consult-4 .g-row.flow > .g-col { background: none !important; box-shadow: none; padding: 0; gap: calc(var(--k) * 20px); align-items: center; justify-content: center; }
+#consult-4 .g-row.flow > .g-col > .t { font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 26px) !important; color: var(--otext); background: rgba(210, 71, 10, .10); border-radius: 999px; padding: .35em .9em; align-self: center; }
+#consult-4 .im { background: #fff; border-radius: 16px; padding: calc(var(--k) * 24px); box-shadow: 0 2px 24px rgba(31, 27, 24, .08); }
+#consult-4 .im img { max-height: calc(var(--k) * 560px); width: auto; max-width: 100%; object-fit: contain; }
+#weekly-3 .bd { align-items: center; text-align: center; }
+#weekly-3 .bd > .k, #weekly-3 .bd > .t { align-self: center; text-align: center; }
+#weekly-3 .r-title { font-size: calc(var(--k) * 72px); }
+#weekly-3 .g-grid.cards { width: 100%; max-width: calc(var(--k) * 1400px); margin: 0 auto; }
+#weekly-3 .g-grid.cards > .box { align-items: center; text-align: center; padding: calc(var(--k) * 56px) calc(var(--k) * 48px); gap: calc(var(--k) * 20px); }
+#weekly-3 .g-grid.cards > .box .ic { width: calc(var(--k) * 64px); height: calc(var(--k) * 64px); }
+#weekly-3 .g-grid.cards > .box .r-ctitle { font-size: calc(var(--k) * 52px); }
+#weekly-3 .g-grid.cards > .box .r-cbody { font-size: calc(var(--k) * 38px); line-height: 1.7; }
