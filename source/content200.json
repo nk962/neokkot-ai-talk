@@ -2144,6 +2144,93 @@
    ]
   },
   {
+   "id": "aside-demo",
+   "members": [
+    "aside-demo"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "쓰는 도구 | Aside 시연"
+    },
+    {
+     "t": "text",
+     "step": "xl",
+     "tone": "ink",
+     "bold": true,
+     "html": "지금 바로 <em>보여 드릴게요</em>",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "grid",
+     "cols": 2,
+     "cards": true,
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "01"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "「이 장 제목을 ‘오늘 와 주신 원장님들 환영합니다’로 바꿔 줘」"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "지금 보고 계신 이 화면에서, <b>10초</b>"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "02"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "「우리 학원 스마트플레이스 최근 리뷰 5개 읽고 답글 초안 써 줘」"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "내가 <b>로그인</b>해 둔 네이버에서, <b>1분</b><br>올리기 전에는 내 확인부터"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p2",
    "body": [
     {
@@ -12997,92 +13084,6 @@
    ],
    "members": [
     "p1"
-   ]
-  },
-  {
-   "id": "why",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "accent",
-       "bold": true,
-       "html": "왜 쓰는가"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "같은 AI, 다른 이유",
-       "head": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "grid",
-     "cols": 2,
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "원장과 강사가 쓰는 이유"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "생산성을 높여서,<br>결국 더 많은 일을.<br>하고 싶은 일을."
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "직원에게 가르치는 이유"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "light",
-         "bold": true,
-         "html": "우리 조직 규모에 맞는<br>가장 알맞은 인원으로."
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": false,
-         "html": "그리고 그 안에서 각자가 버겁지 않도록."
-        }
-       ],
-       "box": true,
-       "dark": true
-      }
-     ]
-    }
-   ],
-   "members": [
-    "why"
    ]
   },
   {
