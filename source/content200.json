@@ -563,6 +563,14 @@
      "html": "AI 세미나를 접하기 시작하며"
     },
     {
+     "t": "text",
+     "step": "m",
+     "tone": "dim",
+     "bold": false,
+     "html": "정말... 환경이란... 무섭습니다... <span class=\"emo\">😱</span>",
+     "sub": true
+    },
+    {
      "t": "group",
      "dir": "col",
      "kids": [
@@ -627,6 +635,92 @@
    "members": [
     "meetings-5",
     "meetings-6"
+   ]
+  },
+  {
+   "id": "why-early",
+   "body": [
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xs",
+       "tone": "accent",
+       "bold": true,
+       "html": "왜 쓰는가"
+      },
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "ink",
+       "bold": true,
+       "html": "같은 AI, 다른 이유",
+       "head": true
+      }
+     ]
+    },
+    {
+     "t": "group",
+     "dir": "grid",
+     "cols": 2,
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "원장과 강사가 쓰는 이유"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "생산성을 높여서,<br>결국 더 많은 일을.<br>하고 싶은 일을."
+        }
+       ],
+       "box": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "직원에게 가르치는 이유"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "light",
+         "bold": true,
+         "html": "우리 조직 규모에 맞는<br>가장 알맞은 인원으로."
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "그리고 그 안에서 각자가 버겁지 않도록."
+        }
+       ],
+       "box": true,
+       "dark": true
+      }
+     ]
+    }
+   ],
+   "members": [
+    "why-early"
    ]
   },
   {
@@ -902,7 +996,7 @@
          "step": "m",
          "tone": "ink",
          "bold": true,
-         "html": "GPT"
+         "html": "<img class=\"ailogo\" src=\"assets/ce01553856e15bb03eba33c50296f42c.svg\" alt=\"\">GPT"
         },
         {
          "t": "text",
@@ -923,7 +1017,7 @@
          "step": "m",
          "tone": "ink",
          "bold": true,
-         "html": "클로드"
+         "html": "<img class=\"ailogo\" src=\"assets/c0d7b8cc4bacaf659ece410e3b088205.svg\" alt=\"\">클로드"
         },
         {
          "t": "text",
@@ -944,7 +1038,7 @@
          "step": "m",
          "tone": "ink",
          "bold": true,
-         "html": "제미나이"
+         "html": "<img class=\"ailogo\" src=\"assets/0b0e429cf7434b4a1cec0671a894ae91.svg\" alt=\"\">제미나이"
         },
         {
          "t": "text",
@@ -1641,6 +1735,13 @@
      "tone": "ink",
      "bold": false,
      "html": "챗지피티, 제미나이, 클로드 웹 버전까지 저마다 장단점이 있습니다.<br>강사이면서 콘텐츠 생산자인 저를 정의해 보니<br>제게 중요한 것은 <b>작업의 정확성과 검수</b>였고,<br>콘텐츠를 만드는 사람에게는 클로드 코드가 맞다고 판단했습니다."
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"tv\"><span class=\"tv-app\"><img src=\"assets/a0f33ad8ad533f1dd3a77bf2f100edae.svg\" alt=\"VS Code\"><span class=\"tv-name\">VS Code</span><span class=\"tv-plus\">+</span><span class=\"tv-name\">터미널</span></span><span class=\"tv-term\"><span class=\"tv-bar\"><i></i><i></i><i></i><span>터미널 — claude</span></span><span class=\"tv-body\"><span class=\"tv-line\"><span class=\"pr\">~/너희가꽃이다 %</span> claude</span><span class=\"tv-box\"><span class=\"o\">✻</span> Welcome to <b>Claude Code</b>!</span><span class=\"tv-line\"><span class=\"o\">&gt;</span> 다정고1 내신 대비 변형문항 30개 만들어 줘</span><span class=\"tv-line o\">● 시험범위 파일을 읽는 중…</span><span class=\"tv-line dimc\">● 학교 기출 패턴 확인 → 문항 생성 → 검수</span></span></span></span>"
     }
    ],
    "members": [
@@ -1885,6 +1986,36 @@
    ]
   },
   {
+   "id": "best-match",
+   "members": [
+    "best-match"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "쓰는 도구"
+    },
+    {
+     "t": "text",
+     "step": "xl",
+     "tone": "ink",
+     "bold": true,
+     "html": "나의 AI 도구, <b>클로드 코드</b>와<br><em>최고의 궁합</em>은?",
+     "head": true
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "dim",
+     "bold": false,
+     "html": "어떻게 하면 생산성이 <em>폭발</em>할 수 있을까?"
+    }
+   ]
+  },
+  {
    "id": "aside-intro",
    "members": [
     "aside-intro"
@@ -1916,7 +2047,7 @@
      "step": "m",
      "tone": "dim",
      "bold": false,
-     "html": "크롬처럼 쓰는 AI 브라우저입니다. 클코가 내 폴더에서 일한다면,<br>Aside는 내가 로그인해 둔 사이트에서 일합니다."
+     "html": "크롬처럼 쓰는 AI 브라우저입니다. 클코가 내 폴더에서 일한다면,<br>Aside는 내가 <strong class=\"hl-login\">로그인</strong>해 둔 사이트에서 일합니다."
     },
     {
      "t": "group",
