@@ -311,6 +311,34 @@ hr.rule { display: none; }
 #weekly-3 .g-grid.cards > .box .r-ctitle { font-size: calc(var(--k) * 52px); }
 #weekly-3 .g-grid.cards > .box .r-cbody { font-size: calc(var(--k) * 38px); line-height: 1.7; }
 
+#auto-pick .bd, #auto-1 .bd { align-items: center; justify-content: center; text-align: center; }
+#auto-pick .bd > .t, #auto-1 .bd > .t { align-self: center; text-align: center; }
+#auto-pick .r-title, #auto-1 .r-title { font-size: calc(var(--k) * 92px) !important; line-height: 1.25; white-space: nowrap; }
+#auto-1 .bign { color: #ff6a00; margin-right: .1em; }
+#core .r-title { font-size: calc(var(--k) * 52px) !important; white-space: nowrap; text-wrap: nowrap; }
+#core .bd > p:has(.cx) { width: 100%; max-width: none; margin-top: calc(var(--k) * 24px); }
+#core .cx { display: flex; align-items: flex-start; justify-content: space-between; gap: calc(var(--k) * 20px); width: 100%; font-family: 'KoPub Dotum', sans-serif; }
+#core .cx-col { display: flex; flex-direction: column; justify-content: flex-start; gap: calc(var(--k) * 16px); flex: 1; }
+#core .cx-mid { flex: 1.05; align-items: center; }
+#core .cx-h { align-self: flex-start; font-family: 'Paperlogy'; font-weight: 800; font-size: calc(var(--k) * 42px); line-height: 1.2; color: #fff; background: #ff6a00; border-radius: 999px; padding: .28em .8em .32em; margin-bottom: calc(var(--k) * 10px); box-shadow: 0 6px 18px rgba(255,106,0,.28); }
+#core .cx-mid .cx-h { align-self: center; margin-bottom: calc(var(--k) * 22px); }
+#core .cx-card { display: flex; align-items: center; gap: calc(var(--k) * 20px); background: #fffdf9; border-radius: 18px; padding: calc(var(--k) * 20px) calc(var(--k) * 26px); box-shadow: 0 2px 20px rgba(31,27,24,.07); }
+#core .cx-ic { width: calc(var(--k) * 64px); height: calc(var(--k) * 64px); flex: none; }
+#core .cx-t { display: flex; flex-direction: column; gap: calc(var(--k) * 4px); line-height: 1.25; }
+#core .cx-t b { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 36px); color: #1f1b18; }
+#core .cx-t small { font-size: calc(var(--k) * 24px); color: #6b6560; }
+#core .cx-arr { display: flex; align-items: center; color: #ff6a00; flex: none; align-self: center; padding-top: calc(var(--k) * 50px); }
+#core .cx-arr svg { width: calc(var(--k) * 52px); height: calc(var(--k) * 52px); }
+#core .cx-id { position: relative; display: flex; flex-direction: column; align-items: center; width: calc(var(--k) * 400px); background: #1f1b18; color: #fff; border-radius: 26px; padding: calc(var(--k) * 30px) calc(var(--k) * 28px) calc(var(--k) * 32px); box-shadow: 0 16px 40px rgba(31,27,24,.22); }
+#core .cx-clip { position: absolute; top: calc(var(--k) * -18px); width: calc(var(--k) * 90px); height: calc(var(--k) * 26px); border-radius: 8px; background: #ff6a00; }
+#core .cx-top { font-family: 'Paperlogy'; font-weight: 600; font-size: calc(var(--k) * 20px); letter-spacing: .14em; color: #ff9a4d; }
+#core .cx-photo { display: flex; align-items: center; justify-content: center; width: calc(var(--k) * 132px); height: calc(var(--k) * 132px); border-radius: 50%; background: #fbeee6; margin: calc(var(--k) * 18px) 0 calc(var(--k) * 12px); }
+#core .cx-photo img { width: 58%; height: 58%; }
+#core .cx-name { font-family: 'Paperlogy'; font-weight: 800; font-size: calc(var(--k) * 54px); line-height: 1.1; }
+#core .cx-dept { font-size: calc(var(--k) * 22px); color: #c9c3bc; margin-top: calc(var(--k) * 6px); }
+#core .cx-steps { display: flex; align-items: center; gap: calc(var(--k) * 6px); margin-top: calc(var(--k) * 22px); }
+#core .cx-steps span { background: rgba(255,106,0,.18); color: #ffb77d; border-radius: 999px; padding: .25em .6em; font-size: calc(var(--k) * 21px); font-weight: 600; white-space: nowrap; }
+#core .cx-steps i { color: #6b6560; font-style: normal; font-size: calc(var(--k) * 22px); }
 #aside-demo .g-row.flow, #aside-demo-2 .g-row.flow { align-items: stretch; width: 100%; }
 #aside-demo .g-row.flow > .box, #aside-demo-2 .g-row.flow > .box { flex: 1; padding: calc(var(--k) * 44px) calc(var(--k) * 40px); gap: calc(var(--k) * 18px); }
 #aside-demo .g-row.flow .r-ctitle, #aside-demo-2 .g-row.flow .r-ctitle { font-size: calc(var(--k) * 46px); }

@@ -3052,45 +3052,15 @@
      "step": "l",
      "tone": "ink",
      "bold": true,
-     "html": "카톡과 노션이 클로드 코드로 모이고, 결과물이 <br>폴더에 놓입니다",
+     "html": "카톡 · 노션 · 메모가 클로드 코드로 모이고, 결과물이 폴더에 놓입니다",
      "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "light",
-         "bold": true,
-         "html": "① 카톡",
-         "chip": "dark"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "light",
-         "bold": true,
-         "html": "② 노션",
-         "chip": "dark"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": true,
-         "html": "|"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"cx\"><span class=\"cx-col\"><span class=\"cx-h\">① 어디서 보고</span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/148a0e74f4235b49ce58797640a12063.svg\" alt=\"\"><span class=\"cx-t\"><b>카톡</b><small>학부모 · 실장님 메시지</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/a20581e0ed373846f73792c64bb95f1d.svg\" alt=\"\"><span class=\"cx-t\"><b>노션</b><small>회의록 · 할 일 목록</small></span></span><span class=\"cx-card\"><svg class=\"cx-ic\" viewBox=\"0 0 24 24\"><rect x=\".5\" y=\".5\" width=\"23\" height=\"23\" rx=\"5.5\" fill=\"#fff\" stroke=\"#E4E0DB\"/><path d=\"M.5 6A5.5 5.5 0 0 1 6 .5h12A5.5 5.5 0 0 1 23.5 6v1.5H.5z\" fill=\"#F7C744\"/><path d=\"M5 12h14M5 15.5h14M5 19h9\" stroke=\"#C9C3BC\" stroke-width=\"1.2\" stroke-linecap=\"round\"/></svg><span class=\"cx-t\"><b>메모</b><small>적어 둔 할 일 · 아이디어</small></span></span></span><span class=\"cx-arr\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></span><span class=\"cx-col cx-mid\"><span class=\"cx-h\">② 클코 직원이 일하고</span><span class=\"cx-id\"><span class=\"cx-clip\"></span><span class=\"cx-top\">STAFF · 사원증</span><span class=\"cx-photo\"><img src=\"assets/c0d7b8cc4bacaf659ece410e3b088205.svg\" alt=\"\"></span><span class=\"cx-name\">클코</span><span class=\"cx-dept\">너희가 꽃이다 · AI 직원</span><span class=\"cx-steps\"><span>읽고</span><i>›</i><span>정리하고</span><i>›</i><span>만들고</span><i>›</i><span>검수</span></span></span></span><span class=\"cx-arr\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></span><span class=\"cx-col\"><span class=\"cx-h\">③ 어디에 남기나</span><span class=\"cx-card\"><svg class=\"cx-ic\" viewBox=\"0 0 24 24\"><path d=\"M2 6a2 2 0 0 1 2-2h5.2l2 2.2H20a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z\" fill=\"#ff9a4d\"/><path d=\"M2 9.2h20V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z\" fill=\"#ffb77d\"/></svg><span class=\"cx-t\"><b>내 폴더</b><small>시험지 · 교재 · 상담 기록</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/a20581e0ed373846f73792c64bb95f1d.svg\" alt=\"\"><span class=\"cx-t\"><b>노션</b><small>한 일 기록</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/148a0e74f4235b49ce58797640a12063.svg\" alt=\"\"><span class=\"cx-t\"><b>카톡</b><small>학부모님께 전달</small></span></span></span></span>"
     }
    ],
    "members": [
@@ -3260,97 +3230,11 @@
     },
     {
      "t": "text",
-     "step": "l",
+     "step": "xl",
      "tone": "ink",
      "bold": true,
-     "html": "가장 대표적이고, 가장 편한 세 가지",
+     "html": "가장 대표적이고, 가장 편한 <em>세 가지</em>",
      "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "첫 번째"
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "accent",
-         "bold": true,
-         "html": "1"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "카톡 신규생 · 퇴원생 정보가 들어온 뒤의 모든 일",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "번호 저장부터 관리톡, 인사, 반톡 초대, 송별까지"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "두 번째"
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "accent",
-         "bold": true,
-         "html": "2"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "수업 뒤 화면 녹화본으로 할 수 있는 모든 일",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "영상이 반톡으로, 출제 포인트로, 복습 테스트로"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
     }
    ],
    "members": [
@@ -3362,58 +3246,10 @@
    ]
   },
   {
-   "id": "auto-pick-7",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "제가 자동화한 것 가운데"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "세 번째"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "accent",
-       "bold": true,
-       "html": "3"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "나의 새벽",
-       "head": true
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "시험 범위가 뜨면 그 범위의 문항을 새벽에 만들어 둡니다"
-      }
-     ]
-    }
-   ],
+   "id": "auto-1",
    "members": [
-    "auto-pick-6",
-    "auto-pick-7"
-   ]
-  },
-  {
-   "id": "auto-pick-8",
+    "auto-1"
+   ],
    "body": [
     {
      "t": "text",
@@ -3424,43 +3260,12 @@
     },
     {
      "t": "text",
-     "step": "m",
-     "tone": "dim",
-     "bold": false,
-     "html": "세 가지 모두,"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "dim",
-     "bold": false,
-     "html": "어떤 말로 시작했는지"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "dim",
-     "bold": false,
-     "html": "어디서 막혔는지"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "dim",
-     "bold": false,
-     "html": "어떻게 돌아가는지를"
-    },
-    {
-     "t": "text",
-     "step": "m",
+     "step": "xl",
      "tone": "ink",
      "bold": true,
-     "html": "화면으로 보여 드립니다."
+     "html": "<span class=\"bign\">1.</span> 신규생 · 퇴원생 정보가 오면?",
+     "head": true
     }
-   ],
-   "rev": "바꿈",
-   "members": [
-    "auto-pick-8"
    ]
   },
   {
@@ -4255,14 +4060,6 @@
      "html": "대표 자동화 1 | 카톡"
     },
     {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "제가 한 말, 막힌 곳, 지금의 안전장치",
-     "head": true
-    },
-    {
      "t": "group",
      "dir": "col",
      "kids": [
@@ -4356,28 +4153,6 @@
     "a4",
     "a4-2",
     "a4-3"
-   ]
-  },
-  {
-   "id": "a4-4",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "대표 자동화 1 | 카톡"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "accent",
-     "bold": true,
-     "html": "막힌 곳"
-    }
-   ],
-   "members": [
-    "a4-4"
    ]
   },
   {
@@ -5601,6 +5376,57 @@
     "dawn-2",
     "dawn-3",
     "dawn-4"
+   ]
+  },
+  {
+   "id": "auto-pick-7",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "제가 자동화한 것 가운데"
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "accent",
+     "bold": true,
+     "html": "세 번째"
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "accent",
+       "bold": true,
+       "html": "3"
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "나의 새벽",
+       "head": true
+      },
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "dim",
+       "bold": false,
+       "html": "시험 범위가 뜨면 그 범위의 문항을 새벽에 만들어 둡니다"
+      }
+     ]
+    }
+   ],
+   "members": [
+    "auto-pick-6",
+    "auto-pick-7"
    ]
   },
   {
