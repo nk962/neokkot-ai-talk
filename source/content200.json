@@ -2154,21 +2154,19 @@
      "step": "xs",
      "tone": "accent",
      "bold": true,
-     "html": "쓰는 도구 | Aside 시연"
+     "html": "쓰는 도구 | Aside 시연 1 · 10초"
     },
     {
      "t": "text",
-     "step": "xl",
+     "step": "l",
      "tone": "ink",
      "bold": true,
-     "html": "지금 바로 <em>보여 드릴게요</em>",
+     "html": "지금 이 장표를 <em>말 한마디로</em> 고쳐 볼게요",
      "head": true
     },
     {
      "t": "group",
-     "dir": "grid",
-     "cols": 2,
-     "cards": true,
+     "dir": "row",
      "kids": [
       {
        "t": "group",
@@ -2187,16 +2185,22 @@
          "step": "m",
          "tone": "ink",
          "bold": true,
-         "html": "「이 장 제목을 ‘오늘 와 주신 원장님들 환영합니다’로 바꿔 줘」"
+         "html": "옆 창 열기"
         },
         {
          "t": "text",
          "step": "s",
          "tone": "dim",
          "bold": false,
-         "html": "지금 보고 계신 이 화면에서, <b>10초</b>"
+         "html": "장표 옆에 Aside<br>대화창을 엽니다"
         }
        ]
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
       },
       {
        "t": "group",
@@ -2215,14 +2219,173 @@
          "step": "m",
          "tone": "ink",
          "bold": true,
-         "html": "「우리 학원 스마트플레이스 최근 리뷰 5개 읽고 답글 초안 써 줘」"
+         "html": "한 줄로 시키기"
         },
         {
          "t": "text",
          "step": "s",
          "tone": "dim",
          "bold": false,
-         "html": "내가 <b>로그인</b>해 둔 네이버에서, <b>1분</b><br>올리기 전에는 내 확인부터"
+         "html": "「이 장 제목을<br>‘환영합니다’로 바꿔 줘」"
+        }
+       ]
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "03"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "바로 바뀝니다"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "보고 계신 이 화면의<br>제목이 그 자리에서 바뀝니다"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aside-demo-2",
+   "members": [
+    "aside-demo-2"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "쓰는 도구 | Aside 시연 2 · 1분"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "<em>로그인해 둔</em> 네이버에서 일 시키기",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "row",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "01"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "네이버 열기"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "로그인돼 있는<br>스마트플레이스 리뷰 화면"
+        }
+       ]
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "02"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "한 줄로 시키기"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "「최근 리뷰 5개 읽고<br>답글 초안 써 줘」"
+        }
+       ]
+      },
+      {
+       "t": "shape",
+       "kind": "arrow-right",
+       "kids": [],
+       "tone": "accent"
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "03"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "확인하고 올리기"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "초안은 Aside가,<br>올리는 건 내가 확인한 뒤에"
         }
        ]
       }

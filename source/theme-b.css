@@ -311,9 +311,11 @@ hr.rule { display: none; }
 #weekly-3 .g-grid.cards > .box .r-ctitle { font-size: calc(var(--k) * 52px); }
 #weekly-3 .g-grid.cards > .box .r-cbody { font-size: calc(var(--k) * 38px); line-height: 1.7; }
 
-#aside-demo .g-grid.cards > .box { padding: calc(var(--k) * 48px) calc(var(--k) * 48px); gap: calc(var(--k) * 20px); }
-#aside-demo .g-grid.cards > .box .r-ctitle { font-size: calc(var(--k) * 44px); line-height: 1.45; }
-#aside-demo .g-grid.cards > .box .r-cbody { font-size: calc(var(--k) * 30px); line-height: 1.6; }
+#aside-demo .g-row.flow, #aside-demo-2 .g-row.flow { align-items: stretch; width: 100%; }
+#aside-demo .g-row.flow > .box, #aside-demo-2 .g-row.flow > .box { flex: 1; padding: calc(var(--k) * 44px) calc(var(--k) * 40px); gap: calc(var(--k) * 18px); }
+#aside-demo .g-row.flow .r-ctitle, #aside-demo-2 .g-row.flow .r-ctitle { font-size: calc(var(--k) * 46px); }
+#aside-demo .g-row.flow .r-cbody, #aside-demo-2 .g-row.flow .r-cbody { font-size: calc(var(--k) * 32px); line-height: 1.6; }
+#aside-demo .g-row.flow > .ar, #aside-demo-2 .g-row.flow > .ar { align-self: center; }
 /* 11-05 9차 */
 #meetings-5 .emo, #best-match .emo { font-family: 'Apple Color Emoji','Segoe UI Emoji',sans-serif; display: inline-block; font-size: 1.5em; vertical-align: -0.12em; margin-left: .15em; transform: rotate(-8deg); }
 #compare .ailogo { height: 1em; width: 1em; vertical-align: -0.12em; margin-right: .4em; display: inline-block; }
