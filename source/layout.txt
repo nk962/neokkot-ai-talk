@@ -64,7 +64,6 @@ n85 | STATS | 85건
 ledger | FLOW | 찾는다 → 적는다 → 승격 → 사람 눈까지 오지 못함
 layers | FLOW | 9겹 검수
 layers-3 | MERGE_PREV | 9겹 나머지
-meetings-3b | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 rv-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 b3-card | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 design-5 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)

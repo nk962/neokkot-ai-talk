@@ -227,129 +227,123 @@
      ]
     },
     {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"cf-lb\">주제</span><b class=\"cf-topic\">AI에 대체되지 않는 사람</b>"
+    },
+    {
      "t": "group",
-     "dir": "row",
+     "dir": "grid",
+     "cols": 3,
+     "cards": true,
      "kids": [
-      {
-       "t": "img",
-       "src": "/_blob/1ba0818cf97a1b70f1d70736542f4558",
-       "alt": "HFK 컨퍼런스 후기 글"
-      },
       {
        "t": "group",
        "dir": "col",
+       "box": true,
        "kids": [
         {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "1",
-           "w": 56.0
-          },
-          {
-           "t": "group",
-           "dir": "col",
-           "kids": [
-            {
-             "t": "text",
-             "step": "s",
-             "tone": "ink",
-             "bold": true,
-             "html": "승연 님"
-            },
-            {
-             "t": "text",
-             "step": "xs",
-             "tone": "dim",
-             "bold": false,
-             "html": "AI부사수 팀 파트너"
-            }
-           ]
-          }
-         ],
-         "box": true
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "1",
+         "w": 56.0
         },
         {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "2",
-           "w": 56.0
-          },
-          {
-           "t": "group",
-           "dir": "col",
-           "kids": [
-            {
-             "t": "text",
-             "step": "s",
-             "tone": "ink",
-             "bold": true,
-             "html": "이림 님"
-            },
-            {
-             "t": "text",
-             "step": "xs",
-             "tone": "dim",
-             "bold": false,
-             "html": "이미커피 대표 · 공간브랜딩 팀 파트너"
-            }
-           ]
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "3",
-           "w": 56.0
-          },
-          {
-           "t": "group",
-           "dir": "col",
-           "kids": [
-            {
-             "t": "text",
-             "step": "s",
-             "tone": "ink",
-             "bold": true,
-             "html": "강양석 님"
-            },
-            {
-             "t": "text",
-             "step": "xs",
-             "tone": "dim",
-             "bold": false,
-             "html": "『뉴로심볼릭 AI』 저자 · 딥스킬 대표"
-            }
-           ]
-          }
-         ],
-         "box": true
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "승연 님"
         },
         {
          "t": "text",
          "step": "xs",
          "tone": "dim",
          "bold": false,
-         "html": "세 연사의 공통 키워드는 「AI에 대체되지 않는 사람」이었습니다."
+         "html": "AI부사수 팀 파트너"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": false,
+         "html": "<span class=\"cf-sess\">첫 번째 세션</span>AI 산업 구조와 스몰 브랜드가<br>AI로 성장하는 전략"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "2",
+         "w": 56.0
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "이림 님"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "이미커피 대표 · 공간브랜딩 팀 파트너"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": false,
+         "html": "<span class=\"cf-sess\">두 번째 세션</span>카페 운영·컨설팅 현장에서<br>AI로 A부터 Z까지 자동화한 실전 사례"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "accent",
+         "bold": true,
+         "html": "3",
+         "w": 56.0
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "강양석 님"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "『뉴로심볼릭 AI』 저자 · 딥스킬 대표"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": false,
+         "html": "<span class=\"cf-sess\">세 번째 세션</span>AI를 과소·과대평가하지 않기 위해<br>어디까지 믿고, 어디서부터<br>사람의 판단이 필요한지"
         }
        ]
       }

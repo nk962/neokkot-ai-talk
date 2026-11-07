@@ -366,3 +366,16 @@ hr.rule { display: none; }
 #tool .tv-box { display: block; border: 1.5px solid #d97757; border-radius: 8px; padding: calc(var(--k) * 12px) calc(var(--k) * 18px); }
 #tool .tv-box b { color: #fff; }
 #aside-intro .hl-login { display: inline-block; color: #fff; background: #ff6a00; font-family: 'Paperlogy'; font-weight: 800; font-size: 1.45em; line-height: 1.1; padding: .08em .32em .12em; margin: 0 .12em; border-radius: .25em; transform: rotate(-3deg); box-shadow: 0 6px 18px rgba(255,106,0,.35); }
+/* 11-08 15차: 6쪽 오른쪽 캡처 빼고 주제 + 세션 주제 */
+#meetings-3b .bd { justify-content: center; }
+#meetings-3b .r-title { margin-bottom: calc(var(--k) * 8px); }
+#meetings-3b .bd > .t.r-body { display: flex; align-items: center; gap: calc(var(--k) * 24px); margin: calc(var(--k) * 8px) 0 calc(var(--k) * 48px); }
+#meetings-3b .cf-lb { font-family: 'Paperlogy'; font-weight: 600; font-size: calc(var(--k) * 30px); color: #d2470a; background: rgba(210, 71, 10, .10); border-radius: 999px; padding: .3em .9em; }
+#meetings-3b .cf-topic { font-family: 'Paperlogy'; font-weight: 800; font-size: calc(var(--k) * 64px); color: #ff6a00; letter-spacing: -0.02em; }
+#meetings-3b .g-grid.cards { width: 100%; gap: calc(var(--k) * 28px); align-items: stretch; }
+#meetings-3b .g-grid.cards > .box { justify-content: flex-start; gap: calc(var(--k) * 10px); padding: calc(var(--k) * 40px) calc(var(--k) * 40px) calc(var(--k) * 44px); }
+#meetings-3b .g-grid.cards > .box > .tag { margin: 0 0 calc(var(--k) * 6px); align-self: flex-start; }
+#meetings-3b .g-grid.cards > .box > .r-ctitle { font-size: calc(var(--k) * 44px); }
+#meetings-3b .g-grid.cards > .box > .r-cbody.dim { font-size: calc(var(--k) * 26px); }
+#meetings-3b .g-grid.cards > .box > .r-cbody.ink { margin-top: calc(var(--k) * 18px); padding-top: calc(var(--k) * 24px); border-top: 1.5px solid rgba(31, 27, 24, .12); font-size: calc(var(--k) * 32px); line-height: 1.5; font-weight: 600; color: #1f1b18; }
+#meetings-3b .cf-sess { display: block; font-family: 'Paperlogy'; font-weight: 600; font-size: calc(var(--k) * 24px); color: #d2470a; margin-bottom: calc(var(--k) * 10px); }
