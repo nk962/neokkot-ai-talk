@@ -1757,55 +1757,97 @@
      "html": "쓰는 도구"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "accent",
-       "bold": true,
-       "html": "클로드 코드"
-      },
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "내 폴더에서 일하는<br>직원"
-      }
-     ],
-     "line": true
+     "t": "text",
+     "step": "m",
+     "tone": "ink",
+     "bold": true,
+     "html": "클로드 코드, <em>내 폴더에서 일하는 직원</em>",
+     "head": true
     },
     {
      "t": "group",
-     "dir": "col",
+     "dir": "grid",
+     "cols": 2,
+     "cards": true,
      "kids": [
       {
        "t": "group",
        "dir": "col",
+       "box": true,
        "kids": [
         {
          "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": false,
-         "html": "질문, 해석, 아이디어는 GPT로 충분합니다.",
-         "chip": "fill"
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "GPT로 충분한 일"
         },
         {
          "t": "text",
-         "step": "l",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "묻고 답하는 일"
+        },
+        {
+         "t": "text",
+         "step": "xs",
          "tone": "ink",
          "bold": false,
-         "html": "<b>한 권을 납품하는 일부터 도구가 갈립니다.</b>",
-         "chip": "fill"
+         "html": "<span class=\"cc-it\">질문</span><span class=\"cc-it\">해석</span><span class=\"cc-it\">아이디어</span>"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "답이 화면 속 글로 나오면 끝납니다."
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "box": true,
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "클로드 코드가 필요한 일"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": true,
+         "html": "한 권을 납품하는 일"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": false,
+         "html": "<span class=\"cc-it\">시험지·교재 한 권</span><span class=\"cc-it\">매주 같은 틀 반복</span><span class=\"cc-it\">검수까지</span>"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "dim",
+         "bold": false,
+         "html": "내 폴더의 자료를 읽고, 결과를 파일로 남깁니다."
         }
        ]
       }
-     ],
-     "build": "fade 1",
-     "step": true
+     ]
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<b>한 권을 납품하는 일부터 도구가 갈립니다.</b>"
     }
    ],
    "members": [

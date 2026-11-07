@@ -14,7 +14,6 @@ compare | MERGE_NEXT | 이름 카드만, 다음 쪽 쓰임새와 한 쪽
 compare-2 | DEDUPE | ChatGPT 아래 GPT | ChatGPT 반복
 compare-4 | DEDUPE | Gemini 아래 제미나이 | Gemini 반복
 compare-6 | MERGE_NEXT | 클로드 코드 소개 세 줄, 다음 쪽 좋은 점 · 알아둘 점 머리로
-gpt-cc-3 | COMPARE | GPT로 충분한 일과 도구가 갈리는 일
 compare2 | CARDS | 남기는 말 셋
 compare2-6 | MERGE_PREV | 남기는 말 둘째
 compare2-9 | MERGE_PREV | 남기는 말 셋째

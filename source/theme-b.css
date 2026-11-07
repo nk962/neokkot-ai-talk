@@ -379,3 +379,19 @@ hr.rule { display: none; }
 #meetings-3b .g-grid.cards > .box > .r-cbody.dim { font-size: calc(var(--k) * 26px); }
 #meetings-3b .g-grid.cards > .box > .r-cbody.ink { margin-top: calc(var(--k) * 18px); padding-top: calc(var(--k) * 24px); border-top: 1.5px solid rgba(31, 27, 24, .12); font-size: calc(var(--k) * 32px); line-height: 1.5; font-weight: 600; color: #1f1b18; }
 #meetings-3b .cf-sess { display: block; font-family: 'Paperlogy'; font-weight: 600; font-size: calc(var(--k) * 24px); color: #d2470a; margin-bottom: calc(var(--k) * 10px); }
+/* 11-08 16차: 23쪽 클로드 코드 */
+#gpt-cc-3 .bd { justify-content: center; }
+#gpt-cc-3 .r-title em { color: #ff6a00; font-style: normal; }
+#gpt-cc-3 .g-grid.cards { width: 100%; gap: calc(var(--k) * 32px); margin-top: calc(var(--k) * 40px); align-items: stretch; }
+#gpt-cc-3 .g-grid.cards > .box { gap: calc(var(--k) * 14px); padding: calc(var(--k) * 48px) calc(var(--k) * 52px); justify-content: flex-start; }
+#gpt-cc-3 .g-grid.cards > .box > .t:first-child { font-family: 'Paperlogy'; font-weight: 600; font-size: calc(var(--k) * 28px); color: #d2470a; }
+#gpt-cc-3 .g-grid.cards > .box > .t:nth-child(2) { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 54px); line-height: 1.25; color: #1f1b18; }
+#gpt-cc-3 .g-grid.cards > .box > .t:nth-child(3) { display: flex; flex-wrap: wrap; gap: calc(var(--k) * 12px); margin-top: calc(var(--k) * 10px); }
+#gpt-cc-3 .cc-it { font-family: 'Paperlogy'; font-weight: 500; font-size: calc(var(--k) * 30px); background: rgba(31, 27, 24, .06); border-radius: 999px; padding: .3em .9em; }
+#gpt-cc-3 .g-grid.cards > .box > .t:last-child { font-size: calc(var(--k) * 30px); margin-top: calc(var(--k) * 12px); }
+#gpt-cc-3 .g-grid.cards > .box:last-child { background: #1f1b18 !important; }
+#gpt-cc-3 .g-grid.cards > .box:last-child > .t { color: #fff; }
+#gpt-cc-3 .g-grid.cards > .box:last-child > .t:first-child { color: #ff8a3d; }
+#gpt-cc-3 .g-grid.cards > .box:last-child .cc-it { background: rgba(255, 106, 0, .22); color: #fff; }
+#gpt-cc-3 .g-grid.cards > .box:last-child > .t:last-child { color: rgba(255, 255, 255, .72); }
+#gpt-cc-3 .bd > .t:last-child { margin-top: calc(var(--k) * 40px); font-size: calc(var(--k) * 40px); }
