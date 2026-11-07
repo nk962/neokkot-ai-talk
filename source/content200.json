@@ -1994,25 +1994,18 @@
      "html": "무료로 판단하지 마세요"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "무료 요금제는 유료와 모델이 다를 때가 많습니다. <br>제대로 비교하려면 같은 급끼리 써 봐야 합니다."
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "t": "text",
+     "step": "m",
+     "tone": "dim",
+     "bold": false,
+     "html": "GPT의 상위 버전은 <b>코덱스</b>,<br>클로드의 상위 버전은 <b>클로드 코드</b>입니다.<br><br>클로드 코드는 코덱스와 비교해야지,<br>GPT 무료 버전과 비교할 수는 없습니다."
+    },
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"ld\"><span class=\"ld-lbs\"><span class=\"ld-lb0\"></span><span class=\"ld-lb\">상위</span><span class=\"ld-lb ld-hot\">기본 유료</span><span class=\"ld-lb\">무료</span></span><span class=\"ld-col\"><span class=\"ld-co\"><b>OpenAI</b><i>ChatGPT</i></span><span class=\"ld-c ld-r0\"><span class=\"ld-plan\">Pro</span><span class=\"ld-price\">$100~500</span><span class=\"ld-model\">GPT-6 Astra</span><span class=\"ld-sub\">Pro 추론</span></span><span class=\"ld-c ld-r1\"><span class=\"ld-plan\">Plus</span><span class=\"ld-price\">$20</span><span class=\"ld-model\">GPT-6.1 Sol</span><span class=\"ld-tool\">Codex</span></span><span class=\"ld-c ld-r2\"><span class=\"ld-plan\">Free</span><span class=\"ld-price\">$0</span><span class=\"ld-model\">GPT-6 Luna</span><span class=\"ld-sub\">Go $8</span></span></span><span class=\"ld-col\"><span class=\"ld-co\"><b>Anthropic</b><i>Claude</i></span><span class=\"ld-c ld-r0\"><span class=\"ld-plan\">Max · Ultra</span><span class=\"ld-price\">$100 · $200</span><span class=\"ld-model\">Fable 5.1</span></span><span class=\"ld-c ld-r1\"><span class=\"ld-plan\">Pro</span><span class=\"ld-price\">$20</span><span class=\"ld-model\">Opus 5.5</span><span class=\"ld-tool\">Claude Code</span></span><span class=\"ld-c ld-r2\"><span class=\"ld-plan\">Free</span><span class=\"ld-price\">$0</span><span class=\"ld-model\">Sonnet · Haiku</span></span></span><span class=\"ld-col\"><span class=\"ld-co\"><b>Google</b><i>Gemini</i></span><span class=\"ld-c ld-r0\"><span class=\"ld-plan\">AI Ultra</span><span class=\"ld-price\">$99.99~199.99</span><span class=\"ld-model\">Gemini 4 Argon</span><span class=\"ld-sub\">최고 한도</span></span><span class=\"ld-c ld-r1\"><span class=\"ld-plan\">AI Pro</span><span class=\"ld-price\">$19.99</span><span class=\"ld-model\">Gemini 4 Argon</span><span class=\"ld-sub\">3.1 Pro</span><span class=\"ld-tool\">Antigravity</span></span><span class=\"ld-c ld-r2\"><span class=\"ld-plan\">Free</span><span class=\"ld-price\">$0</span><span class=\"ld-model\">Flash-Lite</span><span class=\"ld-sub\">Plus $4.99</span></span></span><span class=\"ld-band\">같은 줄끼리 비교</span><span class=\"ld-note\">월 요금 · 미국 달러 · 2026년 11월 각 사 공식 요금표</span></span>"
     }
    ],
    "members": [

@@ -395,3 +395,30 @@ hr.rule { display: none; }
 #gpt-cc-3 .g-grid.cards > .box:last-child .cc-it { background: rgba(255, 106, 0, .22); color: #fff; }
 #gpt-cc-3 .g-grid.cards > .box:last-child > .t:last-child { color: rgba(255, 255, 255, .72); }
 #gpt-cc-3 .bd > .t:last-child { margin-top: calc(var(--k) * 40px); font-size: calc(var(--k) * 40px); }
+/* 11-08 17차: 26쪽 3사 모델·요금 사다리 */
+#compare2-8 .bd { position: relative; justify-content: center; }
+#compare2-8 .bd > .t { max-width: calc(var(--k) * 760px); }
+#compare2-8 .bd > .t.r-body, #compare2-8 .bd > p:nth-last-child(2) { font-size: calc(var(--k) * 34px); line-height: 1.6; }
+#compare2-8 .bd > .t b { color: #1f1b18; }
+#compare2-8 .bd > p:has(.ld) { position: absolute; right: calc(var(--k) * 240px); top: 50%; transform: translateY(-50%); width: calc(var(--k) * 1040px); max-width: none; margin: 0; }
+#compare2-8 .ld { position: relative; display: grid; grid-template-columns: calc(var(--k) * 110px) repeat(3, 1fr); gap: calc(var(--k) * 14px); font-family: 'Paperlogy'; }
+#compare2-8 .ld-lbs, #compare2-8 .ld-col { display: grid; grid-template-rows: calc(var(--k) * 92px) repeat(3, calc(var(--k) * 168px)); gap: calc(var(--k) * 14px); }
+#compare2-8 .ld-lb { display: flex; align-items: center; justify-content: flex-end; padding-right: calc(var(--k) * 6px); font-weight: 600; font-size: calc(var(--k) * 22px); color: #8a8580; text-align: right; }
+#compare2-8 .ld-lb.ld-hot { color: #d2470a; }
+#compare2-8 .ld-co { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding-bottom: calc(var(--k) * 6px); }
+#compare2-8 .ld-co b { font-weight: 800; font-size: calc(var(--k) * 32px); color: #1f1b18; line-height: 1.15; }
+#compare2-8 .ld-co i { font-style: normal; font-weight: 500; font-size: calc(var(--k) * 20px); color: #8a8580; }
+#compare2-8 .ld-c { position: relative; display: flex; flex-direction: column; justify-content: center; gap: calc(var(--k) * 4px); padding: calc(var(--k) * 14px) calc(var(--k) * 22px); border-radius: 14px; background: #fff; box-shadow: 0 2px 18px rgba(31, 27, 24, .07); }
+#compare2-8 .ld-r0 { background: #1f1b18; }
+#compare2-8 .ld-r0 .ld-plan, #compare2-8 .ld-r0 .ld-model { color: #fff; }
+#compare2-8 .ld-r0 .ld-sub { color: rgba(255,255,255,.6); }
+#compare2-8 .ld-r2 { background: rgba(31, 27, 24, .04); box-shadow: none; }
+#compare2-8 .ld-plan { font-weight: 700; font-size: calc(var(--k) * 24px); color: #1f1b18; line-height: 1.2; }
+#compare2-8 .ld-price { font-weight: 800; font-size: calc(var(--k) * 30px); color: #ff6a00; line-height: 1.15; letter-spacing: -0.01em; }
+#compare2-8 .ld-model { font-family: 'KoPub Dotum', sans-serif; font-weight: 500; font-size: calc(var(--k) * 22px); color: #4a443f; line-height: 1.3; }
+#compare2-8 .ld-sub { font-family: 'KoPub Dotum', sans-serif; font-size: calc(var(--k) * 17px); color: #8a8580; line-height: 1.2; }
+#compare2-8 .ld-tool { position: absolute; right: calc(var(--k) * 14px); top: calc(var(--k) * 14px); font-weight: 700; font-size: calc(var(--k) * 18px); color: #fff; background: #ff6a00; border-radius: 999px; padding: .25em .7em; }
+#compare2-8 .ld-band { position: absolute; left: calc(var(--k) * -8px); right: calc(var(--k) * -8px); top: calc(var(--k) * (92px + 14px + 168px + 14px - 8px)); height: calc(var(--k) * (168px + 16px)); border: 3px solid #ff6a00; border-radius: 20px; pointer-events: none; }
+#compare2-8 .ld-band { font-size: 0; }
+#compare2-8 .ld-band::after { content: '같은 줄끼리 비교'; position: absolute; left: calc(var(--k) * 4px); bottom: calc(var(--k) * -18px); font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 20px); color: #fff; background: #ff6a00; border-radius: 999px; padding: .2em .8em; }
+#compare2-8 .ld-note { grid-column: 1 / -1; text-align: right; font-family: 'KoPub Dotum', sans-serif; font-size: calc(var(--k) * 16px); color: #8a8580; margin-top: calc(var(--k) * 14px); }
