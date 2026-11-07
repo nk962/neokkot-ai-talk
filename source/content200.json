@@ -6822,109 +6822,6 @@
    ]
   },
   {
-   "id": "aside",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "내가 자는 동안"
-      },
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "브라우저에서 하는 일은 어사이드",
-       "head": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": false,
-         "html": "만드는 일은 <b>클로드 코드</b>"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": false,
-         "html": "사이트에 들어가 클릭하고 입력하는 일은 <b>어사이드</b>"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "AI 에이전트가 들어 있는 브라우저입니다. 내일 바로 쓰실 수 있는 첫 도구로 권합니다."
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "맡기기 전 한 가지 규칙"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "결제, 발송, 삭제 직전에는 사람이 확인합니다."
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    }
-   ],
-   "members": [
-    "aside",
-    "aside-2",
-    "aside-3",
-    "aside-4"
-   ]
-  },
-  {
    "id": "adm-intro",
    "body": [
     {
@@ -7868,107 +7765,18 @@
     },
     {
      "t": "text",
+     "step": "s",
+     "tone": "accent",
+     "bold": true,
+     "html": "나만의 AI 만드는 방법"
+    },
+    {
+     "t": "text",
      "step": "xl",
      "tone": "light",
      "bold": true,
-     "html": "나만의 AI 만드는 방법",
+     "html": "첫 번째,<br><em>나랑 똑같은 말투</em>를 가진다면?",
      "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "첫 번째"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "bar",
-         "on": false
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "light",
-         "bold": true,
-         "html": "1) 내 말투를 등록한다면?"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "두 번째"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "bar",
-         "on": false
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "light",
-         "bold": true,
-         "html": "2) 디자인 레퍼런스를 준다면?"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "세 번째"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "bar",
-         "on": false
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "light",
-         "bold": true,
-         "html": "3) 내 취향을 계속 전달한다면?"
-        }
-       ]
-      }
-     ],
-     "build": "fade 3",
-     "step": true
     }
    ],
    "members": [
@@ -8727,1069 +8535,6 @@
     "phrases-7",
     "phrases-8",
     "phrases-9"
-   ]
-  },
-  {
-   "id": "p4",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "믿을 수 있는가",
-       "head": true
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "신청서에서 가장 많이 물어보신 것, 검수"
-      }
-     ]
-    }
-   ],
-   "members": [
-    "p4"
-   ]
-  },
-  {
-   "id": "pub-q",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "누가 검수를 잘할까?",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "「출판사」는 어떻게 할까?",
-       "head": true
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "rev": "바꿈",
-   "members": [
-    "pub-q",
-    "rev-pub-publisher"
-   ]
-  },
-  {
-   "id": "pub-q-2",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "accent",
-     "bold": true,
-     "html": "클로드 코드에게 한 질문"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": false,
-       "html": "“콘텐츠를 실수 없이, 오류 없이 만드는 곳이 배열, 정렬, 오탈자까지 정말 오류 없이 작업하는 곳이 출판사잖아.<br>출판사의 검수팀도 편집팀도 이제는 AI를 무조건 활용할 텐데, 그들은 AI 검수의 레이어를 어떻게 쌓고, 어떤 역량을 기르고, 어떤 것을 보라고 요구해?”"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "검수를 잘하는 방법보다 먼저, 검수를 잘하는 곳이 어디인지부터 물었습니다."
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    }
-   ],
-   "members": [
-    "pub-q-2",
-    "pub-q-3",
-    "pub-q-4"
-   ]
-  },
-  {
-   "id": "pub-stack",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "출판사의 검수 층에 AI를 얹는 방법",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "규칙 검사기",
-         "head": true
-        },
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "dim",
-           "bold": true,
-           "html": "하는 일",
-           "w": 300.0
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": false,
-           "html": "스타일시트를 코드로 바꿉니다(표기 통일, 번호 연속, 정답 분포)"
-          }
-         ],
-         "line": true
-        },
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "dim",
-           "bold": true,
-           "html": "사람이 맡는 부분",
-           "w": 300.0
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": false,
-           "html": "규칙을 만들고 늘립니다"
-          }
-         ],
-         "line": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "pub-stack",
-    "pub-stack-7"
-   ]
-  },
-  {
-   "id": "pub-stack-8",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "accent",
-       "bold": true,
-       "html": "AI 1차 교정",
-       "head": true
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "하는 일",
-         "w": 300.0
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "오탈자, 비문, 용어 불일치를 제안합니다"
-        }
-       ],
-       "line": true
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "사람이 맡는 부분",
-         "w": 300.0
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "제안마다 받을지 버릴지 판정합니다"
-        }
-       ],
-       "line": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "원고와 조판본 비교",
-         "head": true
-        },
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": false,
-           "html": "원고와 PDF에서 뽑은 글자를 맞대어 빠진 글, 바뀐 글을 찾습니다"
-          }
-         ],
-         "line": true
-        },
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": false,
-           "html": "차이가 난 곳만 봅니다"
-          }
-         ],
-         "line": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "pub-stack-8",
-    "pub-stack-9"
-   ]
-  },
-  {
-   "id": "pub-stack-10",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "accent",
-       "bold": true,
-       "html": "AI 블라인드 풀이",
-       "head": true
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "하는 일",
-         "w": 300.0
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "정답을 숨기고 풀게 해 복수 정답과 정답 오류를 걸러 냅니다"
-        }
-       ],
-       "line": true
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "사람이 맡는 부분",
-         "w": 300.0
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "답이 갈린 문항을 심판합니다"
-        }
-       ],
-       "line": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "사람 판단",
-         "head": true
-        },
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": false,
-           "html": "교육과정 부합, 학년 수준, 편향, 저작권, 난이도"
-          }
-         ],
-         "line": true
-        },
-        {
-         "t": "group",
-         "dir": "row",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": false,
-           "html": "최종 책임을 집니다"
-          }
-         ],
-         "line": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "pub-stack-10",
-    "pub-stack-11"
-   ]
-  },
-  {
-   "id": "pub-stack-13",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "첫 번째"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "ink",
-     "bold": true,
-     "html": "AI가 원문을 매끄럽게 다듬지 못하게 한다",
-     "chip": "fill"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "두 번째"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "AI가 고친 것을 그대로 반영하지 않는다. 제안으로 받고, 사람이 승인한다",
-       "chip": "fill"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "pub-stack-12",
-    "pub-stack-13",
-    "pub-stack-14",
-    "pub-stack-15"
-   ]
-  },
-  {
-   "id": "pub-compare",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "제 체계를 비교해 보고, 두 가지를 더 만들었습니다",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "이미 있던 것, 보통 출판사보다 앞선 부분"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "pub-compare",
-    "pub-compare-2"
-   ]
-  },
-  {
-   "id": "pub-compare-3",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "이미 있던 것, 보통 출판사보다 앞선 부분"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "다른 모델 둘로 블라인드 풀이"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "0개 검사를 실패로 처리"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "결함 장부와 승격"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "비교하고 새로 만든 것"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "pub-compare-3",
-    "pub-compare-4"
-   ]
-  },
-  {
-   "id": "pub-compare-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가 | 검수"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "비교하고 새로 만든 것"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "240"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "규칙을 한 권으로 모은 「표기 · 조판 원칙」"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "14/15"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "일부러 오류를 심은 교재로 검수기를 시험했더니, 15건 중 14건을 잡았습니다"
-        }
-       ]
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "dim",
-       "bold": false,
-       "html": "놓친 한 건의 원인을 찾아 구멍을 막았습니다"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "만든 AI에게 「이거 맞아?」라고 물으면"
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "accent",
-         "bold": true,
-         "html": "“네, 맞습니다.”",
-         "head": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "pub-compare-5",
-    "trap"
-   ]
-  },
-  {
-   "id": "trap-2",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "기계가 만든 문제를 같은 기계가 다시 읽는 것으로는"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "검수가 되지 않습니다."
-      }
-     ]
-    }
-   ],
-   "members": [
-    "trap-2"
-   ]
-  },
-  {
-   "id": "blind",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "믿을 수 있는가"
-    },
-    {
-     "t": "text",
-     "step": "l",
-     "tone": "ink",
-     "bold": true,
-     "html": "다른 AI가, 답을 모른 채, 다시 풉니다",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "첫 번째"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "1"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "만든 AI는 자기 문항을 검수하지 않습니다"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "두 번째"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "2"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "서로 다른 AI 둘이 정답을 모른 채 다시 풉니다"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "세 번째"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "3"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "답이 갈리면 또 다른 AI가 이의를 심사합니다"
-        }
-       ]
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "네 번째"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "4"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "셀 수 있는 것은 AI 대신 코드가 셉니다"
-        }
-       ]
-      }
-     ],
-     "build": "fade 4",
-     "step": true
-    }
-   ],
-   "members": [
-    "blind",
-    "blind-2",
-    "blind-3",
-    "blind-4",
-    "blind-5",
-    "blind-6",
-    "blind-7",
-    "blind-8",
-    "blind-9"
-   ]
-  },
-  {
-   "id": "layers",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "믿을 수 있는가"
-      },
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "accent",
-       "bold": true,
-       "html": "9<span class=\"ink\">겹</span>"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "학생 앞에 나가기 전, 지금 쌓여 있는 검수"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "원문 잠금"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "근거 인용"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "기계 검사"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "블라인드 재풀이"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "이의 심사"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "교차 검수"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "납품 PDF 되읽기"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "출고 판정"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": false,
-         "html": "결함 승격"
-        }
-       ],
-       "build": "fade 1",
-       "step": true
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    }
-   ],
-   "members": [
-    "layers",
-    "layers-2",
-    "layers-3",
-    "layers-4"
    ]
   },
   {
@@ -11400,6 +10145,1069 @@
    ]
   },
   {
+   "id": "p4",
+   "body": [
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "ink",
+       "bold": true,
+       "html": "믿을 수 있는가",
+       "head": true
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "dim",
+       "bold": false,
+       "html": "신청서에서 가장 많이 물어보신 것, 검수"
+      }
+     ]
+    }
+   ],
+   "members": [
+    "p4"
+   ]
+  },
+  {
+   "id": "pub-q",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "누가 검수를 잘할까?",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "「출판사」는 어떻게 할까?",
+       "head": true
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "rev": "바꿈",
+   "members": [
+    "pub-q",
+    "rev-pub-publisher"
+   ]
+  },
+  {
+   "id": "pub-q-2",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "text",
+     "step": "m",
+     "tone": "accent",
+     "bold": true,
+     "html": "클로드 코드에게 한 질문"
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "ink",
+       "bold": false,
+       "html": "“콘텐츠를 실수 없이, 오류 없이 만드는 곳이 배열, 정렬, 오탈자까지 정말 오류 없이 작업하는 곳이 출판사잖아.<br>출판사의 검수팀도 편집팀도 이제는 AI를 무조건 활용할 텐데, 그들은 AI 검수의 레이어를 어떻게 쌓고, 어떤 역량을 기르고, 어떤 것을 보라고 요구해?”"
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "dim",
+       "bold": false,
+       "html": "검수를 잘하는 방법보다 먼저, 검수를 잘하는 곳이 어디인지부터 물었습니다."
+      }
+     ],
+     "build": "fade 2",
+     "step": true
+    }
+   ],
+   "members": [
+    "pub-q-2",
+    "pub-q-3",
+    "pub-q-4"
+   ]
+  },
+  {
+   "id": "pub-stack",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "출판사의 검수 층에 AI를 얹는 방법",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "규칙 검사기",
+         "head": true
+        },
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "dim",
+           "bold": true,
+           "html": "하는 일",
+           "w": 300.0
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "스타일시트를 코드로 바꿉니다(표기 통일, 번호 연속, 정답 분포)"
+          }
+         ],
+         "line": true
+        },
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "s",
+           "tone": "dim",
+           "bold": true,
+           "html": "사람이 맡는 부분",
+           "w": 300.0
+          },
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "규칙을 만들고 늘립니다"
+          }
+         ],
+         "line": true
+        }
+       ]
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "members": [
+    "pub-stack",
+    "pub-stack-7"
+   ]
+  },
+  {
+   "id": "pub-stack-8",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "accent",
+       "bold": true,
+       "html": "AI 1차 교정",
+       "head": true
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": true,
+         "html": "하는 일",
+         "w": 300.0
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "오탈자, 비문, 용어 불일치를 제안합니다"
+        }
+       ],
+       "line": true
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": true,
+         "html": "사람이 맡는 부분",
+         "w": 300.0
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "제안마다 받을지 버릴지 판정합니다"
+        }
+       ],
+       "line": true
+      }
+     ]
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "원고와 조판본 비교",
+         "head": true
+        },
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "원고와 PDF에서 뽑은 글자를 맞대어 빠진 글, 바뀐 글을 찾습니다"
+          }
+         ],
+         "line": true
+        },
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "차이가 난 곳만 봅니다"
+          }
+         ],
+         "line": true
+        }
+       ]
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "members": [
+    "pub-stack-8",
+    "pub-stack-9"
+   ]
+  },
+  {
+   "id": "pub-stack-10",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "accent",
+       "bold": true,
+       "html": "AI 블라인드 풀이",
+       "head": true
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": true,
+         "html": "하는 일",
+         "w": 300.0
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "정답을 숨기고 풀게 해 복수 정답과 정답 오류를 걸러 냅니다"
+        }
+       ],
+       "line": true
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": true,
+         "html": "사람이 맡는 부분",
+         "w": 300.0
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "답이 갈린 문항을 심판합니다"
+        }
+       ],
+       "line": true
+      }
+     ]
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "사람 판단",
+         "head": true
+        },
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "교육과정 부합, 학년 수준, 편향, 저작권, 난이도"
+          }
+         ],
+         "line": true
+        },
+        {
+         "t": "group",
+         "dir": "row",
+         "kids": [
+          {
+           "t": "text",
+           "step": "m",
+           "tone": "ink",
+           "bold": false,
+           "html": "최종 책임을 집니다"
+          }
+         ],
+         "line": true
+        }
+       ]
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "members": [
+    "pub-stack-10",
+    "pub-stack-11"
+   ]
+  },
+  {
+   "id": "pub-stack-13",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "accent",
+     "bold": true,
+     "html": "첫 번째"
+    },
+    {
+     "t": "text",
+     "step": "m",
+     "tone": "ink",
+     "bold": true,
+     "html": "AI가 원문을 매끄럽게 다듬지 못하게 한다",
+     "chip": "fill"
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "accent",
+       "bold": true,
+       "html": "두 번째"
+      },
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "ink",
+       "bold": true,
+       "html": "AI가 고친 것을 그대로 반영하지 않는다. 제안으로 받고, 사람이 승인한다",
+       "chip": "fill"
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "members": [
+    "pub-stack-12",
+    "pub-stack-13",
+    "pub-stack-14",
+    "pub-stack-15"
+   ]
+  },
+  {
+   "id": "pub-compare",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "제 체계를 비교해 보고, 두 가지를 더 만들었습니다",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "accent",
+       "bold": true,
+       "html": "이미 있던 것, 보통 출판사보다 앞선 부분"
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "members": [
+    "pub-compare",
+    "pub-compare-2"
+   ]
+  },
+  {
+   "id": "pub-compare-3",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "dim",
+       "bold": true,
+       "html": "이미 있던 것, 보통 출판사보다 앞선 부분"
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "다른 모델 둘로 블라인드 풀이"
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "0개 검사를 실패로 처리"
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": true,
+       "html": "결함 장부와 승격"
+      }
+     ]
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "accent",
+       "bold": true,
+       "html": "비교하고 새로 만든 것"
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "members": [
+    "pub-compare-3",
+    "pub-compare-4"
+   ]
+  },
+  {
+   "id": "pub-compare-5",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가 | 검수"
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "dim",
+       "bold": true,
+       "html": "비교하고 새로 만든 것"
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "240"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": false,
+         "html": "규칙을 한 권으로 모은 「표기 · 조판 원칙」"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "14/15"
+        },
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "ink",
+         "bold": false,
+         "html": "일부러 오류를 심은 교재로 검수기를 시험했더니, 15건 중 14건을 잡았습니다"
+        }
+       ]
+      },
+      {
+       "t": "text",
+       "step": "xs",
+       "tone": "dim",
+       "bold": false,
+       "html": "놓친 한 건의 원인을 찾아 구멍을 막았습니다"
+      }
+     ]
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "dim",
+         "bold": false,
+         "html": "만든 AI에게 「이거 맞아?」라고 물으면"
+        },
+        {
+         "t": "text",
+         "step": "xl",
+         "tone": "accent",
+         "bold": true,
+         "html": "“네, 맞습니다.”",
+         "head": true
+        }
+       ]
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    }
+   ],
+   "members": [
+    "pub-compare-5",
+    "trap"
+   ]
+  },
+  {
+   "id": "trap-2",
+   "body": [
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": false,
+       "html": "기계가 만든 문제를 같은 기계가 다시 읽는 것으로는"
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "ink",
+       "bold": false,
+       "html": "검수가 되지 않습니다."
+      }
+     ]
+    }
+   ],
+   "members": [
+    "trap-2"
+   ]
+  },
+  {
+   "id": "blind",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "믿을 수 있는가"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "다른 AI가, 답을 모른 채, 다시 풉니다",
+     "head": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "accent",
+       "bold": true,
+       "html": "첫 번째"
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "1"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "만든 AI는 자기 문항을 검수하지 않습니다"
+        }
+       ]
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "accent",
+       "bold": true,
+       "html": "두 번째"
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "2"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "서로 다른 AI 둘이 정답을 모른 채 다시 풉니다"
+        }
+       ]
+      }
+     ],
+     "build": "fade 2",
+     "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "accent",
+       "bold": true,
+       "html": "세 번째"
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "3"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "답이 갈리면 또 다른 AI가 이의를 심사합니다"
+        }
+       ]
+      }
+     ],
+     "build": "fade 3",
+     "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "s",
+       "tone": "accent",
+       "bold": true,
+       "html": "네 번째"
+      },
+      {
+       "t": "group",
+       "dir": "row",
+       "kids": [
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "accent",
+         "bold": true,
+         "html": "4"
+        },
+        {
+         "t": "text",
+         "step": "l",
+         "tone": "ink",
+         "bold": true,
+         "html": "셀 수 있는 것은 AI 대신 코드가 셉니다"
+        }
+       ]
+      }
+     ],
+     "build": "fade 4",
+     "step": true
+    }
+   ],
+   "members": [
+    "blind",
+    "blind-2",
+    "blind-3",
+    "blind-4",
+    "blind-5",
+    "blind-6",
+    "blind-7",
+    "blind-8",
+    "blind-9"
+   ]
+  },
+  {
+   "id": "layers",
+   "body": [
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "m",
+       "tone": "accent",
+       "bold": true,
+       "html": "믿을 수 있는가"
+      },
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "accent",
+       "bold": true,
+       "html": "9<span class=\"ink\">겹</span>"
+      },
+      {
+       "t": "text",
+       "step": "l",
+       "tone": "dim",
+       "bold": false,
+       "html": "학생 앞에 나가기 전, 지금 쌓여 있는 검수"
+      }
+     ]
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "원문 잠금"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "근거 인용"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "기계 검사"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "블라인드 재풀이"
+        }
+       ]
+      }
+     ],
+     "build": "fade 1",
+     "step": true
+    },
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "이의 심사"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "교차 검수"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "납품 PDF 되읽기"
+        },
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "출고 판정"
+        }
+       ]
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "m",
+         "tone": "ink",
+         "bold": false,
+         "html": "결함 승격"
+        }
+       ],
+       "build": "fade 1",
+       "step": true
+      }
+     ],
+     "build": "fade 2",
+     "step": true
+    }
+   ],
+   "members": [
+    "layers",
+    "layers-2",
+    "layers-3",
+    "layers-4"
+   ]
+  },
+  {
    "id": "yt-break",
    "members": [
     "yt-break"
@@ -11424,7 +11232,7 @@
        "step": "l",
        "tone": "dim",
        "bold": false,
-       "html": "저희 유튜브 하나 짧게 볼게요? ㅎㅎ"
+       "html": "저희 유튜브 하나 짧게 볼게요."
       }
      ]
     }
@@ -11465,26 +11273,9 @@
        "step": "l",
        "tone": "dim",
        "bold": false,
-       "html": "우리는 일을 미루기보다 늘 끌어오는 사람들입니다."
+       "html": "우리는 일을 미루기보다 늘 끌어오는 사람들입니다.<br>저도 끌어오다 보니 1년 치 일이 한 달 안에 끝나 있었습니다."
       }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "저도 끌어오다 보니 1년 치 일이 한 달 안에 끝나 있었습니다."
-      }
-     ],
-     "build": "fade 3",
-     "step": true
+     ]
     }
    ],
    "members": [
@@ -11498,13 +11289,6 @@
    "id": "ideal",
    "body": [
     {
-     "t": "text",
-     "step": "m",
-     "tone": "accent",
-     "bold": true,
-     "html": "왜 쓰는가"
-    },
-    {
      "t": "group",
      "dir": "col",
      "kids": [
@@ -11513,42 +11297,10 @@
        "step": "xl",
        "tone": "ink",
        "bold": true,
-       "html": "학생은 많은데,<br>한 명 한 명 <em>다 챙기는</em> 학원",
+       "html": "왜 쓰는가?",
        "head": true
       }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "사업으로 보면 가장 이상적인 그림입니다. 이제는 가능합니다."
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "학생이 느끼는 퀄리티 = 나를 얼마나 잘 알고 챙겨 주는가"
-      }
-     ],
-     "build": "fade 3",
-     "step": true
+     ]
     }
    ],
    "members": [
@@ -11559,11 +11311,41 @@
    ]
   },
   {
+   "id": "ideal-b",
+   "members": [
+    "ideal-b"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "왜 쓰는가"
+    },
+    {
+     "t": "text",
+     "step": "xl",
+     "tone": "ink",
+     "bold": true,
+     "html": "학생은 많은데,<br>한 명 한 명 <em>다 챙기는</em> 학원",
+     "head": true
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"x-sub\">사업으로 보면 가장 이상적인 그림입니다. <b>이제는 가능합니다.</b></span><span class=\"x-eq\"><span class=\"x-eq-l\">학생이 느끼는 퀄리티</span><span class=\"x-eq-op\">=</span><span class=\"x-eq-r\">나를 얼마나 잘 알고 챙겨 주는가</span></span>"
+    }
+   ]
+  },
+  {
    "id": "rev-future-1",
    "body": [
     {
      "t": "text",
-     "step": "s",
+     "step": "xs",
      "tone": "accent",
      "bold": true,
      "html": "앞으로 우리 학원은"
@@ -11573,58 +11355,15 @@
      "step": "l",
      "tone": "ink",
      "bold": true,
-     "html": "자료는 누구나 갖게 됩니다",
+     "html": "자료는 <em>누구나</em> 갖게 됩니다",
      "head": true
     },
     {
      "t": "text",
      "step": "s",
-     "tone": "dim",
+     "tone": "ink",
      "bold": false,
-     "html": "교재와 문항의 원가는 0에 가까워집니다."
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": false,
-       "html": "빅북 15회, 주간내신, 취약유형 교재."
-      },
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": false,
-       "html": "지금은 밤에 자동으로 뽑고 있지만"
-      },
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": false,
-       "html": "1~2년 안에 다른 학원도 비슷하게 합니다."
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "「자료 좋은 학원」은"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "차별점이 못 됩니다"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "html": "<span class=\"x-sub\">교재와 문항의 원가는 <b>0에 가까워집니다.</b></span><span class=\"x-row x-3\"><span class=\"x-card\"><span class=\"x-lb\">지금</span><span class=\"x-main\">빅북 15회 · 주간내신<br>취약유형 교재</span><span class=\"x-note\">지금은 밤에 자동으로 뽑고 있지만</span></span><span class=\"x-arrow\">→</span><span class=\"x-card\"><span class=\"x-lb\">1~2년 안에</span><span class=\"x-main\">다른 학원도<br>비슷하게 합니다</span></span><span class=\"x-arrow\">→</span><span class=\"x-card x-dark\"><span class=\"x-lb\">그래서</span><span class=\"x-main\">「자료 좋은 학원」은<br><b>차별점이 못 됩니다</b></span></span></span>"
     }
    ],
    "members": [
@@ -11715,6 +11454,13 @@
    "body": [
     {
      "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "앞으로 우리 학원은"
+    },
+    {
+     "t": "text",
      "step": "s",
      "tone": "accent",
      "bold": true,
@@ -11731,79 +11477,9 @@
     {
      "t": "text",
      "step": "s",
-     "tone": "dim",
+     "tone": "ink",
      "bold": false,
-     "html": "그렇다면 사람이 직접 하고,"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "AI는 준비만 합니다."
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "예를 들어"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": true,
-           "html": "AI가 하는 것"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "상담 메모와 오답 기록을 정리해 「오늘 꼭 할 말 한 줄」 뽑기"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "선생님이 하는 것"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "그 말을 아이에게 직접 하기"
-          }
-         ],
-         "box": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "html": "<span class=\"x-sub\">그렇다면 <b>사람이 직접</b> 하고, <b class=\"o\">AI는 준비만</b> 합니다.</span><span class=\"x-lb2\">예를 들어</span><span class=\"x-row x-2\"><span class=\"x-card\"><span class=\"x-lb\">AI가 하는 것</span><span class=\"x-main\">상담 메모와 오답 기록을 정리해<br>「오늘 꼭 할 말 한 줄」 뽑기</span></span><span class=\"x-arrow\">→</span><span class=\"x-card x-dark\"><span class=\"x-lb\">선생님이 하는 것</span><span class=\"x-main\">그 말을 아이에게<br><b>직접</b> 하기</span></span></span>"
     }
    ],
    "members": [
@@ -11816,6 +11492,13 @@
    "body": [
     {
      "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "앞으로 우리 학원은"
+    },
+    {
+     "t": "text",
      "step": "s",
      "tone": "accent",
      "bold": true,
@@ -11826,29 +11509,15 @@
      "step": "l",
      "tone": "ink",
      "bold": true,
-     "html": "아이를 실제로<br>앉혀서 하게 만드는 일",
+     "html": "아이를 실제로 <em>앉혀서 하게 만드는</em> 일",
      "head": true
     },
     {
      "t": "text",
      "step": "s",
-     "tone": "dim",
+     "tone": "ink",
      "bold": false,
-     "html": "동기를 주고, 약속을 받고,"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "dim",
-     "bold": false,
-     "html": "다음 주에 확인합니다."
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "사람이 지켜보고 있다는 압력과 관계"
+     "html": "<span class=\"x-row x-3s\"><span class=\"x-card\"><span class=\"x-num\">1</span><span class=\"x-main\">동기를 주고</span></span><span class=\"x-arrow\">→</span><span class=\"x-card\"><span class=\"x-num\">2</span><span class=\"x-main\">약속을 받고</span></span><span class=\"x-arrow\">→</span><span class=\"x-card\"><span class=\"x-num\">3</span><span class=\"x-main\">다음 주에 확인합니다</span></span></span><span class=\"x-key\"><span class=\"x-key-lb\">핵심</span><span class=\"x-key-t\">사람이 지켜보고 있다는 <b>압력과 관계</b></span></span>"
     }
    ],
    "rev": "끼움",
@@ -11861,6 +11530,13 @@
    "body": [
     {
      "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "앞으로 우리 학원은"
+    },
+    {
+     "t": "text",
      "step": "s",
      "tone": "accent",
      "bold": true,
@@ -11871,85 +11547,15 @@
      "step": "l",
      "tone": "ink",
      "bold": true,
-     "html": "선생님 한 분이 주에<br>학생 한 명당 몇 분을<br>얼굴 보고 쓰는가",
+     "html": "선생님 한 분이 주에 학생 한 명당<br><em>몇 분을 얼굴 보고</em> 쓰는가",
      "head": true
     },
     {
      "t": "text",
      "step": "s",
-     "tone": "dim",
+     "tone": "ink",
      "bold": false,
-     "html": "이 숫자가 늘지 않으면"
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "전략이 작동하지 않는 겁니다."
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "accent",
-       "bold": true,
-       "html": "한 줄 정리"
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": true,
-           "html": "AI"
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": true,
-           "html": "이 아이를 아는 일"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "사람"
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": true,
-           "html": "알려졌다고 느끼게 하는 일, 실제로 하게 만드는 일"
-          }
-         ],
-         "box": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "html": "<span class=\"x-sub\">이 숫자가 늘지 않으면 <b class=\"o\">전략이 작동하지 않는 겁니다.</b></span><span class=\"x-lb2\">한 줄 정리</span><span class=\"x-row x-2\"><span class=\"x-card\"><span class=\"x-lb\">AI</span><span class=\"x-main\">이 아이를 아는 일</span></span><span class=\"x-arrow\">+</span><span class=\"x-card x-dark\"><span class=\"x-lb\">사람</span><span class=\"x-main\">알려졌다고 느끼게 하는 일,<br>실제로 하게 만드는 일</span></span></span>"
     }
    ],
    "members": [
@@ -11961,72 +11567,26 @@
    "id": "lines-6",
    "body": [
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "s",
-       "tone": "dim",
-       "bold": true,
-       "html": "취약유형 개인 교재"
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": true,
-         "html": "학생에게 주는 것"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "커스텀"
-        }
-       ]
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "사교육이 가는 방향"
-      }
-     ]
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "취약유형 개인 교재"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "ink",
-         "bold": true,
-         "html": "커스텀"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "교재 라인도 학생마다 맞는 자료를 골라 주는 쪽으로 정리했습니다."
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "t": "text",
+     "step": "xl",
+     "tone": "ink",
+     "bold": true,
+     "html": "학생에게 주는 것도,<br>사교육이 가는 방향도 <em>커스텀</em>",
+     "head": true
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"x-sub\">교재 라인도 <b>학생마다 맞는 자료를 골라 주는 쪽</b>으로 정리했습니다.</span>"
     }
    ],
    "members": [
@@ -12135,7 +11695,7 @@
    "dark": true
   },
   {
-   "id": "transition",
+   "id": "ans-human-4",
    "body": [
     {
      "t": "group",
@@ -12143,54 +11703,25 @@
      "kids": [
       {
        "t": "text",
-       "step": "m",
+       "step": "xs",
        "tone": "accent",
        "bold": true,
-       "html": "쓰는 도구"
+       "html": "책임지는 일"
       },
       {
        "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "지금은 과도기입니다."
+       "step": "m",
+       "tone": "ink",
+       "bold": true,
+       "html": "끝까지 사람이 쥐는 일",
+       "head": true
       }
      ]
     },
     {
      "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "다 해 보고,<br><em>다 알아야</em> 합니다",
-       "head": true
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "지금 필요한 태도는 그것 하나입니다."
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
+     "dir": "grid",
+     "cols": 2,
      "kids": [
       {
        "t": "group",
@@ -12198,23 +11729,161 @@
        "kids": [
         {
          "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "미국의 한 IT 회사 이야기. 2주 만에 사람들이"
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "01"
         },
         {
          "t": "text",
-         "step": "l",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "상담과 신뢰",
+         "head": true
+        },
+        {
+         "t": "text",
+         "step": "s",
          "tone": "dim",
          "bold": false,
-         "html": "자기 신용카드 번호를 다 내주었습니다."
+         "html": "불안한 학부모가 마지막에 찾는 것은 원장의 목소리입니다. AI는 근거를 준비하고, 말은 사람이 합니다."
         }
-       ]
+       ],
+       "box": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "02"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "학생의 동기",
+         "head": true
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "문항은 AI가 만들어도, 학생이 자리에 앉아 있게 하는 힘은 교실의 사람에게서 나옵니다."
+        }
+       ],
+       "box": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "03"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "무엇을 만들지 정하는 판단",
+         "head": true
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "어떤 학교, 어떤 유형, 어떤 약속을 할지는 현장 경험이 정합니다."
+        }
+       ],
+       "box": true
+      },
+      {
+       "t": "group",
+       "dir": "col",
+       "kids": [
+        {
+         "t": "text",
+         "step": "xs",
+         "tone": "accent",
+         "bold": true,
+         "html": "04"
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "ink",
+         "bold": true,
+         "html": "책임",
+         "head": true
+        },
+        {
+         "t": "text",
+         "step": "s",
+         "tone": "dim",
+         "bold": false,
+         "html": "오답 문항이 나갔을 때 사과하고 책임지는 쪽은 사람입니다."
+        }
+       ],
+       "box": true
       }
-     ],
-     "build": "fade 3",
-     "step": true
+     ]
+    }
+   ],
+   "members": [
+    "ans-human-4"
+   ]
+  },
+  {
+   "id": "transition",
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "쓰는 도구"
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "accent",
+     "bold": true,
+     "html": "지금은 과도기입니다."
+    },
+    {
+     "t": "text",
+     "step": "xl",
+     "tone": "ink",
+     "bold": true,
+     "html": "다 해 보고,<br><em>다 알아야</em> 합니다",
+     "head": true
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"x-sub\">지금 필요한 태도는 <b>그것 하나</b>입니다.</span>"
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"x-story\"><span class=\"x-lb\">미국의 한 IT 회사 이야기</span><span class=\"x-main\">2주 만에 사람들이<br>자기 신용카드 번호를<br><b>다 내주었습니다.</b></span></span>"
     }
    ],
    "members": [
@@ -12441,69 +12110,33 @@
    "id": "doubt",
    "body": [
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "그런데"
-      },
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "dim",
-       "bold": true,
-       "html": "?"
-      }
-     ]
+     "t": "text",
+     "step": "s",
+     "tone": "accent",
+     "bold": true,
+     "html": "그런데"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "지금 AI는 굉장히 시끄럽습니다",
-       "head": true
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "t": "text",
+     "step": "xl",
+     "tone": "ink",
+     "bold": true,
+     "html": "지금 AI는<br><em>굉장히 시끄럽습니다</em>",
+     "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "속도 조절론도, 비관론자도 있습니다.<br>그런 이야기만 골라 들으면 물음표가 생깁니다."
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "“이거 지금 꼭 배워야 해요?<br>나중에 더 싸지면, 말만 하면 뚝딱 되는 시대가 오지 않나요?”",
-         "chip": "fill"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"x-sub\">속도 조절론도, 비관론자도 있습니다.<br>그런 이야기만 골라 들으면 <b>물음표</b>가 생깁니다.</span>"
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"x-q\"><span class=\"x-qm\">?</span><span class=\"x-qt\">이거 지금 꼭 배워야 해요?<br>나중에 더 싸지면, 말만 하면<br><b>뚝딱 되는 시대</b>가 오지 않나요?</span></span>"
     }
    ],
    "members": [
@@ -13509,158 +13142,6 @@
    "dark": true,
    "members": [
     "ans-q4"
-   ]
-  },
-  {
-   "id": "ans-human-4",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "accent",
-       "bold": true,
-       "html": "책임지는 일"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "끝까지 사람이 쥐는 일",
-       "head": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "grid",
-     "cols": 2,
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "01"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "상담과 신뢰",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": false,
-         "html": "불안한 학부모가 마지막에 찾는 것은 원장의 목소리입니다. AI는 근거를 준비하고, 말은 사람이 합니다."
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "02"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "학생의 동기",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": false,
-         "html": "문항은 AI가 만들어도, 학생이 자리에 앉아 있게 하는 힘은 교실의 사람에게서 나옵니다."
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "03"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "무엇을 만들지 정하는 판단",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": false,
-         "html": "어떤 학교, 어떤 유형, 어떤 약속을 할지는 현장 경험이 정합니다."
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "04"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "책임",
-         "head": true
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": false,
-         "html": "오답 문항이 나갔을 때 사과하고 책임지는 쪽은 사람입니다."
-        }
-       ],
-       "box": true
-      }
-     ]
-    }
-   ],
-   "members": [
-    "ans-human-4"
    ]
   },
   {
