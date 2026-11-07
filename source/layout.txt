@@ -50,7 +50,6 @@ adm-onboard-4 | MERGE_PREV | 3, 4단계와 맺음
 adm-fee | COMPARE | 사람이 하는 일과 AI가 하는 일
 adm-why | CARDS | 많다 · 반복된다 · 실수는 없다
 tone-ask-6 | MERGE_NEXT | 결과 한 줄
-tone-rule-6 | MERGE_PREV | 결론 한 줄
 phrases-9 | MERGE_PREV | 넷째 마디
 pub-q | MERGE_NEXT | 질문과 답
 pub-stack | CARDS | 규칙 검사기 · AI 1차 교정
@@ -69,8 +68,6 @@ design-5 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 
 vr-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 vr-2 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 vr-3 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
-vr-4 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
-vr-6 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 vr-7 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 web-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 program | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)

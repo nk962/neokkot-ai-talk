@@ -8303,110 +8303,15 @@
      "step": "l",
      "tone": "ink",
      "bold": true,
-     "html": "한 줄 지시가 바로 규칙이 됩니다",
+     "html": "한 줄 지시가 바로 <em>규칙</em>이 됩니다",
      "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "내가 한 지시"
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "앞으로 강사님에게 보내는 건 성 빼고 00 선생님~ 이렇게 시작해서 보내. 성까지 넣으면 너무 딱딱해 보이니까."
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": true,
-         "html": "지시 전"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "이다빈 선생님, 자료 보내요."
-        }
-       ]
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "지시 후"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "다빈 선생님, 자료 보내요."
-        }
-       ],
-       "box": true
-      }
-     ],
-     "build": "fade 4",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "이 규칙은 말투 스킬과 카톡 발송 절차에 함께 적어 둡니다. 다음 카톡부터는 말하지 않아도 지킵니다."
-      }
-     ],
-     "build": "fade 5",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"tr\"><span class=\"tr-cmd\"><span class=\"tr-lb\">내가 한 지시</span><span class=\"tr-q\">앞으로 강사님에게 보내는 건 성 빼고<br><b>00 선생님~</b> 이렇게 시작해서 보내.<br>성까지 넣으면 너무 딱딱해 보이니까.</span></span><span class=\"tr-ba\"><span class=\"tr-c tr-before\"><span class=\"tr-lb2\">지시 전</span><span class=\"tr-msg\"><s>이다빈</s> 선생님, 자료 보내요.</span></span><span class=\"tr-arrow\">↓</span><span class=\"tr-c tr-after\"><span class=\"tr-lb2\">지시 후</span><span class=\"tr-msg\"><b>다빈 선생님</b>, 자료 보내요.</span></span></span></span><span class=\"tr-foot\">이 규칙은 말투 스킬과 카톡 발송 절차에 함께 적어 둡니다. <b>다음 카톡부터는 말하지 않아도 지킵니다.</b></span>"
     }
    ],
    "members": [
@@ -9583,38 +9488,11 @@
      "html": "4단계 | 기준을 적용한 결과: 머리 부분"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "전 | 영문 라벨, 가운뎃점, 통계 줄, 머리 선",
-       "chip": "fill"
-      },
-      {
-       "t": "img",
-       "src": "/_blob/7e754c5380c95c4eb2057eada9fba98f",
-       "alt": "",
-       "fit": "contain"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "light",
-       "bold": true,
-       "html": "후 | 굵은 한글 제목, 알약, 교재 목업",
-       "chip": "accent"
-      },
-      {
-       "t": "img",
-       "src": "/_blob/5c16e131820a6ecf2967a7127f90dc9f",
-       "alt": "",
-       "fit": "contain"
-      }
-     ]
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"v4\"><span class=\"v4-row\"><span class=\"v4-lb\"><b>전</b>영문 라벨, 가운뎃점,<br>통계 줄, 머리 선</span><span class=\"v4-im\"><img src=\"assets/7e754c5380c95c4eb2057eada9fba98f.png\" alt=\"전: 머리 부분\"></span></span><span class=\"v4-row v4-after\"><span class=\"v4-lb\"><b>후</b>굵은 한글 제목,<br>알약, 교재 목업</span><span class=\"v4-im\"><img src=\"assets/5c16e131820a6ecf2967a7127f90dc9f.png\" alt=\"후: 머리 부분\"></span></span></span>"
     }
    ],
    "members": [
@@ -9778,89 +9656,18 @@
    "id": "vr-6",
    "body": [
     {
-     "t": "group",
-     "dir": "row",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "6단계 | 쓰임 자체를 다시 정의"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "내 요청"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "light",
-           "bold": false,
-           "html": "이게 왜 행정실에 필요한 말이야! 행정실은 시험지 인쇄를 하는 곳이 아닌데. 페이지 수도 몰라도 돼. 학부모님이 연락 왔을 때 수업 설명을 충분히 해 줄 수 있어야 해. 수업이 어떻게 기획됐고, 각 반이 어떤 단어를 다루고, 단어를 어떻게 골랐고, 들으면 어떤 점이 좋고, 수업은 언제인지."
-          }
-         ],
-         "box": true,
-         "dark": true
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "행정실 안내에서 지운 문구"
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "img",
-           "src": "/_blob/6231e8a04bfea624bcf66a6f4f0f1f0f",
-           "alt": "",
-           "fit": "contain"
-          },
-          {
-           "t": "img",
-           "src": "/_blob/81713d5ef7697661b89f0d562991b5d2",
-           "alt": "",
-           "fit": "contain"
-          },
-          {
-           "t": "img",
-           "src": "/_blob/fba861a48c87f31f351e8d174231ac46",
-           "alt": "",
-           "fit": "contain"
-          }
-         ]
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "수업 시간, 기획 의도, 단어 선정 방법, 반별 어근, 좋은 점으로 다시 짰습니다."
-        }
-       ]
-      },
-      {
-       "t": "img",
-       "src": "/_blob/04bd422e6034cb76094a5ea5dddf24b7",
-       "alt": "",
-       "fit": "contain"
-      }
-     ]
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "6단계 | 쓰임 자체를 다시 정의"
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"v6\"><span class=\"v6-l\"><span class=\"v6-req\"><span class=\"v6-lb\">내 요청</span><span class=\"v6-t\">이게 왜 행정실에 필요한 말이야! 행정실은 시험지 인쇄를 하는 곳이 아닌데. 페이지 수도 몰라도 돼. <b>학부모님이 연락 왔을 때 수업 설명을 충분히 해 줄 수 있어야 해.</b> 수업이 어떻게 기획됐고, 각 반이 어떤 단어를 다루고, 단어를 어떻게 골랐고, 들으면 어떤 점이 좋고, 수업은 언제인지.</span></span><span class=\"v6-lb2\">행정실 안내에서 지운 문구</span><span class=\"v6-cut\"><img class=\"c1\" src=\"assets/6231e8a04bfea624bcf66a6f4f0f1f0f.png\" alt=\"\"><img class=\"c2\" src=\"assets/81713d5ef7697661b89f0d562991b5d2.png\" alt=\"\"><img class=\"c3\" src=\"assets/fba861a48c87f31f351e8d174231ac46.png\" alt=\"\"></span><span class=\"v6-res\">수업 시간, 기획 의도, 단어 선정 방법, 반별 어근, 좋은 점으로 <b>다시 짰습니다.</b></span></span><span class=\"v6-r\"><img src=\"assets/04bd422e6034cb76094a5ea5dddf24b7.png\" alt=\"다시 짠 행정실 안내\"></span></span>"
     }
    ],
    "members": [
