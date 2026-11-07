@@ -472,6 +472,8 @@ hr.rule { display: none; }
 #doubt .x-qm { position: absolute; left: calc(var(--k) * 48px); top: calc(var(--k) * -70px); font-family: 'Paperlogy'; font-weight: 800; font-size: calc(var(--k) * 200px); line-height: 1; color: #ff6a00; }
 #doubt .x-qt { display: block; font-family: 'Paperlogy'; font-weight: 600; font-size: calc(var(--k) * 42px); line-height: 1.45; color: #fff; }
 #doubt .x-qt b { color: #ff8a3d; font-weight: 800; }
-/* 11-08 20차: 106쪽 ref-skill 오른쪽 안내문 이미지 최대로 */
-#ref-skill .g-row.media > .im { align-self: stretch; background: none !important; box-shadow: none !important; padding: 0 !important; display: flex; align-items: center; justify-content: center; }
-#ref-skill .g-row.media > .im img { height: 100% !important; max-height: none !important; width: auto !important; max-width: 100% !important; object-fit: contain; border-radius: 12px; box-shadow: 0 6px 32px rgba(31, 27, 24, .14); }
+/* 11-08 20차: 106쪽 ref-skill 오른쪽 안내문 이미지 최대로(맞춤 계산에서 빠지게 절대 배치) */
+#ref-skill .g-row.media { position: relative; }
+#ref-skill .g-row.media > .g-col { flex: 0 0 54%; max-width: 54%; }
+#ref-skill .g-row.media > .im { position: absolute !important; right: 0; top: 0; bottom: 0; width: 42%; height: auto !important; display: flex; align-items: center; justify-content: center; background: none !important; box-shadow: none !important; padding: 0 !important; overflow: visible; }
+#ref-skill .g-row.media > .im img { height: 100% !important; max-height: 100% !important; width: auto !important; max-width: 100% !important; object-fit: contain; border-radius: 12px; box-shadow: 0 6px 32px rgba(31, 27, 24, .14); }
