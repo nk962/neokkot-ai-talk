@@ -8089,7 +8089,7 @@
         {
          "t": "text",
          "step": "l",
-         "tone": "accent",
+         "tone": "ink",
          "bold": true,
          "html": "학생에게",
          "head": true
@@ -8097,7 +8097,7 @@
         {
          "t": "text",
          "step": "m",
-         "tone": "ink",
+         "tone": "dim",
          "bold": false,
          "html": "반말로 다정하게 씁니다. 「~하자 :))」, 「수고했어!」. 약속은 분명하고 야단치지 않습니다."
         }
