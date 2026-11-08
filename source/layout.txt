@@ -12,8 +12,6 @@ compare2 | CARDS | 남기는 말 셋
 compare2-6 | MERGE_PREV | 남기는 말 둘째
 compare2-9 | MERGE_PREV | 남기는 말 셋째
 ask-self-2 | MERGE_PREV | 앞 쪽 결론 한 줄
-inbox-ex | CARDS | 카톡 세 건
-inbox-ex-5 | MERGE_PREV | 실장님 메시지와 결론 줄
 a3 | MERGE_NEXT | 송별 바 한 줄, 다음 쪽 송별 메시지
 a4 | MERGE_NEXT | 제가 한 말 소제목만
 b1 | FLOW | 수업 영상 01~07 단계
