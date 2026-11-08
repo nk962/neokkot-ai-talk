@@ -2,8 +2,6 @@
 lines | CARDS | 교재 라인별 학생에게 주는 것
 lines-4 | MERGE_PREV | 앞 쪽 교재 라인 카드의 나머지 항목
 lines-7 | MERGE_PREV | 커스텀 한 줄, 앞 항목에 이어짐
-possib-5 | MERGE_PREV | 한 줄짜리, 앞 쪽 가능주의에 이어짐
-hypo | STATEMENT | AI를 잘 쓰면 시간을 되찾을 수 있다가 핵심
 close | DEDUPE | 서명 줄이 꼬리 줄과 같음
 ans-split | COMPARE | 만드는 일과 책임지는 일
 prog-flow | FLOW | STEP 1~6 순서
@@ -27,13 +25,11 @@ c1-4 | FLOW | 1~6단계 원문 찾기부터 조립·납품까지
 c1-6 | STATS | 38분 · 70/70 · 122 · 9
 c2 | MERGE_NEXT | 한 문장, 다음 쪽 지침서로 이어짐
 c2-5 | CARDS | 발견 두 가지
-wake-4 | MERGE_PREV | 월, 수, 금 · 매달
 season-4 | FLOW | 05~08 시즌 순서
 season-6 | FLOW | 09~10 시즌 순서
 weekly | CARDS | 케어지 · 수업 당일 카톡
 weekly-4 | MERGE_PREV | 늘 켜 두는 것
 objection | FLOW | 시험 직후 → 질문이 오면 → 결과
-consult-3 | FLOW | 상담 → 메모 정리 → 학부모 피드백
 aside | COMPARE | 클로드 코드와 어사이드
 adm-intro | CARDS | 행정실 세 가지 일
 adm-intro-5 | MERGE_PREV | 2, 3번
@@ -60,7 +56,6 @@ vr-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 vr-2 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 vr-3 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 vr-7 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
-web-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 program | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 prog-test | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 b2-7 | MEDIA | 줄글 + 다정고1 단톡방 캡처(11-03 수정)

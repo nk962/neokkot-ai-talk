@@ -617,3 +617,34 @@ hr.rule { display: none; }
 .xk-concl.xk-big { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 52px); color: #1f1b18; text-align: center; }
 .xk-concl.xk-big b { color: #ff6a00; }
 #inbox-ex .bd > p:has(.xk-msgs) { background: none !important; box-shadow: none !important; padding: 0 !important; border: 0 !important; gap: calc(var(--k) * 40px); }
+/* 11-08 23차 */
+:is(#meetings-5,#wake,#consult,#consult-4) .bd { justify-content: center; }
+:is(#meetings-5,#wake,#consult,#consult-4) .bd > p:has(.m5,.xk-row,.cf4,.xk-sub) { display: flex; flex-direction: column; width: 100%; max-width: none; margin-top: calc(var(--k) * 20px); }
+#meetings-5 .m5 { display: flex; flex-direction: column; gap: calc(var(--k) * 40px); }
+#meetings-5 .m5-top { font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 64px); color: #5a534d; }
+#meetings-5 .m5-top .emo { font-size: 1.1em; }
+#meetings-5 .m5-card { flex: 0 0 auto; align-self: flex-start; padding: calc(var(--k) * 48px) calc(var(--k) * 96px) calc(var(--k) * 52px) calc(var(--k) * 56px); }
+#meetings-5 .m5-card .xk-lb { font-size: calc(var(--k) * 38px); }
+#meetings-5 .m5-card .xk-main { font-size: calc(var(--k) * 72px); }
+#meetings-5 .m5-end { font-family: 'KoPub Dotum', sans-serif; font-size: calc(var(--k) * 54px); color: #5a534d; }
+#meetings-5 .m5-end b { font-family: 'Paperlogy'; font-weight: 800; color: #ff6a00; }
+#wake .xk-lb2 { margin-bottom: calc(var(--k) * -6px); }
+#wake .wk-c { align-items: flex-start; }
+#wake .wk-t { font-family: 'Paperlogy'; font-weight: 800; font-size: calc(var(--k) * 46px); color: #ff6a00; line-height: 1.2; }
+#wake .wk-d { font-family: 'Paperlogy'; font-weight: 600; font-size: calc(var(--k) * 34px); line-height: 1.4; color: #1f1b18; }
+#wake .xk-dark .wk-d { color: #fff; }
+#wake .xk-dark .wk-t { color: #ff8a3d; }
+#consult .xk-concl { font-size: calc(var(--k) * 44px); margin-top: calc(var(--k) * 44px); }
+#consult .xk-concl b { color: #ff6a00; }
+#consult-4 .cf4 { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: calc(var(--k) * 32px); }
+#consult-4 .cf4-l, #consult-4 .cf4-r { display: flex; flex-direction: column; gap: calc(var(--k) * 16px); min-width: 0; }
+#consult-4 .cf4-lb { align-self: flex-start; font-family: 'Paperlogy'; font-weight: 700; font-size: calc(var(--k) * 30px); color: #1f1b18; background: rgba(31, 27, 24, .07); border-radius: 999px; padding: .3em 1em; }
+#consult-4 .cf4-hot { color: #fff; background: #ff6a00; }
+#consult-4 .cf4-memo { display: block; width: 100%; height: auto; background: #fff; border-radius: 16px; box-shadow: 0 6px 30px rgba(31, 27, 24, .12); }
+#consult-4 .cf4-msg { display: block; height: calc(var(--k) * 700px); width: auto; border-radius: 16px; box-shadow: 0 6px 30px rgba(31, 27, 24, .14); }
+:is(#possib-q,#possib-big) .bd { justify-content: center; align-items: center; text-align: center; }
+:is(#possib-q,#possib-big) .r-title { font-size: calc(var(--k) * 120px); line-height: 1.2; text-align: center; }
+#possib-q .vs { font-size: .55em; color: #ff6a00; margin: 0 .35em; vertical-align: .15em; }
+#possib-big .r-title { font-size: calc(var(--k) * 150px); }
+#consult-4 .cf4 { grid-template-columns: minmax(0, 1fr) auto auto; }
+#consult-4 .cf4-msg { height: calc(var(--k) * 620px); }
