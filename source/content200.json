@@ -136,64 +136,15 @@
      "step": "l",
      "tone": "ink",
      "bold": true,
-     "html": "2019년부터 2026년까지",
+     "html": "2018년부터 2026년까지",
      "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "2019 · 2020"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "교재 강의. 한글 매크로로 교재를 구성하고 디자인하던 때"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "2026"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "6년 만에 다시 서는 외부 강의"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-row\"><span class=\"xk-card\"><span class=\"xk-lb\">2018 · 2019 · 2020</span><span class=\"xk-main\">교재 세미나</span><span class=\"xk-note\">한글과 Canva로 교재를 제작하고<br>교재를 구성하는 세미나</span></span><span class=\"xk-arrow\">→</span><span class=\"xk-card xk-dark\"><span class=\"xk-lb\">2026</span><span class=\"xk-main\">학원, AI 어디까지</span><span class=\"xk-note\">AI 강의</span></span></span>"
     }
    ],
    "members": [
@@ -565,50 +516,37 @@
      "sub": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "가족과 지인"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "주변 사람들의 회사 이야기"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "너희가 꽃이다"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "AX 팀빌딩, 현재 진행 중"
-        }
-       ]
-      }
-     ]
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-card xk-wide\"><span class=\"xk-lb\">가족과 지인</span><span class=\"xk-main\">주변 사람들의 회사 이야기</span></span><span class=\"xk-concl\">저에게 영감과 배움이 되어 준 <b>만남들</b>입니다.</span>"
+    }
+   ],
+   "members": [
+    "meetings-5",
+    "meetings-6"
+   ]
+  },
+  {
+   "id": "ax-team",
+   "members": [
+    "ax-team"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "AI 세미나를 접하기 시작하며"
+    },
+    {
+     "t": "text",
+     "step": "m",
+     "tone": "accent",
+     "bold": true,
+     "html": "너희가 꽃이다"
     },
     {
      "t": "group",
@@ -616,19 +554,14 @@
      "kids": [
       {
        "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "저에게 영감과 배움을 되어 준 우연한 만남들입니다."
+       "step": "xl",
+       "tone": "ink",
+       "bold": true,
+       "html": "AX 팀빌딩,<br><em>현재 진행 중</em>",
+       "head": true
       }
-     ],
-     "build": "fade 1",
-     "step": true
+     ]
     }
-   ],
-   "members": [
-    "meetings-5",
-    "meetings-6"
    ]
   },
   {
@@ -650,7 +583,7 @@
        "step": "m",
        "tone": "ink",
        "bold": true,
-       "html": "같은 AI, 다른 이유",
+       "html": "왜 직원까지의 교육이 필요했나?",
        "head": true
       }
      ]
@@ -732,105 +665,15 @@
      "step": "l",
      "tone": "ink",
      "bold": true,
-     "html": "일 년 동안 이렇게 보냈습니다",
+     "html": "지난 1년 반 동안 저는,",
      "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "매주 혹은 격주 일요일 3시간"
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "dim",
-           "bold": false,
-           "html": "자기 개발에 썼습니다"
-          }
-         ]
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": true,
-           "html": "현장에 계속 옮겨 왔습니다"
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "dim",
-           "bold": false,
-           "html": "그러면서 시행착오를 겪었습니다"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "2학기 중간고사를 마무리하며"
-        },
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "dim",
-         "bold": false,
-         "html": "유의미한 전체 흐름과 자동화가 만들어졌습니다"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "같은 시기에 직원들의 AI 이해도 크게 올랐습니다."
-      }
-     ],
-     "build": "fade 3",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-row\"><span class=\"xk-card xk-dark\"><span class=\"xk-lb\">매주 일요일 오전 10시 ~ 오후 6시</span><span class=\"xk-main\">AI 스터디 및<br>자기 개발</span></span><span class=\"xk-arrow\">→</span><span class=\"xk-card\"><span class=\"xk-lb\">현장에 계속 옮겨 왔습니다</span><span class=\"xk-main\">그러면서<br>시행착오를 겪었습니다</span></span><span class=\"xk-arrow\">→</span><span class=\"xk-card\"><span class=\"xk-lb\">2학기 중간고사를 마무리하며</span><span class=\"xk-main\">유의미한 전체 흐름과<br>자동화가 만들어졌습니다</span></span></span><span class=\"xk-concl\">같은 시기에 <b>직원들의 AI 이해도</b> 크게 올랐습니다.</span>"
     }
    ],
    "members": [
@@ -970,250 +813,24 @@
     },
     {
      "t": "text",
-     "step": "m",
+     "step": "l",
      "tone": "ink",
      "bold": true,
      "html": "보통 많이 쓰는 대표 3가지 AI",
      "head": true
     },
     {
-     "t": "group",
-     "dir": "grid",
-     "cols": 3,
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "<img class=\"ailogo\" src=\"assets/ce01553856e15bb03eba33c50296f42c.svg\" alt=\"\">GPT"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "ChatGPT"
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "<img class=\"ailogo\" src=\"assets/c0d7b8cc4bacaf659ece410e3b088205.svg\" alt=\"\">클로드"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "Claude"
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "ink",
-         "bold": true,
-         "html": "<img class=\"ailogo\" src=\"assets/0b0e429cf7434b4a1cec0671a894ae91.svg\" alt=\"\">제미나이"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "dim",
-         "bold": false,
-         "html": "Gemini"
-        }
-       ],
-       "box": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "accent",
-       "bold": true,
-       "html": "쓰는 도구 | 세 AI의 특징"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "각 AI, 이런 일에 씁니다",
-       "head": true
-      },
-      {
-       "t": "group",
-       "dir": "grid",
-       "cols": 3,
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "GPT"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "만능 대화 상대"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "아이디어 · 해석"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "그림 · 사진 생성"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "클로드"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "내 폴더에서 일하는 직원"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "클로드 코드 기준"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "교재 · 시험지 제작과 검수"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "구글 자료를 다루는 조수"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "구글 문서 · 드라이브"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "dim",
-           "bold": false,
-           "html": "긴 PDF · 영상 정리"
-          }
-         ],
-         "box": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-row\"><span class=\"xk-card xk-ai\"><span class=\"xk-ainame\"><img src=\"assets/ce01553856e15bb03eba33c50296f42c.svg\" alt=\"\">GPT</span><span class=\"xk-note\">ChatGPT</span><span class=\"xk-main\">만능 대화 상대</span><span class=\"xk-tag\">아이디어 · 해석</span><span class=\"xk-tag\">그림 · 사진 생성</span></span><span class=\"xk-card xk-ai\"><span class=\"xk-ainame\"><img src=\"assets/c0d7b8cc4bacaf659ece410e3b088205.svg\" alt=\"\">클로드</span><span class=\"xk-note\">Claude · 클로드 코드 기준</span><span class=\"xk-main\">내 폴더에서 일하는 직원</span><span class=\"xk-tag\">교재 · 시험지 제작과 검수</span></span><span class=\"xk-card xk-ai\"><span class=\"xk-ainame\"><img src=\"assets/0b0e429cf7434b4a1cec0671a894ae91.svg\" alt=\"\">제미나이</span><span class=\"xk-note\">Gemini</span><span class=\"xk-main\">구글 자료를 다루는 조수</span><span class=\"xk-tag\">구글 문서 · 드라이브</span><span class=\"xk-tag\">긴 PDF · 영상 정리</span></span></span>"
     }
    ],
    "rev": "바꿈",
    "members": [
     "compare",
     "rev-compare-uses"
-   ]
-  },
-  {
-   "id": "compare-2",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "쓰는 도구 | 세 AI 비교"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "ChatGPT"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "무엇이든 물어보는 만능 대화 상대"
-      }
-     ]
-    }
-   ],
-   "members": [
-    "compare-2"
    ]
   },
   {
@@ -1390,136 +1007,6 @@
    ]
   },
   {
-   "id": "compare-5",
-   "body": [
-    {
-     "t": "text",
-     "step": "xs",
-     "tone": "accent",
-     "bold": true,
-     "html": "쓰는 도구 | 세 AI 비교"
-    },
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "ink",
-     "bold": true,
-     "html": "제미나이 | Gemini",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "row",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "좋은 점"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "구글과 한 몸"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "긴 자료를 한 번에"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "내 자료만 근거로"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "그림 생성·편집"
-        }
-       ],
-       "box": true
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "알아둘 점"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "흩어진 기능"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "내 폴더와 거리"
-        },
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "ink",
-         "bold": true,
-         "html": "결과는 화면 글"
-        }
-       ],
-       "box": true
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "row",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "구글 드라이브 작업",
-       "chip": "outline"
-      },
-      {
-       "t": "text",
-       "step": "xs",
-       "tone": "ink",
-       "bold": true,
-       "html": "긴 PDF·영상 정리",
-       "chip": "outline"
-      }
-     ],
-     "wrap": true
-    }
-   ],
-   "rev": "바꿈",
-   "members": [
-    "compare-5"
-   ]
-  },
-  {
    "id": "compare-6",
    "body": [
     {
@@ -1530,161 +1017,19 @@
      "html": "쓰는 도구 | 세 AI 비교"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "클로드 코드"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "내 폴더에서 한 권을 만들어 내는 직원"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "제 주력 도구",
-       "chip": "accent"
-      }
-     ]
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "클로드 코드 <span class=\"xk-chip\">제 주력 도구</span>",
+     "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "좋은 점"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "파일로 끝난다"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "원문이 안 바뀐다"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "AI끼리 검수"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "규칙이 쌓인다"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "알아둘 점"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "세팅이 고비"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "쓸수록 비용"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "그림 생성은 없음"
-          },
-          {
-           "t": "text",
-           "step": "s",
-           "tone": "ink",
-           "bold": true,
-           "html": "배우는 시간"
-          }
-         ],
-         "box": true
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "시험지·교재 한 권",
-         "chip": "outline"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "매주 같은 틀 반복",
-         "chip": "outline"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "검수까지",
-         "chip": "outline"
-        }
-       ],
-       "wrap": true
-      }
-     ],
-     "build": "fade 1",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-sub\">내 폴더에서 <b>한 권을 만들어 내는 직원</b></span><span class=\"xk-row\"><span class=\"xk-card xk-dark\"><span class=\"xk-lb\">좋은 점</span><span class=\"xk-li\">파일로 끝난다</span><span class=\"xk-li\">원문이 안 바뀐다</span><span class=\"xk-li\">AI끼리 검수</span><span class=\"xk-li\">규칙이 쌓인다</span></span><span class=\"xk-card\"><span class=\"xk-lb\">알아둘 점</span><span class=\"xk-li\">세팅이 고비</span><span class=\"xk-li\">쓸수록 비용</span><span class=\"xk-li\">그림 생성은 없음</span><span class=\"xk-li\">배우는 시간</span></span><span class=\"xk-card xk-soft\"><span class=\"xk-lb\">이런 일에</span><span class=\"xk-li\">시험지·교재 한 권</span><span class=\"xk-li\">매주 같은 틀 반복</span><span class=\"xk-li\">검수까지</span></span></span>"
     }
    ],
    "members": [
@@ -1711,7 +1056,7 @@
        "step": "xl",
        "tone": "ink",
        "bold": true,
-       "html": "클로드 코드",
+       "html": "제가 쓰는 것은 <em>VS Code</em>",
        "head": true
       }
      ]
@@ -1721,7 +1066,7 @@
      "step": "l",
      "tone": "dim",
      "bold": false,
-     "html": "VS Code 터미널에서 씁니다"
+     "html": "VS Code 안에서 클로드 코드를 씁니다"
     },
     {
      "t": "text",
@@ -1735,7 +1080,7 @@
      "step": "s",
      "tone": "ink",
      "bold": false,
-     "html": "<span class=\"tv\"><span class=\"tv-app\"><img src=\"assets/a0f33ad8ad533f1dd3a77bf2f100edae.svg\" alt=\"VS Code\"><span class=\"tv-name\">VS Code</span><span class=\"tv-plus\">+</span><span class=\"tv-name\">터미널</span></span><span class=\"tv-term\"><span class=\"tv-bar\"><i></i><i></i><i></i><span>터미널 — claude</span></span><span class=\"tv-body\"><span class=\"tv-line\"><span class=\"pr\">~/너희가꽃이다 %</span> claude</span><span class=\"tv-box\"><span class=\"o\">✻</span> Welcome to <b>Claude Code</b>!</span><span class=\"tv-line\"><span class=\"o\">&gt;</span> 다정고1 내신 대비 변형문항 30개 만들어 줘</span><span class=\"tv-line o\">● 시험범위 파일을 읽는 중…</span><span class=\"tv-line dimc\">● 학교 기출 패턴 확인 → 문항 생성 → 검수</span></span></span></span>"
+     "html": "<span class=\"tw\"><span class=\"tw-c\"><img src=\"assets/c0d7b8cc4bacaf659ece410e3b088205.svg\" alt=\"클로드\"><b>클로드 코드 웹</b><small>브라우저에서 · claude.ai</small></span><span class=\"tw-vs\">vs</span><span class=\"tw-c tw-me\"><span class=\"tw-badge\">제가 쓰는 것</span><img src=\"assets/a0f33ad8ad533f1dd3a77bf2f100edae.svg\" alt=\"VS Code\"><b>VS Code</b><small>내 컴퓨터 · 내 폴더에서</small></span></span>"
     }
    ],
    "members": [
@@ -1744,6 +1089,36 @@
     "tool-3",
     "tool-4",
     "tool-5"
+   ]
+  },
+  {
+   "id": "tool-screens",
+   "members": [
+    "tool-screens"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "제가 쓰는 프로그램"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "첫 화면부터 다릅니다",
+     "head": true
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-shots\"><span class=\"xk-shot\"><span class=\"xk-shl\"><img class=\"xk-ic\" src=\"assets/c0d7b8cc4bacaf659ece410e3b088205.svg\" alt=\"\">클로드 코드 웹</span><img class=\"xk-shi\" src=\"assets/f6ed68a1ed37a0d998bdea6e3966d4bd.png\" alt=\"클로드 코드 웹 첫 화면\"></span><span class=\"xk-shot xk-me\"><span class=\"xk-shl\"><img class=\"xk-ic\" src=\"assets/a0f33ad8ad533f1dd3a77bf2f100edae.svg\" alt=\"\">VS Code <em>제가 쓰는 것</em></span><img class=\"xk-shi\" src=\"assets/ffd732b6538ad7c53346404d58bf5602.png\" alt=\"VS Code 첫 화면\"></span></span>"
+    }
    ]
   },
   {
@@ -2452,6 +1827,28 @@
    ]
   },
   {
+   "id": "before-task",
+   "members": [
+    "before-task"
+   ],
+   "body": [
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "ink",
+       "bold": true,
+       "html": "어떤 일을 시킬까를<br><em>생각하기 전에</em>",
+       "head": true
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "e820ce89",
    "body": [
     {
@@ -2618,152 +2015,10 @@
     },
     {
      "t": "text",
-     "step": "l",
+     "step": "s",
      "tone": "ink",
-     "bold": true,
-     "html": "카톡 한 줄이 곧 할 일입니다",
-     "head": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "다정고1 오00"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": false,
-         "html": "선생님, 시험 범위 이번에 교과서 3과 아니고 4과부터 나간대요"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "대성고2 권00"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": false,
-           "html": "이번 부교재 올포 3강부터래요"
-          }
-         ]
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "accent",
-           "bold": true,
-           "html": "종촌고3 박00"
-          },
-          {
-           "t": "text",
-           "step": "l",
-           "tone": "ink",
-           "bold": false,
-           "html": "저희 영어 시험 16일이에요"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "accent",
-       "bold": true,
-       "html": "실장님",
-       "head": true
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "s",
-         "tone": "dim",
-         "bold": true,
-         "html": "실장님"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": false,
-         "html": "원장님 다정고2 신규생입니다. 학생 번호는 000, 학부모님 번호 000이고 첫 수업 11월 1일입니다"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "accent",
-         "bold": true,
-         "html": "연락 = 오늘 나의 할 일"
-        }
-       ],
-       "build": "fade 1",
-       "step": true
-      }
-     ],
-     "build": "fade 4",
-     "step": true
+     "bold": false,
+     "html": "<span class=\"xk-msgs\"><span class=\"xk-msg\"><span class=\"xk-who\">다정고1 오00</span><span class=\"xk-say\">선생님, 시험 범위 이번에 교과서 3과 아니고 4과부터 나간대요</span></span><span class=\"xk-msg\"><span class=\"xk-who\">대성고2 권00</span><span class=\"xk-say\">이번 부교재 올포 3강부터래요</span></span><span class=\"xk-msg\"><span class=\"xk-who\">종촌고3 박00</span><span class=\"xk-say\">저희 영어 시험 16일이에요</span></span><span class=\"xk-msg xk-msg2\"><span class=\"xk-who\">실장님</span><span class=\"xk-say\">원장님 다정고2 신규생입니다. 학생 번호는 000, 학부모님 번호 000이고 첫 수업 11월 1일입니다</span></span></span><span class=\"xk-concl xk-big\">연락 = <b>오늘 나의 할 일</b></span>"
     }
    ],
    "members": [
@@ -2773,6 +2028,28 @@
     "inbox-ex-4",
     "inbox-ex-5",
     "inbox-ex-6"
+   ]
+  },
+  {
+   "id": "inbox-line",
+   "members": [
+    "inbox-line"
+   ],
+   "body": [
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "ink",
+       "bold": true,
+       "html": "카톡 한 줄이<br><em>곧 할 일입니다</em>",
+       "head": true
+      }
+     ]
+    }
    ]
   },
   {
@@ -2826,110 +2103,11 @@
      "head": true
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "m",
-         "tone": "accent",
-         "bold": true,
-         "html": "할 일을 받는 곳"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "ink",
-         "bold": true,
-         "html": "<em>1위</em> 카톡"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": true,
-         "html": "<em>2위</em> 노션 회의록"
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": true,
-         "html": "<em>3위</em> 이메일"
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "ink",
-       "bold": true,
-       "html": "일을 끝내면, 어디에 보관하고 전달할까?",
-       "head": true
-      },
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "보관"
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": true,
-           "html": "내 로컬 · 노션"
-          }
-         ],
-         "box": true
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "accent",
-           "bold": true,
-           "html": "전달"
-          },
-          {
-           "t": "text",
-           "step": "m",
-           "tone": "ink",
-           "bold": true,
-           "html": "카톡"
-          }
-         ],
-         "box": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-two\"><span class=\"xk-card\"><span class=\"xk-lb\">할 일을 받는 곳</span><span class=\"xk-rank\"><em>1위</em>카톡</span><span class=\"xk-rank xk-dim\"><em>2위</em>노션 회의록</span><span class=\"xk-rank xk-dim\"><em>3위</em>이메일</span></span><span class=\"xk-col\"><span class=\"xk-q\">일을 끝내면,<br>어디에 보관하고 전달할까?</span><span class=\"xk-card xk-dark\"><span class=\"xk-lb\">보관</span><span class=\"xk-main\">내 로컬 · 노션</span></span><span class=\"xk-card xk-dark\"><span class=\"xk-lb\">전달</span><span class=\"xk-main\">카톡</span></span></span></span>"
     }
    ],
    "members": [
@@ -3089,7 +2267,7 @@
      "step": "s",
      "tone": "ink",
      "bold": false,
-     "html": "<span class=\"cx\"><span class=\"cx-col\"><span class=\"cx-h\">① 어디서 보고</span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/148a0e74f4235b49ce58797640a12063.svg\" alt=\"\"><span class=\"cx-t\"><b>카톡</b><small>학부모 · 실장님 메시지</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/a20581e0ed373846f73792c64bb95f1d.svg\" alt=\"\"><span class=\"cx-t\"><b>노션</b><small>회의록 · 할 일 목록</small></span></span><span class=\"cx-card\"><svg class=\"cx-ic\" viewBox=\"0 0 24 24\"><rect x=\".5\" y=\".5\" width=\"23\" height=\"23\" rx=\"5.5\" fill=\"#fff\" stroke=\"#E4E0DB\"/><path d=\"M.5 6A5.5 5.5 0 0 1 6 .5h12A5.5 5.5 0 0 1 23.5 6v1.5H.5z\" fill=\"#F7C744\"/><path d=\"M5 12h14M5 15.5h14M5 19h9\" stroke=\"#C9C3BC\" stroke-width=\"1.2\" stroke-linecap=\"round\"/></svg><span class=\"cx-t\"><b>메모</b><small>적어 둔 할 일 · 아이디어</small></span></span></span><span class=\"cx-arr\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></span><span class=\"cx-col cx-mid\"><span class=\"cx-h\">② 클코 직원이 일하고</span><span class=\"cx-id\"><span class=\"cx-clip\"></span><span class=\"cx-top\">STAFF · 사원증</span><span class=\"cx-photo\"><img src=\"assets/c0d7b8cc4bacaf659ece410e3b088205.svg\" alt=\"\"></span><span class=\"cx-name\">클코</span><span class=\"cx-dept\">너희가 꽃이다 · AI 직원</span><span class=\"cx-steps\"><span>읽고</span><i>›</i><span>정리하고</span><i>›</i><span>만들고</span><i>›</i><span>검수</span></span></span></span><span class=\"cx-arr\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></span><span class=\"cx-col\"><span class=\"cx-h\">③ 어디에 남기나</span><span class=\"cx-card\"><svg class=\"cx-ic\" viewBox=\"0 0 24 24\"><path d=\"M2 6a2 2 0 0 1 2-2h5.2l2 2.2H20a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z\" fill=\"#ff9a4d\"/><path d=\"M2 9.2h20V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z\" fill=\"#ffb77d\"/></svg><span class=\"cx-t\"><b>내 폴더</b><small>시험지 · 교재 · 상담 기록</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/a20581e0ed373846f73792c64bb95f1d.svg\" alt=\"\"><span class=\"cx-t\"><b>노션</b><small>한 일 기록</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/148a0e74f4235b49ce58797640a12063.svg\" alt=\"\"><span class=\"cx-t\"><b>카톡</b><small>학부모님께 전달</small></span></span></span></span>"
+     "html": "<span class=\"cx\"><span class=\"cx-col\"><span class=\"cx-h\">① 어디서 보고</span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/148a0e74f4235b49ce58797640a12063.svg\" alt=\"\"><span class=\"cx-t\"><b>카톡</b><small>학부모 · 실장님 메시지</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/a20581e0ed373846f73792c64bb95f1d.svg\" alt=\"\"><span class=\"cx-t\"><b>노션</b><small>회의록 · 할 일 목록</small></span></span><span class=\"cx-card\"><svg class=\"cx-ic\" viewBox=\"0 0 24 24\"><rect x=\".5\" y=\".5\" width=\"23\" height=\"23\" rx=\"5.5\" fill=\"#fff\" stroke=\"#E4E0DB\"/><path d=\"M.5 6A5.5 5.5 0 0 1 6 .5h12A5.5 5.5 0 0 1 23.5 6v1.5H.5z\" fill=\"#F7C744\"/><path d=\"M5 12h14M5 15.5h14M5 19h9\" stroke=\"#C9C3BC\" stroke-width=\"1.2\" stroke-linecap=\"round\"/></svg><span class=\"cx-t\"><b>메모</b><small>적어 둔 할 일 · 아이디어</small></span></span></span><span class=\"cx-arr\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></span><span class=\"cx-col cx-mid\"><span class=\"cx-h\">② 클코 직원이 일하고</span><span class=\"cx-id\"><span class=\"cx-clip\"></span><span class=\"cx-top\">STAFF · 사원증</span><span class=\"cx-photo\"><img src=\"assets/a0f33ad8ad533f1dd3a77bf2f100edae.svg\" alt=\"VS Code\"></span><span class=\"cx-dept\">너희가 꽃이다 · AI 직원</span><span class=\"cx-steps\"><span>읽고</span><i>›</i><span>정리하고</span><i>›</i><span>만들고</span><i>›</i><span>검수</span></span></span></span><span class=\"cx-arr\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></span><span class=\"cx-col\"><span class=\"cx-h\">③ 어디에 남기나</span><span class=\"cx-card\"><svg class=\"cx-ic\" viewBox=\"0 0 24 24\"><path d=\"M2 6a2 2 0 0 1 2-2h5.2l2 2.2H20a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z\" fill=\"#ff9a4d\"/><path d=\"M2 9.2h20V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z\" fill=\"#ffb77d\"/></svg><span class=\"cx-t\"><b>내 폴더</b><small>시험지 · 교재 · 상담 기록</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/a20581e0ed373846f73792c64bb95f1d.svg\" alt=\"\"><span class=\"cx-t\"><b>노션</b><small>한 일 기록</small></span></span><span class=\"cx-card\"><img class=\"cx-ic\" src=\"assets/148a0e74f4235b49ce58797640a12063.svg\" alt=\"\"><span class=\"cx-t\"><b>카톡</b><small>학부모님께 전달</small></span></span></span></span>"
     }
    ],
    "members": [
@@ -4636,142 +3814,6 @@
    "id": "rv-1",
    "body": [
     {
-     "t": "group",
-     "dir": "row",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": true,
-         "html": "학생용 | 실제 출력본",
-         "chip": "fill"
-        },
-        {
-         "t": "img",
-         "src": "/_blob/79a64ec28fd3d92a6b46093a298e6411",
-         "alt": "",
-         "fit": "contain"
-        }
-       ]
-      },
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "accent",
-         "bold": true,
-         "html": "수업 영상 → 리뷰 테스트"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "반 이름 · 이름 · 날짜 · 점수 칸이 맨 위에 있습니다",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "어법 · 어휘 · 지칭 · 빈칸 문항이 한 장에 이어집니다",
-         "chip": "fill"
-        },
-        {
-         "t": "text",
-         "step": "xs",
-         "tone": "ink",
-         "bold": false,
-         "html": "수업 범위(올림포스 11강 1~8번)가 머리에 찍힙니다",
-         "chip": "fill"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "row",
-       "kids": [
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "light",
-           "bold": true,
-           "html": "정답판 | 근거 포함",
-           "chip": "accent"
-          },
-          {
-           "t": "img",
-           "src": "/_blob/261da248f09218bc939a70bdbefa4d34",
-           "alt": "",
-           "fit": "contain"
-          }
-         ]
-        },
-        {
-         "t": "group",
-         "dir": "col",
-         "kids": [
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": false,
-           "html": "정답 선택지에 회색 표시가 들어갑니다",
-           "chip": "fill"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": false,
-           "html": "문항마다 「정답 + 근거」 상자가 바로 아래 붙습니다",
-           "chip": "fill"
-          },
-          {
-           "t": "text",
-           "step": "xs",
-           "tone": "ink",
-           "bold": false,
-           "html": "채점하는 사람이 해설을 찾아볼 일이 없습니다",
-           "chip": "fill"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "rv-1",
-    "rv-2"
-   ]
-  },
-  {
-   "id": "b1-8",
-   "body": [
-    {
      "t": "text",
      "step": "xs",
      "tone": "accent",
@@ -4779,35 +3821,16 @@
      "html": "대표 자동화 2 | 수업 영상"
     },
     {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "07"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "사람은 인쇄기 앞에서 가져오기만"
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "그 전의 모든 일은 자동"
-      }
-     ]
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-split\" style=\"--l:1fr;--r:calc(var(--k) * 520px)\"><span class=\"xk-sl\"><span class=\"xk-lb2\">학생용 | 실제 출력본</span><span class=\"xk-h\">수업 영상 → <em>리뷰 테스트</em></span><span class=\"xk-card xk-num\"><b>1</b><span>반 이름 · 이름 · 날짜 · 점수 칸이 맨 위에 있습니다</span></span><span class=\"xk-card xk-num\"><b>2</b><span>어법 · 어휘 · 지칭 · 빈칸 문항이 한 장에 이어집니다</span></span><span class=\"xk-card xk-num\"><b>3</b><span>수업 범위(올림포스 11강 1~8번)가 머리에 찍힙니다</span></span><span class=\"xk-card xk-dark xk-num\"><b>+</b><span>정답판에는 문항마다 「정답 + 근거」 상자가 붙어<br>채점하는 사람이 해설을 찾아볼 일이 없습니다</span></span></span><span class=\"xk-sr\"><img src=\"assets/79a64ec28fd3d92a6b46093a298e6411.jpg\" alt=\"리뷰 테스트 학생용 출력본\"></span></span>"
     }
    ],
    "members": [
-    "b1-8"
+    "rv-1",
+    "rv-2"
    ]
   },
   {
@@ -4981,19 +4004,36 @@
     },
     {
      "t": "text",
-     "step": "l",
+     "step": "s",
      "tone": "ink",
      "bold": false,
-     "html": "수업 영상을 공유와 보강 차원에서<br><b>「반&nbsp;단톡방에 링크 공유해!」</b>라고 시키면,<br>클코가 카톡에서 해당 반을 검색해서<br>링크를 자동으로 올립니다."
-    },
-    {
-     "t": "img",
-     "src": "/_blob/4a7a8fcf71a1c78c4455ca9f0c802dd4",
-     "alt": "[너꽃] 다정고1 단톡방에 올라간 수업 영상 링크"
+     "html": "<span class=\"xk-split\" style=\"--l:1fr;--r:calc(var(--k) * 640px)\"><span class=\"xk-sl xk-mid\"><span class=\"xk-p\">수업 영상을 공유와 보강 차원에서<br><b>「반&nbsp;단톡방에 링크 공유해!」</b>라고 시키면,<br>클코가 카톡에서 해당 반을 검색해서<br>링크를 자동으로 올립니다.</span></span><span class=\"xk-sr\"><img src=\"assets/4a7a8fcf71a1c78c4455ca9f0c802dd4.png\" alt=\"[너꽃] 다정고1 단톡방에 올라간 수업 영상 링크\"></span></span>"
     }
    ],
    "members": [
     "b2-7"
+   ]
+  },
+  {
+   "id": "talk-to-q",
+   "members": [
+    "talk-to-q"
+   ],
+   "body": [
+    {
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "ink",
+       "bold": true,
+       "html": "수업 시간에 내가 말하는 모든 게<br><em>바로 문제</em>로 만들고 싶다.",
+       "head": true
+      }
+     ]
+    }
    ]
   },
   {
@@ -5420,37 +4460,9 @@
     {
      "t": "text",
      "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "세 번째"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "accent",
-       "bold": true,
-       "html": "3"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": true,
-       "html": "나의 새벽",
-       "head": true
-      },
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "dim",
-       "bold": false,
-       "html": "시험 범위가 뜨면 그 범위의 문항을 새벽에 만들어 둡니다"
-      }
-     ]
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-split xk-me2\" style=\"--l:calc(var(--k) * 420px);--r:1fr\"><span class=\"xk-sr xk-photo\"><img src=\"assets/70d38ebf37bd73d7aa3e67b30f3a2b63.png\" alt=\"권나윤 원장\"></span><span class=\"xk-sl xk-mid\"><span class=\"xk-lb2\">세 번째 | 나의 새벽</span><span class=\"xk-bubble\">매일 카톡으로 전달되는 추가된 시험범위들을 내가 신경 쓰지 않아도 <b>알아서 학교별로 정리하고 누적</b>해서, 매일 새벽에 해당 시험범위에 관련된 <b>변형문제를 학교별로 제작</b>해. 변형문제집은 학교별로 동형모의고사 시험지로 <b>총 15회</b>로 만들 거야. 15회 중에 5회는 난도 &lt;중&gt;, 5회는 난도 &lt;중상&gt;, 마지막 5회는 난도 &lt;상&gt;으로 제작하자. 기출시험지를 기반으로 배점, 선지의 길이, 학교의 시그니처 문항들 모두 반영되어야 해. 학교의 시험범위가 확정되는 날, 새벽 동안 제작하고 있던 문항들 <b>바로 PDF 파일로 압축해서 인쇄소에 이메일 보내.</b></span></span></span>"
     }
    ],
    "members": [

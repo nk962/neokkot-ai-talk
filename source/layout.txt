@@ -7,13 +7,7 @@ hypo | STATEMENT | AI를 잘 쓰면 시간을 되찾을 수 있다가 핵심
 close | DEDUPE | 서명 줄이 꼬리 줄과 같음
 ans-split | COMPARE | 만드는 일과 책임지는 일
 prog-flow | FLOW | STEP 1~6 순서
-origin | COMPARE | 2019·2020 교재 강의와 2026 외부 강의
-meetings-5 | CARDS | 가족과 지인 / 너희가 꽃이다
-year | FLOW | 일요일 3시간 → 현장에 옮김 → 2학기 중간고사
-compare | MERGE_NEXT | 이름 카드만, 다음 쪽 쓰임새와 한 쪽
-compare-2 | DEDUPE | ChatGPT 아래 GPT | ChatGPT 반복
 compare-4 | DEDUPE | Gemini 아래 제미나이 | Gemini 반복
-compare-6 | MERGE_NEXT | 클로드 코드 소개 세 줄, 다음 쪽 좋은 점 · 알아둘 점 머리로
 compare2 | CARDS | 남기는 말 셋
 compare2-6 | MERGE_PREV | 남기는 말 둘째
 compare2-9 | MERGE_PREV | 남기는 말 셋째
@@ -62,7 +56,6 @@ n85 | STATS | 85건
 ledger | FLOW | 찾는다 → 적는다 → 승격 → 사람 눈까지 오지 못함
 layers | FLOW | 9겹 검수
 layers-3 | MERGE_PREV | 9겹 나머지
-rv-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 b3-card | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 design-5 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
 vr-1 | MEDIA | 문서 캡처를 크게(레퍼런스: 제목 + 세로 그림 칸)
