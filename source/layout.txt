@@ -2,7 +2,6 @@
 lines | CARDS | 교재 라인별 학생에게 주는 것
 lines-4 | MERGE_PREV | 앞 쪽 교재 라인 카드의 나머지 항목
 lines-7 | MERGE_PREV | 커스텀 한 줄, 앞 항목에 이어짐
-close | DEDUPE | 서명 줄이 꼬리 줄과 같음
 ans-split | COMPARE | 만드는 일과 책임지는 일
 prog-flow | FLOW | STEP 1~6 순서
 compare-4 | DEDUPE | Gemini 아래 제미나이 | Gemini 반복

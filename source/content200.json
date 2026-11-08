@@ -8414,6 +8414,36 @@
    ]
   },
   {
+   "id": "grow",
+   "members": [
+    "grow"
+   ],
+   "body": [
+    {
+     "t": "text",
+     "step": "xs",
+     "tone": "accent",
+     "bold": true,
+     "html": "나다운 AI"
+    },
+    {
+     "t": "text",
+     "step": "l",
+     "tone": "ink",
+     "bold": true,
+     "html": "사람의 관점에서 <em>함께 고민할 때</em> 자랍니다",
+     "head": true
+    },
+    {
+     "t": "text",
+     "step": "s",
+     "tone": "ink",
+     "bold": false,
+     "html": "<span class=\"xk-sub\">파일을 더 많이 넣어 준다고 AI가 똑똑해지지는 않습니다.</span><span class=\"xk-two gr-two\"><span class=\"xk-card\"><span class=\"xk-lb\">사람과 대화하는 시간만큼</span><span class=\"xk-main\">AI와 대화합니다</span><span class=\"gr-tags\"><span class=\"xk-tag\">묻고</span><span class=\"xk-tag\">따지고</span><span class=\"xk-tag\">잔소리하고</span><span class=\"xk-tag\">토론합니다</span></span></span><span class=\"xk-card xk-dark\"><span class=\"xk-lb\">그리고</span><span class=\"xk-main\">실패를<br>기록합니다</span></span></span>"
+    }
+   ]
+  },
+  {
    "id": "p4",
    "body": [
     {
@@ -10126,33 +10156,25 @@
      "html": "쓰는 도구"
     },
     {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "지금은 과도기입니다."
-    },
-    {
-     "t": "text",
-     "step": "xl",
-     "tone": "ink",
-     "bold": true,
-     "html": "다 해 보고,<br><em>다 알아야</em> 합니다",
-     "head": true
-    },
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "ink",
-     "bold": false,
-     "html": "<span class=\"x-sub\">지금 필요한 태도는 <b>그것 하나</b>입니다.</span>"
+     "t": "group",
+     "dir": "col",
+     "kids": [
+      {
+       "t": "text",
+       "step": "xl",
+       "tone": "ink",
+       "bold": true,
+       "html": "지금은 <em>과도기</em>입니다.",
+       "head": true
+      }
+     ]
     },
     {
      "t": "text",
      "step": "s",
      "tone": "ink",
      "bold": false,
-     "html": "<span class=\"x-story\"><span class=\"x-lb\">미국의 한 IT 회사 이야기</span><span class=\"x-main\">2주 만에 사람들이<br>자기 신용카드 번호를<br><b>다 내주었습니다.</b></span></span>"
+     "html": "<span class=\"tz-2\">다 해 보고, <b>다 알아야</b> 합니다</span><span class=\"tz-3\">지금 필요한 태도는 그것 하나입니다.</span>"
     }
    ],
    "members": [
@@ -10160,23 +10182,6 @@
     "transition-2",
     "transition-3",
     "card"
-   ]
-  },
-  {
-   "id": "card-2",
-   "body": [
-    {
-     "t": "text",
-     "step": "xl",
-     "tone": "ink",
-     "bold": true,
-     "html": "사람은 불안보다<br><em>편리함</em>을 고릅니다",
-     "head": true
-    }
-   ],
-   "members": [
-    "card-2",
-    "card-3"
    ]
   },
   {
@@ -10209,112 +10214,6 @@
    ]
   },
   {
-   "id": "together",
-   "body": [
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "CLOSING"
-      },
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "파일을 더 많이 넣어 준다고 AI가 똑똑해지지는 않습니다."
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "사람의 관점에서<br><em>함께 고민할 때</em> 자랍니다",
-       "head": true
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    }
-   ],
-   "members": [
-    "together",
-    "together-2"
-   ]
-  },
-  {
-   "id": "junior",
-   "body": [
-    {
-     "t": "text",
-     "step": "m",
-     "tone": "accent",
-     "bold": true,
-     "html": "CLOSING"
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "사람과 대화하는 시간만큼,<br>AI와 대화합니다.",
-       "head": true
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "묻고, 따지고, 잔소리하고, 토론합니다."
-        },
-        {
-         "t": "text",
-         "step": "l",
-         "tone": "dim",
-         "bold": false,
-         "html": "그리고 <em><b>실패를 기록합니다.</b></em>"
-        }
-       ]
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    }
-   ],
-   "members": [
-    "junior",
-    "junior-2",
-    "junior-3"
-   ]
-  },
-  {
    "id": "excl",
    "body": [
     {
@@ -10323,50 +10222,13 @@
      "kids": [
       {
        "t": "text",
-       "step": "m",
-       "tone": "accent",
-       "bold": true,
-       "html": "진짜 마지막 이야기!"
-      },
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "accent",
-       "bold": true,
-       "html": "!"
-      }
-     ]
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
        "step": "xl",
        "tone": "ink",
        "bold": true,
-       "html": "제가 AI에 대해<br>느낀 것은 느낌표입니다",
+       "html": "마지막 이야기",
        "head": true
       }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "학원에는 정말 미친 듯이 잡일이 많습니다.<br>이걸 AI로 덜어낼 수 있다는 것이 엄청난 느낌표였습니다."
-      }
-     ],
-     "build": "fade 2",
-     "step": true
+     ]
     }
    ],
    "members": [
@@ -10378,13 +10240,6 @@
   {
    "id": "doubt",
    "body": [
-    {
-     "t": "text",
-     "step": "s",
-     "tone": "accent",
-     "bold": true,
-     "html": "그런데"
-    },
     {
      "t": "text",
      "step": "xl",
@@ -10602,84 +10457,10 @@
    "body": [
     {
      "t": "text",
-     "step": "l",
-     "tone": "dim",
+     "step": "s",
+     "tone": "ink",
      "bold": false,
-     "html": "얄리의 질문 한 줄이 책 한 권이 되었습니다."
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "xl",
-       "tone": "ink",
-       "bold": true,
-       "html": "집에 가는 길에,<br><em>나에게</em> 던질 질문 하나",
-       "head": true
-      }
-     ],
-     "build": "fade 1",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "ink",
-       "bold": false,
-       "html": "너희가 꽃이다 학원 원장 권나윤"
-      }
-     ],
-     "build": "fade 2",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "text",
-       "step": "l",
-       "tone": "dim",
-       "bold": false,
-       "html": "너희가 꽃이다 | 권나윤"
-      }
-     ],
-     "build": "fade 3",
-     "step": true
-    },
-    {
-     "t": "group",
-     "dir": "col",
-     "kids": [
-      {
-       "t": "group",
-       "dir": "col",
-       "kids": [
-        {
-         "t": "icon",
-         "name": "Chat",
-         "tone": "accent"
-        },
-        {
-         "t": "text",
-         "step": "xl",
-         "tone": "ink",
-         "bold": true,
-         "html": "질문 받겠습니다",
-         "head": true,
-         "center": true
-        }
-       ]
-      }
-     ],
-     "build": "fade 4",
-     "step": true
+     "html": "<span class=\"cl\"><span class=\"cl-l\"><span class=\"cl-a\">얄리의 질문 한 줄이<br><b>책 한 권</b>이 되었습니다.</span><span class=\"cl-q\">집에 가는 길에,<br><em>나에게</em> 던질<br>질문 하나</span></span><span class=\"cl-book\"><img src=\"assets/31b63ad37d86f92f37d34f976bbc5c66.png\" alt=\"총 균 쇠 양장본\"></span><span class=\"cl-r\"><span class=\"cl-ask\"><span class=\"cl-ic\">💬</span>질문<br>받겠습니다</span><span class=\"cl-me\">너희가 꽃이다 학원<br>원장 권나윤</span></span></span>"
     }
    ],
    "members": [
